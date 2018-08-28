@@ -1,0 +1,119 @@
+﻿.button-search-advanced{
+    background-image: url(../MojImages/PdoImages/Nominations/AdvancedNorm.png);
+}
+
+.button-blue-gradient:hover .button-search-advanced {
+   background-image: url(../MojImages/PdoImages/Nominations/AdvancedHover.png);
+}
+
+.button-blue-gradient[disabled] .button-search-advanced {
+   background-image: url(../MojImages/PdoImages/Nominations/AdvancedDis.png);
+}
+
+
+.button-previous-rounds {
+    background-image: url(../MojImages/PdoImages/Nominations/SvavimNorm.png);
+}
+
+.button-blue-gradient:hover .button-previous-rounds {
+   background-image: url(../MojImages/PdoImages/Nominations/SvavimHover.png);
+}
+
+.button-blue-gradient[disabled] .button-previous-rounds {
+   background-image: url(../MojImages/PdoImages/Nominations/SvavimDis.png);
+}
+
+
+.div-advocate-info {
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.special-advocate {
+    background-image: url(../MojImages/icons/icoAlert.gif);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+}
+
+
+.criminal-case-process {
+    background-image: url(../MojImages/icons/RashiOff.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    .criminal-case-process[disabled] {
+        background-image: url(../MojImages/icons/RashiDis.png);
+        background-repeat: no-repeat;
+    }
+
+    .criminal-case-process:hover {
+        background-image: url(../MojImages/icons/RashiOn.png);
+        background-repeat: no-repeat;
+    }
+
+.divNominationHeader {
+    background-color: #FAFAFA;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+}
+
+
+.margin-sides {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.divTelephoneConnectionHeader {
+    background-color: #FAFAFA;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    height: 100px;
+}
+
+
+.k-grid tbody .copy-pdo-file .k-button {
+    background-image: url(../MojImages/icons/CopyPasteOFF.png);
+}
+
+    .k-grid tbody .copy-pdo-file .k-button:hover {
+        background-image: url(../MojImages/icons/CopyPasteON.png);
+    }
+
+    .k-grid tbody .copy-pdo-file .k-button[disabled] {
+        background-image: url(../MojImages/icons/CopyPasteDis.png);
+    }
+
+
+.k-grid tbody .copy-advocate .k-button {
+    background-image: url(../MojImages/icons/AddClientOff.png);
+}
+
+    .k-grid tbody .copy-advocate .k-button:hover {
+        background-image: url(../MojImages/icons/AddClientOn.png);
+    }
+
+    .k-grid tbody .copy-advocate .k-button[disabled] {
+        background-image: url(../MojImages/icons/AddClientDis.png);
+    }
+
+.k-grid tbody .copy-shift .k-button {
+    background-image: url(../MojImages/icons/AddClientOff.png);
+}
+
+    .k-grid tbody .copy-shift .k-button:hover {
+        background-image: url(../MojImages/icons/AddClientOn.png);
+    }
+
+    .k-grid tbody .copy-shift .k-button[disabled] {
+        background-image: url(../MojImages/icons/AddClientDis.png);
+    }

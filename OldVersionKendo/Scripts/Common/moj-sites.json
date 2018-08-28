@@ -1,0 +1,168 @@
+﻿{
+  "moj-sites": [
+    {
+      "name": "תאגידים  - פעולות בחברות",
+      "url": "https://ica.justice.gov.il/"
+    },
+    {
+      "name": "תאגידים  - פעולות בחברות",
+      "url": "https://ica-online.justice.gov.il/"
+    },
+    {
+      "name": "תאגידים  - מידע חינמי חברות",
+      "url": "https://havarot.justice.gov.il/orderform.aspx"
+    },
+    {
+      "name": "תאגידים  - אתר עיון במשכון",
+      "url": "https://pledges.justice.gov.il/"
+    },
+    {
+      "name": "הגשת סמני מסחר",
+      "url": "https://trademarksonline.justice.gov.il/"
+    },
+    {
+      "name": "הגשת סמני מסחר",
+      "url": "https://trademarksonline-sc.justice.gov.il/"
+    },
+    {
+      "name": "הגשת פטנטים",
+      "url": "https://patentsonline.justice.gov.il/"
+    },
+    {
+      "name": "הגשת פטנטים",
+      "url": "https://patentsonline-sc.justice.gov.il/"
+    },
+    {
+      "name": "PCT",
+      "url": "https://pctonline.justice.gov.il/"
+    },
+    {
+      "name": "PCT",
+      "url": "https://pctonline-sc.justice.gov.il/"
+    },
+    {
+      "name": "הגשת מדגמים",
+      "url": "https://designsonline.justice.gov.il/"
+    },
+    {
+      "name": "הגשת מדגמים",
+      "url": "https://designsonline-sc.justice.gov.il/"
+    },
+    {
+      "name": "סמני מסחר (חיפוש)",
+      "url": "http://www.trademarks.justice.gov.il/"
+    },
+    {
+      "name": "חיפוש פטנטים",
+      "url": "http://www.ilpatsearch.justice.gov.il/UI/MainPage.aspx"
+    },
+    {
+      "name": "חיפוש מדגמים",
+      "url": "http://designsearch.justice.gov.il/"
+    },
+    {
+      "name": "סיוע משפטי",
+      "url": "https://siyualawyers.justice.gov.il/"
+    },
+    {
+      "name": "טאבו אונליין",
+      "url": "https://ilr-online.justice.gov.il/"
+    },
+    {
+      "name": "מבדיל",
+      "url": "https://mavdil.justice.gov.il/"
+    },
+    {
+      "name": "אתר שק\"ד",
+      "url": "https://committees.justice.gov.il/"
+    },
+    {
+      "name": "ועדת עיזבונות (הגשה ורו\"ח)",
+      "url": "https://estatescommittee.justice.gov.il/"
+    },
+    {
+      "name": "רו\"ח",
+      "url": "https://estatescommittee.justice.gov.il/"
+    },
+    {
+      "name": "אתר השתלמויות כניסה למנויים",
+      "url": "https://hishtalmuyotsc.justice.gov.il/Account/Login.aspx"
+    },
+    {
+      "name": "אתר השתלמויות רישום למכון",
+      "url": "https://hishtalmuyot.justice.gov.il/General/InstituteRegistration.aspx"
+    },
+    {
+      "name": "רמו\"ט - דיווח מחזיקים וגופים ציבוריים",
+      "url": "https://ilitaonline-sc.justice.gov.il/Holders"
+    },
+    {
+      "name": "רמו\"ט – בקשה לעדכון מאגר",
+      "url": "https://ilitaonline.justice.gov.il/"
+    },
+    {
+      "name": "אתר יחידות מקצועיות (שמאים)",
+      "url": "https://professionalunits.justice.gov.il/units/AppraiserRegistration/MainForm.aspx"
+    },
+    {
+      "name": "אתר יחידות מקצועיות (מתווכים)",
+      "url": "https://professionalunits.justice.gov.il/units/RealestateRegistration/MainForm.aspx"
+    },
+    {
+      "name": "אתר רו\"ח",
+      "url": "https://cpa.justice.gov.il/home/login"
+    },
+    {
+      "name": "אתר רו\"ח",
+      "url": "https://cpa-sc.justice.gov.il/CPA"
+    },
+    {
+      "name": "שמאי מכריע",
+      "url": "https://reqshm.justice.gov.il/"
+    },
+    {
+      "name": "שמאי מכריע",
+      "url": "https://tikun84.justice.gov.il/"
+    },
+    {
+      "name": "אפ\"כ- אתר מנהלים מיוחדים",
+      "url": "https://apotsc.justice.gov.il/"
+    },
+    {
+      "name": "אפ\"כ - אתר כשרות משפטית (מזוהה)",
+      "url": "https://legalcapacity-sc.justice.gov.il/"
+    },
+    {
+      "name": "כשרות משפטית – אנונימי",
+      "url": "https://legalcapacity.justice.gov.il/"
+    },
+    {
+      "name": "אפ\"כ - אתר הכונס הרשמי",
+      "url": "http://apot.justice.gov.il/poshtim/General/Main/Main.aspx"
+    },
+    {
+      "name": "אפ\"כ - אתר הצגת קובצי כנ\"ר",
+      "url": "https://apot.justice.gov.il/poshtimFiles/General/Main/OpeningRemarks.aspx"
+    },
+    {
+      "name": "אפ\"כ - אתר פרסומים",
+      "url": "http://pirsumim.justice.gov.il/Layout/Main.aspx"
+    },
+    {
+      "name": "אפ\"כ - אתר רשם הירושה",
+      "url": "https://inheritance.justice.gov.il/"
+    },
+    {
+      "name": "אפ\"כ - אתר טופס 4,5",
+      "url": "https://apacforms.justice.gov.il/"
+    },
+    {
+      "name": "סנגוריה – אתר הגשת שכ\"ט",
+      "url": "https://pdoonline-sc.justice.gov.il/"
+    },
+    {
+      "name": "חשיפת מסמכים",
+      "url": "http://fileextractor.justice.gov.il/"
+    }
+  ]
+}

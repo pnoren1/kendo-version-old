@@ -1,0 +1,1715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EDF17615-6FE0-47E0-8E21-EA78BCA30D52}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OldVersionKendo</RootNamespace>
+    <AssemblyName>OldVersionKendo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlHelpers\HTMLHelper.cs" />
+    <Compile Include="Models\CodeTablePair.cs" />
+    <Compile Include="Models\ProcessDetailsModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-rtl.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Common\jqueryui.overrides.css" />
+    <Content Include="Content\Common\kendo.overrides-website.css" />
+    <Content Include="Content\Common\kendo.overrides.css" />
+    <Content Include="Content\Common\moj-bo.css" />
+    <Content Include="Content\Common\moj-common-email.css" />
+    <Content Include="Content\Common\moj-common.css" />
+    <Content Include="Content\Common\moj-en.css" />
+    <Content Include="Content\Common\moj-fonts.css" />
+    <Content Include="Content\Common\moj-forms.css" />
+    <Content Include="Content\Common\moj-layout.css" />
+    <Content Include="Content\Common\moj-request-panel.css" />
+    <Content Include="Content\Common\moj-tabs-vertical.css" />
+    <Content Include="Content\Common\moj-tabs.css" />
+    <Content Include="Content\Common\moj-website.css" />
+    <Content Include="Content\Common\moj-window.css" />
+    <Content Include="Content\Common\moj-wizard.css" />
+    <Content Include="Content\Common\pdo-common.css" />
+    <Content Include="Content\DocumentsOld\Document.css" />
+    <Content Include="Content\Documents\Document.css" />
+    <Content Include="Content\Fonts\journal-webfont.svg" />
+    <Content Include="Content\Fonts\opensanshebrew-bold-webfont.svg" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\jquery\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jquery\themes\base\jquery-ui.css" />
+    <Content Include="Content\jquery\themes\base\jquery.qtip.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\jquery\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\jquery\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jquery\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\jquery\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\kendo\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="Content\MojImages\AppealsMenu\Diyounim.png" />
+    <Content Include="Content\MojImages\AppealsMenu\Hishtatfout.png" />
+    <Content Include="Content\MojImages\AppealsMenu\Klali.png" />
+    <Content Include="Content\MojImages\AppealsMenu\Minouyim.png" />
+    <Content Include="Content\MojImages\AppealsMenu\Pniyot.png" />
+    <Content Include="Content\MojImages\AppealsMenu\Tircha.png" />
+    <Content Include="Content\MojImages\ButtonDisable.png" />
+    <Content Include="Content\MojImages\ButtonOFF.png" />
+    <Content Include="Content\MojImages\ButtonON.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuCorrespondenceButtonHover.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuCorrespondenceButtonNormal.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuCorrespondenceButtonPress.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuFilesButtonHover.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuFilesButtonNormal.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuFilesButtonPress.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuMasotButtonHover.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuMasotButtonNormal.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuMasotButtonPress.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuNewButton.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuNewHover.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuNewPress.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuPartiesButtonHover.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuPartiesButtonNormal.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuPartiesButtonPress.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuPaymentsButttonHover.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuPaymentsButttonNormal.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuPaymentsButttonPress.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuReportButton.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuSettingReportHover.png" />
+    <Content Include="Content\MojImages\buttonsMenu\MenuSettingReportPress.png" />
+    <Content Include="Content\MojImages\buttonsTabs\SelectedMiddle.png" />
+    <Content Include="Content\MojImages\buttonsTabs\SelectedSides.png" />
+    <Content Include="Content\MojImages\buttonsTabs\TabMenu.png" />
+    <Content Include="Content\MojImages\buttonsTabs\TabSeperator.png" />
+    <Content Include="Content\MojImages\buttons\back-to-top-bg.png" />
+    <Content Include="Content\MojImages\buttons\BackLeftHover.png" />
+    <Content Include="Content\MojImages\buttons\BackLeftOff.png" />
+    <Content Include="Content\MojImages\buttons\BackLeftPress.png" />
+    <Content Include="Content\MojImages\buttons\BackMiddleHover.png" />
+    <Content Include="Content\MojImages\buttons\BackMiddleOff.png" />
+    <Content Include="Content\MojImages\buttons\BackMiddlePress.png" />
+    <Content Include="Content\MojImages\buttons\BackRightHover.png" />
+    <Content Include="Content\MojImages\buttons\BackRightOff.png" />
+    <Content Include="Content\MojImages\buttons\BackRightPress.png" />
+    <Content Include="Content\MojImages\buttons\LineSeperator.png" />
+    <Content Include="Content\MojImages\buttons\LocationProcess.png" />
+    <Content Include="Content\MojImages\buttons\LocationProcessDis.png" />
+    <Content Include="Content\MojImages\CancelButDisable.png" />
+    <Content Include="Content\MojImages\CancelButOFF.png" />
+    <Content Include="Content\MojImages\CancelButON.png" />
+    <Content Include="Content\MojImages\ComboDrop.png" />
+    <Content Include="Content\MojImages\CornerTriangle.png" />
+    <Content Include="Content\MojImages\documentIcons\AcceptedDis.png" />
+    <Content Include="Content\MojImages\documentIcons\AcceptedOff.png" />
+    <Content Include="Content\MojImages\documentIcons\AcceptedOn.png" />
+    <Content Include="Content\MojImages\documentIcons\AddDocDis.png" />
+    <Content Include="Content\MojImages\documentIcons\AddDocOff.png" />
+    <Content Include="Content\MojImages\documentIcons\AddDocON.png" />
+    <Content Include="Content\MojImages\documentIcons\BrowseDis.png" />
+    <Content Include="Content\MojImages\documentIcons\BrowseOff.png" />
+    <Content Include="Content\MojImages\documentIcons\BrowseOn.png" />
+    <Content Include="Content\MojImages\documentIcons\DownloadDIS.png" />
+    <Content Include="Content\MojImages\documentIcons\DownloadOFF.png" />
+    <Content Include="Content\MojImages\documentIcons\DownloadON.png" />
+    <Content Include="Content\MojImages\documentIcons\EditDocDis.png" />
+    <Content Include="Content\MojImages\documentIcons\EditDocOFF.png" />
+    <Content Include="Content\MojImages\documentIcons\EditDocOn.png" />
+    <Content Include="Content\MojImages\documentIcons\ExportDis.png" />
+    <Content Include="Content\MojImages\documentIcons\ExportOff.png" />
+    <Content Include="Content\MojImages\documentIcons\ExportOn.png" />
+    <Content Include="Content\MojImages\documentIcons\ImportDis.png" />
+    <Content Include="Content\MojImages\documentIcons\ImportOff.png" />
+    <Content Include="Content\MojImages\documentIcons\ImportOn.png" />
+    <Content Include="Content\MojImages\documentIcons\KishourDis.png" />
+    <Content Include="Content\MojImages\documentIcons\KishourOff.png" />
+    <Content Include="Content\MojImages\documentIcons\KishourOn.png" />
+    <Content Include="Content\MojImages\documentIcons\LinkDocDis.png" />
+    <Content Include="Content\MojImages\documentIcons\LinkDocOff.png" />
+    <Content Include="Content\MojImages\documentIcons\LinkDocOn.png" />
+    <Content Include="Content\MojImages\documentIcons\Must.png" />
+    <Content Include="Content\MojImages\documentIcons\NewDrag.png" />
+    <Content Include="Content\MojImages\documentIcons\Nitkabel.png" />
+    <Content Include="Content\MojImages\documentIcons\OnDragging.png" />
+    <Content Include="Content\MojImages\documentIcons\Optional.png" />
+    <Content Include="Content\MojImages\documentIcons\QuestionMarkBlue.png" />
+    <Content Include="Content\MojImages\documentIcons\RemoveListDis.png" />
+    <Content Include="Content\MojImages\documentIcons\RemoveListOff.png" />
+    <Content Include="Content\MojImages\documentIcons\RemoveListOn.png" />
+    <Content Include="Content\MojImages\documentIcons\ScanDIS.png" />
+    <Content Include="Content\MojImages\documentIcons\ScannerDis.png" />
+    <Content Include="Content\MojImages\documentIcons\ScannerOff.png" />
+    <Content Include="Content\MojImages\documentIcons\ScannerOn.png" />
+    <Content Include="Content\MojImages\documentIcons\ScanOFF.png" />
+    <Content Include="Content\MojImages\documentIcons\ScanON.png" />
+    <Content Include="Content\MojImages\documentIcons\SendDocDis.png" />
+    <Content Include="Content\MojImages\documentIcons\SendDocOff.png" />
+    <Content Include="Content\MojImages\documentIcons\SendDocOn.png" />
+    <Content Include="Content\MojImages\documentIcons\SendMailOFF.png" />
+    <Content Include="Content\MojImages\documentIcons\SettingDIS.png" />
+    <Content Include="Content\MojImages\documentIcons\SettingOFF.png" />
+    <Content Include="Content\MojImages\documentIcons\SettingON.png" />
+    <Content Include="Content\MojImages\documentIcons\SplitDis.png" />
+    <Content Include="Content\MojImages\documentIcons\SplitOFF.png" />
+    <Content Include="Content\MojImages\documentIcons\SplitOn.png" />
+    <Content Include="Content\MojImages\documentIcons\ViewOriginalDis.png" />
+    <Content Include="Content\MojImages\documentIcons\ViewOriginalOff.png" />
+    <Content Include="Content\MojImages\documentIcons\ViewOriginalOn.png" />
+    <Content Include="Content\MojImages\DotLine.png" />
+    <Content Include="Content\MojImages\DotsSeperator.png" />
+    <Content Include="Content\MojImages\Fonts\sprite-font-size-A.png" />
+    <Content Include="Content\MojImages\Fonts\sprite-font-size-B.png" />
+    <Content Include="Content\MojImages\Fonts\sprite-font-size-C.png" />
+    <Content Include="Content\MojImages\GrayTorButton.png" />
+    <Content Include="Content\MojImages\HeadLine1px.png" />
+    <Content Include="Content\MojImages\icons\activeDis.png" />
+    <Content Include="Content\MojImages\icons\activeOff.png" />
+    <Content Include="Content\MojImages\icons\activeOff2.png" />
+    <Content Include="Content\MojImages\icons\activeON.png" />
+    <Content Include="Content\MojImages\icons\activeWatch.png" />
+    <Content Include="Content\MojImages\icons\Acts.png" />
+    <Content Include="Content\MojImages\icons\AddBasketDis.png" />
+    <Content Include="Content\MojImages\icons\AddBasketHover.png" />
+    <Content Include="Content\MojImages\icons\AddBasketNorm.png" />
+    <Content Include="Content\MojImages\icons\AddClientDis.png" />
+    <Content Include="Content\MojImages\icons\AddClientOff.png" />
+    <Content Include="Content\MojImages\icons\AddClientOn.png" />
+    <Content Include="Content\MojImages\icons\AddDis.png" />
+    <Content Include="Content\MojImages\icons\AddDocDis.png" />
+    <Content Include="Content\MojImages\icons\AddDocOff.png" />
+    <Content Include="Content\MojImages\icons\AddDocON.png" />
+    <Content Include="Content\MojImages\icons\AddedRecord.png" />
+    <Content Include="Content\MojImages\icons\AddFileDIS.png" />
+    <Content Include="Content\MojImages\icons\AddFileOFF.png" />
+    <Content Include="Content\MojImages\icons\AddFileON.png" />
+    <Content Include="Content\MojImages\icons\AddImageDis.png" />
+    <Content Include="Content\MojImages\icons\AddImageOFF.png" />
+    <Content Include="Content\MojImages\icons\AddImageON.png" />
+    <Content Include="Content\MojImages\icons\AddOff.png" />
+    <Content Include="Content\MojImages\icons\AddOn.png" />
+    <Content Include="Content\MojImages\icons\AddTichInDis.png" />
+    <Content Include="Content\MojImages\icons\AddTichInOff.png" />
+    <Content Include="Content\MojImages\icons\AddTichInOn.png" />
+    <Content Include="Content\MojImages\icons\AddTichOutDis.png" />
+    <Content Include="Content\MojImages\icons\AddTichOutOff.png" />
+    <Content Include="Content\MojImages\icons\AddTichOutOn.png" />
+    <Content Include="Content\MojImages\icons\ALERT.jpg" />
+    <Content Include="Content\MojImages\icons\Alert.png" />
+    <Content Include="Content\MojImages\icons\AlertBlue.png" />
+    <Content Include="Content\MojImages\icons\AlertPopIcon.png" />
+    <Content Include="Content\MojImages\icons\AlertRed.png" />
+    <Content Include="Content\MojImages\icons\allSlidesDIS.png" />
+    <Content Include="Content\MojImages\icons\allSlidesOFF.png" />
+    <Content Include="Content\MojImages\icons\allSlidesON.png" />
+    <Content Include="Content\MojImages\icons\ApprovedDIS.png" />
+    <Content Include="Content\MojImages\icons\ApprovedOFF.png" />
+    <Content Include="Content\MojImages\icons\ApprovedON.png" />
+    <Content Include="Content\MojImages\icons\ApproveField.png" />
+    <Content Include="Content\MojImages\icons\Approx.png" />
+    <Content Include="Content\MojImages\icons\ArrangeListDis.png" />
+    <Content Include="Content\MojImages\icons\ArrangeListOff.png" />
+    <Content Include="Content\MojImages\icons\ArrangeListON.png" />
+    <Content Include="Content\MojImages\icons\ArrowsBack.png" />
+    <Content Include="Content\MojImages\icons\ArrowsForward.png" />
+    <Content Include="Content\MojImages\icons\AttentionPopIcon.png" />
+    <Content Include="Content\MojImages\icons\AutoTreatmentDis.png" />
+    <Content Include="Content\MojImages\icons\AutoTreatmentOFF.png" />
+    <Content Include="Content\MojImages\icons\AutoTreatmentON.png" />
+    <Content Include="Content\MojImages\icons\back-to-top.png" />
+    <Content Include="Content\MojImages\icons\BackPersonalDis.png" />
+    <Content Include="Content\MojImages\icons\BackPersonalHover.png" />
+    <Content Include="Content\MojImages\icons\BackPersonalNorm.png" />
+    <Content Include="Content\MojImages\icons\btn-pause.png" />
+    <Content Include="Content\MojImages\icons\btn-play.png" />
+    <Content Include="Content\MojImages\icons\CalendarDis.png" />
+    <Content Include="Content\MojImages\icons\CalendarHover.png" />
+    <Content Include="Content\MojImages\icons\CalendarOff.png" />
+    <Content Include="Content\MojImages\icons\CancelOff.png" />
+    <Content Include="Content\MojImages\icons\CancelOn.png" />
+    <Content Include="Content\MojImages\icons\Check.png" />
+    <Content Include="Content\MojImages\icons\CheckBox.png" />
+    <Content Include="Content\MojImages\icons\CheckBoxDis.png" />
+    <Content Include="Content\MojImages\icons\ChosenDownDis.png" />
+    <Content Include="Content\MojImages\icons\ChosenDownOff.png" />
+    <Content Include="Content\MojImages\icons\ChosenDownOn.png" />
+    <Content Include="Content\MojImages\icons\ChosenUpDis.png" />
+    <Content Include="Content\MojImages\icons\ChosenUpOff.png" />
+    <Content Include="Content\MojImages\icons\ChosenUpOn.png" />
+    <Content Include="Content\MojImages\icons\ClassifiedDis.png" />
+    <Content Include="Content\MojImages\icons\ClassifiedOff.png" />
+    <Content Include="Content\MojImages\icons\ClassifiedOn.png" />
+    <Content Include="Content\MojImages\icons\CloseOff.png" />
+    <Content Include="Content\MojImages\icons\CloseON.png" />
+    <Content Include="Content\MojImages\icons\ClosePanelDoc.png" />
+    <Content Include="Content\MojImages\icons\ClosePress.png" />
+    <Content Include="Content\MojImages\icons\CloseSection.png" />
+    <Content Include="Content\MojImages\icons\CloseSectionEng.png" />
+    <Content Include="Content\MojImages\icons\CloseSectionEngHover.png" />
+    <Content Include="Content\MojImages\icons\CloseSectionHover.png" />
+    <Content Include="Content\MojImages\icons\CloseTabOff.png" />
+    <Content Include="Content\MojImages\icons\CloseTabOn.png" />
+    <Content Include="Content\MojImages\icons\CloseTabPress.png" />
+    <Content Include="Content\MojImages\icons\connectDis.png" />
+    <Content Include="Content\MojImages\icons\connectOff.png" />
+    <Content Include="Content\MojImages\icons\connectOn.png" />
+    <Content Include="Content\MojImages\icons\CopyAddress.png" />
+    <Content Include="Content\MojImages\icons\CopyDetails.png" />
+    <Content Include="Content\MojImages\icons\CopyPasteOFF.png" />
+    <Content Include="Content\MojImages\icons\CopyPasteON.png" />
+    <Content Include="Content\MojImages\icons\Correspondence.png" />
+    <Content Include="Content\MojImages\icons\CreateDocDis.png" />
+    <Content Include="Content\MojImages\icons\CreateDocOff.png" />
+    <Content Include="Content\MojImages\icons\CreateDocOn.png" />
+    <Content Include="Content\MojImages\icons\DeleteDIS.png" />
+    <Content Include="Content\MojImages\icons\DeletedRecord.png" />
+    <Content Include="Content\MojImages\icons\DeleteOFF.png" />
+    <Content Include="Content\MojImages\icons\DeleteOn.png" />
+    <Content Include="Content\MojImages\icons\DenyField.png" />
+    <Content Include="Content\MojImages\icons\DownloadDIS.png" />
+    <Content Include="Content\MojImages\icons\DownloadOFF.png" />
+    <Content Include="Content\MojImages\icons\DownloadON.png" />
+    <Content Include="Content\MojImages\icons\Drishot.png" />
+    <Content Include="Content\MojImages\icons\DuplicateReportDIS.png" />
+    <Content Include="Content\MojImages\icons\DuplicateReportOff.png" />
+    <Content Include="Content\MojImages\icons\DuplicateReportON.png" />
+    <Content Include="Content\MojImages\icons\EditDIS.png" />
+    <Content Include="Content\MojImages\icons\EditDocDis.png" />
+    <Content Include="Content\MojImages\icons\EditDocOFF.png" />
+    <Content Include="Content\MojImages\icons\EditDocOn.png" />
+    <Content Include="Content\MojImages\icons\EditOFF.png" />
+    <Content Include="Content\MojImages\icons\EditOn.png" />
+    <Content Include="Content\MojImages\icons\EditRecord.png" />
+    <Content Include="Content\MojImages\icons\EnterDis.png" />
+    <Content Include="Content\MojImages\icons\EnterOff.png" />
+    <Content Include="Content\MojImages\icons\EnterOn.png" />
+    <Content Include="Content\MojImages\icons\ErrorPopIcon.png" />
+    <Content Include="Content\MojImages\icons\Examination.png" />
+    <Content Include="Content\MojImages\icons\ExclelDis.png" />
+    <Content Include="Content\MojImages\icons\ExclelOff.png" />
+    <Content Include="Content\MojImages\icons\ExclelON.png" />
+    <Content Include="Content\MojImages\icons\EyeDis.png" />
+    <Content Include="Content\MojImages\icons\EyeOff.png" />
+    <Content Include="Content\MojImages\icons\EyeOn.png" />
+    <Content Include="Content\MojImages\icons\FavViewDis.png" />
+    <Content Include="Content\MojImages\icons\FavViewOFF.png" />
+    <Content Include="Content\MojImages\icons\FavViewOn.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestBasis.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestHasaga.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestKizuz.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestKizuz2.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestKizuzahuz.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestkizuzAutomat.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestKizuzBasis.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestTosefet.png" />
+    <Content Include="Content\MojImages\icons\FeeRequestTosefetAhuz.png" />
+    <Content Include="Content\MojImages\icons\FullOFF.png" />
+    <Content Include="Content\MojImages\icons\FullOFFgray.png" />
+    <Content Include="Content\MojImages\icons\FullON.png" />
+    <Content Include="Content\MojImages\icons\FullON2.png" />
+    <Content Include="Content\MojImages\icons\Gormim.png" />
+    <Content Include="Content\MojImages\icons\GrayTriangle.png" />
+    <Content Include="Content\MojImages\icons\GridDIS.png" />
+    <Content Include="Content\MojImages\icons\GridOFF.png" />
+    <Content Include="Content\MojImages\icons\GridON.png" />
+    <Content Include="Content\MojImages\icons\HabatRatzonDis.png" />
+    <Content Include="Content\MojImages\icons\HabatRatzonHover.png" />
+    <Content Include="Content\MojImages\icons\HabatRatzonNorm.png" />
+    <Content Include="Content\MojImages\icons\HanhyotMakdimotDis.png" />
+    <Content Include="Content\MojImages\icons\HanhyotMakdimotHover.png" />
+    <Content Include="Content\MojImages\icons\HanhyotMakdimotNorm.png" />
+    <Content Include="Content\MojImages\icons\Hayavim.png" />
+    <Content Include="Content\MojImages\icons\HayavimDone.png" />
+    <Content Include="Content\MojImages\icons\HayavimOff.png" />
+    <Content Include="Content\MojImages\icons\HayavimOn.png" />
+    <Content Include="Content\MojImages\icons\HearotDone.png" />
+    <Content Include="Content\MojImages\icons\HearotOff.png" />
+    <Content Include="Content\MojImages\icons\HearotOn.png" />
+    <Content Include="Content\MojImages\icons\HeartAlert.png" />
+    <Content Include="Content\MojImages\icons\History.png" />
+    <Content Include="Content\MojImages\icons\Icn_AccessLogo.png" />
+    <Content Include="Content\MojImages\icons\icoAlert.gif" />
+    <Content Include="Content\MojImages\icons\icoBMP.png" />
+    <Content Include="Content\MojImages\icons\icoCSV.png" />
+    <Content Include="Content\MojImages\icons\icodoc.png" />
+    <Content Include="Content\MojImages\icons\icodocx.png" />
+    <Content Include="Content\MojImages\icons\icoGIF.png" />
+    <Content Include="Content\MojImages\icons\icoHTM.png" />
+    <Content Include="Content\MojImages\icons\icoHTML.png" />
+    <Content Include="Content\MojImages\icons\icojpeg.png" />
+    <Content Include="Content\MojImages\icons\icojpg.png" />
+    <Content Include="Content\MojImages\icons\icoMP3.png" />
+    <Content Include="Content\MojImages\icons\icoMP4.png" />
+    <Content Include="Content\MojImages\icons\icoMsg.png" />
+    <Content Include="Content\MojImages\icons\icon-email.png" />
+    <Content Include="Content\MojImages\icons\icon-help.png" />
+    <Content Include="Content\MojImages\icons\icon-phone.png" />
+    <Content Include="Content\MojImages\icons\IconActionLog.png" />
+    <Content Include="Content\MojImages\icons\IconAgrot.png" />
+    <Content Include="Content\MojImages\icons\IconAnnualReport.png" />
+    <Content Include="Content\MojImages\icons\IconCalendar.png" />
+    <Content Include="Content\MojImages\icons\IconDirectors.png" />
+    <Content Include="Content\MojImages\icons\IconDocuments.png" />
+    <Content Include="Content\MojImages\icons\IconHerkevHon.png" />
+    <Content Include="Content\MojImages\icons\IconInfo.png" />
+    <Content Include="Content\MojImages\icons\IconProcess.png" />
+    <Content Include="Content\MojImages\icons\IconRequest.png" />
+    <Content Include="Content\MojImages\icons\IconShiaboudim.png" />
+    <Content Include="Content\MojImages\icons\IconStocks.png" />
+    <Content Include="Content\MojImages\icons\IconTaktzir.png" />
+    <Content Include="Content\MojImages\icons\icoOther.png" />
+    <Content Include="Content\MojImages\icons\icoPdf.png" />
+    <Content Include="Content\MojImages\icons\icopng.png" />
+    <Content Include="Content\MojImages\icons\icoppt.png" />
+    <Content Include="Content\MojImages\icons\icopptx.png" />
+    <Content Include="Content\MojImages\icons\icotif.png" />
+    <Content Include="Content\MojImages\icons\icotiff.png" />
+    <Content Include="Content\MojImages\icons\icotxt.png" />
+    <Content Include="Content\MojImages\icons\icoxls.png" />
+    <Content Include="Content\MojImages\icons\icoxlsx.png" />
+    <Content Include="Content\MojImages\icons\icoXml.png" />
+    <Content Include="Content\MojImages\icons\icoZIP.png" />
+    <Content Include="Content\MojImages\icons\ImportantClock.png" />
+    <Content Include="Content\MojImages\icons\InactiveDis.png" />
+    <Content Include="Content\MojImages\icons\InactiveOff.png" />
+    <Content Include="Content\MojImages\icons\InactiveOff2.png" />
+    <Content Include="Content\MojImages\icons\InactiveON.png" />
+    <Content Include="Content\MojImages\icons\InactiveWatch.png" />
+    <Content Include="Content\MojImages\icons\KizuzHelkiDis.png" />
+    <Content Include="Content\MojImages\icons\KizuzHelkiHover.png" />
+    <Content Include="Content\MojImages\icons\KizuzHelkiReg.png" />
+    <Content Include="Content\MojImages\icons\KizuzMaleDis.png" />
+    <Content Include="Content\MojImages\icons\KizuzMaleHover.png" />
+    <Content Include="Content\MojImages\icons\KizuzMaleReg.png" />
+    <Content Include="Content\MojImages\icons\Klali.png" />
+    <Content Include="Content\MojImages\icons\LeftRightGrey.png" />
+    <Content Include="Content\MojImages\icons\LeftRightWhite.png" />
+    <Content Include="Content\MojImages\icons\LinkDocDis.png" />
+    <Content Include="Content\MojImages\icons\LinkDocOff.png" />
+    <Content Include="Content\MojImages\icons\LinkDocOn.png" />
+    <Content Include="Content\MojImages\icons\MailDis.png" />
+    <Content Include="Content\MojImages\icons\MailOFF.png" />
+    <Content Include="Content\MojImages\icons\MailON.png" />
+    <Content Include="Content\MojImages\icons\Memashken.png" />
+    <Content Include="Content\MojImages\icons\MemashkenDone.png" />
+    <Content Include="Content\MojImages\icons\MemashkenOff.png" />
+    <Content Include="Content\MojImages\icons\MemashkenOn.png" />
+    <Content Include="Content\MojImages\icons\MessagePopIcon.png" />
+    <Content Include="Content\MojImages\icons\NavTriangle.png" />
+    <Content Include="Content\MojImages\icons\Nehasim.png" />
+    <Content Include="Content\MojImages\icons\NehasimDone.png" />
+    <Content Include="Content\MojImages\icons\NehasimOff.png" />
+    <Content Include="Content\MojImages\icons\NehasimOn.png" />
+    <Content Include="Content\MojImages\icons\Noshim.png" />
+    <Content Include="Content\MojImages\icons\NoshimDone.png" />
+    <Content Include="Content\MojImages\icons\NoshimOff.png" />
+    <Content Include="Content\MojImages\icons\NoshimOn.png" />
+    <Content Include="Content\MojImages\icons\NoStatus.png" />
+    <Content Include="Content\MojImages\icons\notChecked.png" />
+    <Content Include="Content\MojImages\icons\Notes.png" />
+    <Content Include="Content\MojImages\icons\NotYetWatch.png" />
+    <Content Include="Content\MojImages\icons\onlineSeperator.png" />
+    <Content Include="Content\MojImages\icons\OpenPanelDoc.png" />
+    <Content Include="Content\MojImages\icons\OpenReportDIS.png" />
+    <Content Include="Content\MojImages\icons\OpenReportOFF.png" />
+    <Content Include="Content\MojImages\icons\OpenReportON.png" />
+    <Content Include="Content\MojImages\icons\OpenSection.png" />
+    <Content Include="Content\MojImages\icons\OpenSectionHover.png" />
+    <Content Include="Content\MojImages\icons\Others.png" />
+    <Content Include="Content\MojImages\icons\Payments.png" />
+    <Content Include="Content\MojImages\icons\Photo.png" />
+    <Content Include="Content\MojImages\icons\popup-alert.png" />
+    <Content Include="Content\MojImages\icons\Popup-Close.png" />
+    <Content Include="Content\MojImages\icons\popup-error.png" />
+    <Content Include="Content\MojImages\icons\popup-message.png" />
+    <Content Include="Content\MojImages\icons\PratimClaliDone.png" />
+    <Content Include="Content\MojImages\icons\PratimClaliOff.png" />
+    <Content Include="Content\MojImages\icons\PratimClaliON.png" />
+    <Content Include="Content\MojImages\icons\PrincipPhotosDIS.png" />
+    <Content Include="Content\MojImages\icons\PrincipPhotosOFF.png" />
+    <Content Include="Content\MojImages\icons\PrincipPhotosON.png" />
+    <Content Include="Content\MojImages\icons\PrincipSlidesDIS.png" />
+    <Content Include="Content\MojImages\icons\PrincipSlidesOFF.png" />
+    <Content Include="Content\MojImages\icons\PrincipSlidesON.png" />
+    <Content Include="Content\MojImages\icons\PrintDIS.png" />
+    <Content Include="Content\MojImages\icons\PrintOFF.png" />
+    <Content Include="Content\MojImages\icons\PrintON.png" />
+    <Content Include="Content\MojImages\icons\PrintOneOff.png" />
+    <Content Include="Content\MojImages\icons\PrintOneON.png" />
+    <Content Include="Content\MojImages\icons\PriorityClaims.png" />
+    <Content Include="Content\MojImages\icons\ProduceDis.png" />
+    <Content Include="Content\MojImages\icons\ProduceOff.png" />
+    <Content Include="Content\MojImages\icons\ProduceOn.png" />
+    <Content Include="Content\MojImages\icons\QuestionMark.png" />
+    <Content Include="Content\MojImages\icons\RashiDis.png" />
+    <Content Include="Content\MojImages\icons\RashiOff.png" />
+    <Content Include="Content\MojImages\icons\RashiOn.png" />
+    <Content Include="Content\MojImages\icons\RemoveBasketDis.png" />
+    <Content Include="Content\MojImages\icons\RemoveBasketHover.png" />
+    <Content Include="Content\MojImages\icons\RemoveBasketNorm.png" />
+    <Content Include="Content\MojImages\icons\ReplaceOFF.png" />
+    <Content Include="Content\MojImages\icons\ReplaceON.png" />
+    <Content Include="Content\MojImages\icons\RightLeftGrey.png" />
+    <Content Include="Content\MojImages\icons\RightLeftWhite.png" />
+    <Content Include="Content\MojImages\icons\SaveOff.png" />
+    <Content Include="Content\MojImages\icons\SaveOn.png" />
+    <Content Include="Content\MojImages\icons\ScanDIS.png" />
+    <Content Include="Content\MojImages\icons\ScanOFF.png" />
+    <Content Include="Content\MojImages\icons\ScanON.png" />
+    <Content Include="Content\MojImages\icons\SearchDis.png" />
+    <Content Include="Content\MojImages\icons\SearchFieldLeft.png" />
+    <Content Include="Content\MojImages\icons\SearchFieldMiddle.png" />
+    <Content Include="Content\MojImages\icons\SearchFieldRight.png" />
+    <Content Include="Content\MojImages\icons\SearchFolderDis.png" />
+    <Content Include="Content\MojImages\icons\SearchFolderOff.png" />
+    <Content Include="Content\MojImages\icons\SearchFolderOn.png" />
+    <Content Include="Content\MojImages\icons\SearchHover.png" />
+    <Content Include="Content\MojImages\icons\SearchOff.png" />
+    <Content Include="Content\MojImages\icons\SearchOn.png" />
+    <Content Include="Content\MojImages\icons\SearchReg.png" />
+    <Content Include="Content\MojImages\icons\SearchSeperator.png" />
+    <Content Include="Content\MojImages\icons\SendMailOFF.png" />
+    <Content Include="Content\MojImages\icons\SettingDIS.png" />
+    <Content Include="Content\MojImages\icons\SettingOFF.png" />
+    <Content Include="Content\MojImages\icons\SettingON.png" />
+    <Content Include="Content\MojImages\icons\SmallQuestionMark.png" />
+    <Content Include="Content\MojImages\icons\SplitOFF.png" />
+    <Content Include="Content\MojImages\icons\StarFav.png" />
+    <Content Include="Content\MojImages\icons\StatusOff.png" />
+    <Content Include="Content\MojImages\icons\StatusOn.png" />
+    <Content Include="Content\MojImages\icons\SuccessPopIcon.png" />
+    <Content Include="Content\MojImages\icons\Tasks.png" />
+    <Content Include="Content\MojImages\icons\TichIN.png" />
+    <Content Include="Content\MojImages\icons\TichOUT.png" />
+    <Content Include="Content\MojImages\icons\TosefetDis.png" />
+    <Content Include="Content\MojImages\icons\TosefetHover.png" />
+    <Content Include="Content\MojImages\icons\TosefetReg.png" />
+    <Content Include="Content\MojImages\icons\TyoutaDis.png" />
+    <Content Include="Content\MojImages\icons\TyoutaHover.png" />
+    <Content Include="Content\MojImages\icons\TyoutaNorm.png" />
+    <Content Include="Content\MojImages\icons\TyoutaPress.png" />
+    <Content Include="Content\MojImages\icons\Urgent.png" />
+    <Content Include="Content\MojImages\icons\WatchFilesDIS.png" />
+    <Content Include="Content\MojImages\icons\WatchFilesOff.png" />
+    <Content Include="Content\MojImages\icons\WatchFilesON.png" />
+    <Content Include="Content\MojImages\icons\website\ActiveDis.png" />
+    <Content Include="Content\MojImages\icons\website\ActiveHover.png" />
+    <Content Include="Content\MojImages\icons\website\ActiveNorm.png" />
+    <Content Include="Content\MojImages\icons\website\AddCommentDis.png" />
+    <Content Include="Content\MojImages\icons\website\AddCommentHover.png" />
+    <Content Include="Content\MojImages\icons\website\AddCommentNormal.png" />
+    <Content Include="Content\MojImages\icons\website\AddDis.png" />
+    <Content Include="Content\MojImages\icons\website\AddFileDis.png" />
+    <Content Include="Content\MojImages\icons\website\AddFileOFF.png" />
+    <Content Include="Content\MojImages\icons\website\AddFileON.png" />
+    <Content Include="Content\MojImages\icons\website\AddHover.png" />
+    <Content Include="Content\MojImages\icons\website\AddListDis.png" />
+    <Content Include="Content\MojImages\icons\website\AddListOff.png" />
+    <Content Include="Content\MojImages\icons\website\AddListOn.png" />
+    <Content Include="Content\MojImages\icons\website\AddNatzigDis.png" />
+    <Content Include="Content\MojImages\icons\website\AddNatzighover.png" />
+    <Content Include="Content\MojImages\icons\website\AddNatzigNorm.png" />
+    <Content Include="Content\MojImages\icons\website\AddNorm.png" />
+    <Content Include="Content\MojImages\icons\website\AttachDis.png" />
+    <Content Include="Content\MojImages\icons\website\AttachHover.png" />
+    <Content Include="Content\MojImages\icons\website\AttachNorm.png" />
+    <Content Include="Content\MojImages\icons\website\BackPersonalDis.png" />
+    <Content Include="Content\MojImages\icons\website\BackPersonalHover.png" />
+    <Content Include="Content\MojImages\icons\website\BackPersonalNorm.png" />
+    <Content Include="Content\MojImages\icons\website\CalendarDis.png" />
+    <Content Include="Content\MojImages\icons\website\CalendarHover.png" />
+    <Content Include="Content\MojImages\icons\website\CalendarOff.png" />
+    <Content Include="Content\MojImages\icons\website\CancelDis.png" />
+    <Content Include="Content\MojImages\icons\website\CancelOff.png" />
+    <Content Include="Content\MojImages\icons\website\CancelOn.png" />
+    <Content Include="Content\MojImages\icons\website\ContineRequestDis.png" />
+    <Content Include="Content\MojImages\icons\website\ContineRequestNormal.png" />
+    <Content Include="Content\MojImages\icons\website\ContineRequestOn.png" />
+    <Content Include="Content\MojImages\icons\website\DeleteDis.png" />
+    <Content Include="Content\MojImages\icons\website\DeleteOFF.png" />
+    <Content Include="Content\MojImages\icons\website\DeleteON.png" />
+    <Content Include="Content\MojImages\icons\website\EditDis.png" />
+    <Content Include="Content\MojImages\icons\website\EditOff.png" />
+    <Content Include="Content\MojImages\icons\website\EditOn.png" />
+    <Content Include="Content\MojImages\icons\website\EnterDis.png" />
+    <Content Include="Content\MojImages\icons\website\EnterOff.png" />
+    <Content Include="Content\MojImages\icons\website\EnterOn.png" />
+    <Content Include="Content\MojImages\icons\website\eraseDis.png" />
+    <Content Include="Content\MojImages\icons\website\eraseHover.png" />
+    <Content Include="Content\MojImages\icons\website\eraseNorm.png" />
+    <Content Include="Content\MojImages\icons\website\FavEmailDis.png" />
+    <Content Include="Content\MojImages\icons\website\FavEmailHover.png" />
+    <Content Include="Content\MojImages\icons\website\FavEmailNorm.png" />
+    <Content Include="Content\MojImages\icons\website\FindDis.png" />
+    <Content Include="Content\MojImages\icons\website\FindHover.png" />
+    <Content Include="Content\MojImages\icons\website\FindNorm.png" />
+    <Content Include="Content\MojImages\icons\website\grid-icon-plus-dis.png" />
+    <Content Include="Content\MojImages\icons\website\grid-icon-plus-off.png" />
+    <Content Include="Content\MojImages\icons\website\grid-icon-plus-on.png" />
+    <Content Include="Content\MojImages\icons\website\grid-icon-send-mail-Dis.png" />
+    <Content Include="Content\MojImages\icons\website\grid-icon-send-mail-off.png" />
+    <Content Include="Content\MojImages\icons\website\grid-icon-send-mail-on.png" />
+    <Content Include="Content\MojImages\icons\website\HadrachaNorm.png" />
+    <Content Include="Content\MojImages\icons\website\Help.png" />
+    <Content Include="Content\MojImages\icons\website\IcnResetDis.png" />
+    <Content Include="Content\MojImages\icons\website\IcnResetOff.png" />
+    <Content Include="Content\MojImages\icons\website\IcnResetOn.png" />
+    <Content Include="Content\MojImages\icons\website\icon-arrow-dis.png" />
+    <Content Include="Content\MojImages\icons\website\icon-arrow-hover.png" />
+    <Content Include="Content\MojImages\icons\website\icon-download-Dis.png" />
+    <Content Include="Content\MojImages\icons\website\icon-download-hover.png" />
+    <Content Include="Content\MojImages\icons\website\icon-download.png" />
+    <Content Include="Content\MojImages\icons\website\icon-folder.png" />
+    <Content Include="Content\MojImages\icons\website\icon-grid-add-cart-dis.png" />
+    <Content Include="Content\MojImages\icons\website\icon-grid-add-cart-hover.png" />
+    <Content Include="Content\MojImages\icons\website\icon-grid-add-cart-on.png" />
+    <Content Include="Content\MojImages\icons\website\icon-grid-remove-cart-dis.png" />
+    <Content Include="Content\MojImages\icons\website\icon-grid-remove-cart-hover.png" />
+    <Content Include="Content\MojImages\icons\website\icon-grid-remove-cart-on.png" />
+    <Content Include="Content\MojImages\icons\website\icon-ichzur.png" />
+    <Content Include="Content\MojImages\icons\website\icon-money.png" />
+    <Content Include="Content\MojImages\icons\website\icon-nesach.png" />
+    <Content Include="Content\MojImages\icons\website\icon-print-dis.png" />
+    <Content Include="Content\MojImages\icons\website\icon-print-hover.png" />
+    <Content Include="Content\MojImages\icons\website\icon-print.png" />
+    <Content Include="Content\MojImages\icons\website\icon-rasham.png" />
+    <Content Include="Content\MojImages\icons\website\InactiveDis %282%29.png" />
+    <Content Include="Content\MojImages\icons\website\InactiveDis.png" />
+    <Content Include="Content\MojImages\icons\website\InactiveHover.png" />
+    <Content Include="Content\MojImages\icons\website\InactiveNorm.png" />
+    <Content Include="Content\MojImages\icons\website\InCorDis.png" />
+    <Content Include="Content\MojImages\icons\website\InCorHover.png" />
+    <Content Include="Content\MojImages\icons\website\InCorReg.png" />
+    <Content Include="Content\MojImages\icons\website\NewFav.png" />
+    <Content Include="Content\MojImages\icons\website\NotesDis.png" />
+    <Content Include="Content\MojImages\icons\website\NotesHover.png" />
+    <Content Include="Content\MojImages\icons\website\NotesNormal.png" />
+    <Content Include="Content\MojImages\icons\website\OtherSitesNorm.png" />
+    <Content Include="Content\MojImages\icons\website\OutCorDis.png" />
+    <Content Include="Content\MojImages\icons\website\OutCorHover.png" />
+    <Content Include="Content\MojImages\icons\website\OutCorReg.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTashlumReg.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTashlumRegDis.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTashlumRegOn.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTikDis.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTikNorm.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTikOn.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTviaDis.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTviaNorm.png" />
+    <Content Include="Content\MojImages\icons\website\PirteiTviaOn.png" />
+    <Content Include="Content\MojImages\icons\website\QuestionMark.png" />
+    <Content Include="Content\MojImages\icons\website\RecoverDis.png" />
+    <Content Include="Content\MojImages\icons\website\RecoverHover.png" />
+    <Content Include="Content\MojImages\icons\website\RecoverNorm.png" />
+    <Content Include="Content\MojImages\icons\website\ReplaceDis.png" />
+    <Content Include="Content\MojImages\icons\website\ReplaceOff.png" />
+    <Content Include="Content\MojImages\icons\website\ReplaceOn.png" />
+    <Content Include="Content\MojImages\icons\website\SaveDis.png" />
+    <Content Include="Content\MojImages\icons\website\SaveOff.png" />
+    <Content Include="Content\MojImages\icons\website\SaveOn.png" />
+    <Content Include="Content\MojImages\icons\website\TeumYomanDis.png" />
+    <Content Include="Content\MojImages\icons\website\TeumYomanHover.png" />
+    <Content Include="Content\MojImages\icons\website\TeumYomanReg.png" />
+    <Content Include="Content\MojImages\icons\website\UserSetting.png" />
+    <Content Include="Content\MojImages\icons\website\WatchDis.png" />
+    <Content Include="Content\MojImages\icons\website\WatchHover.png" />
+    <Content Include="Content\MojImages\icons\website\WatchNormal.png" />
+    <Content Include="Content\MojImages\icons\YepouyKoahDis.png" />
+    <Content Include="Content\MojImages\icons\YepouyKoahHover.png" />
+    <Content Include="Content\MojImages\icons\YepouyKoahNorm.png" />
+    <Content Include="Content\MojImages\img-headset.png" />
+    <Content Include="Content\MojImages\Layout\BGlogin.jpg" />
+    <Content Include="Content\MojImages\Layout\general-bg.png" />
+    <Content Include="Content\MojImages\Layout\header-top-img.png" />
+    <Content Include="Content\MojImages\Layout\LogoMoj.png" />
+    <Content Include="Content\MojImages\LinePanelMiddle.png" />
+    <Content Include="Content\MojImages\LogoTaagidim.png" />
+    <Content Include="Content\MojImages\MaarhotMedaLogo.png" />
+    <Content Include="Content\MojImages\MailEnvelope.png" />
+    <Content Include="Content\MojImages\MenoraLogo.png" />
+    <Content Include="Content\MojImages\MenuButtonLeft.png" />
+    <Content Include="Content\MojImages\MenuButtonLeftHover.png" />
+    <Content Include="Content\MojImages\MenuButtonLeftPress.png" />
+    <Content Include="Content\MojImages\MenuButtonMiddle.png" />
+    <Content Include="Content\MojImages\MenuButtonMiddleHover.png" />
+    <Content Include="Content\MojImages\MenuButtonMiddlePress.png" />
+    <Content Include="Content\MojImages\MenuButtonRight.png" />
+    <Content Include="Content\MojImages\MenuHomeButton.png" />
+    <Content Include="Content\MojImages\MenuNewButton.png" />
+    <Content Include="Content\MojImages\MenuQuestionButton.png" />
+    <Content Include="Content\MojImages\MenuReportButton.png" />
+    <Content Include="Content\MojImages\MenuSeperator.png" />
+    <Content Include="Content\MojImages\MenuSettingButton.png" />
+    <Content Include="Content\MojImages\Metro\ChosenCircle.png" />
+    <Content Include="Content\MojImages\Metro\ChosenCircleEnd.png" />
+    <Content Include="Content\MojImages\Metro\ChosenCircleStart.png" />
+    <Content Include="Content\MojImages\Metro\Disable.png" />
+    <Content Include="Content\MojImages\Metro\RoadLine.png" />
+    <Content Include="Content\MojImages\Metro\UnVisited.png" />
+    <Content Include="Content\MojImages\Metro\Visited.png" />
+    <Content Include="Content\MojImages\online.png" />
+    <Content Include="Content\MojImages\optionsMenu\CreatePledge.png" />
+    <Content Include="Content\MojImages\optionsMenu\DeletePledge.png" />
+    <Content Include="Content\MojImages\optionsMenu\UpdatePledge.png" />
+    <Content Include="Content\MojImages\optionsMenu\ViewPledge.png" />
+    <Content Include="Content\MojImages\orange-pixel.png" />
+    <Content Include="Content\MojImages\PanelMinus.png" />
+    <Content Include="Content\MojImages\PanelPlus.png" />
+    <Content Include="Content\MojImages\PanelSeperator.png" />
+    <Content Include="Content\MojImages\PdoImages\ArrowsAllLeft.png" />
+    <Content Include="Content\MojImages\PdoImages\ArrowsAllRight.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackLeftHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackLeftNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackLeftPress.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackMiddleHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackMiddleNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackMiddlePress.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackRightHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackRightNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\Back\BackRightPress.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryLeftDis.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryLeftHover.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryLeftNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryLeftPress.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryMiddleDis.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryMiddleHover.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryMiddleNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryMiddlePress.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryRightDis.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryRightHover.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryRightNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\BigPrimary\BigPrimaryRightPress.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryLeftHover.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryLeftNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryLeftPress.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryMiddleHover.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryMiddleNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryMiddlePress.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryRightHover.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryRightNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\BigSecondary\BigSecondaryRightPress.png" />
+    <Content Include="Content\MojImages\PdoImages\BreakConnectionDis.png" />
+    <Content Include="Content\MojImages\PdoImages\BreakConnectionOff.png" />
+    <Content Include="Content\MojImages\PdoImages\BreakConnectionOn.png" />
+    <Content Include="Content\MojImages\PdoImages\CopyPasteDis.png" />
+    <Content Include="Content\MojImages\PdoImages\CopyPasteOff.png" />
+    <Content Include="Content\MojImages\PdoImages\CopyPasteOn.png" />
+    <Content Include="Content\MojImages\PdoImages\DataHistoryDis.png" />
+    <Content Include="Content\MojImages\PdoImages\DataHistoryOff.png" />
+    <Content Include="Content\MojImages\PdoImages\DataHistoryOn.png" />
+    <Content Include="Content\MojImages\PdoImages\EyeDis.png" />
+    <Content Include="Content\MojImages\PdoImages\EyeOff.png" />
+    <Content Include="Content\MojImages\PdoImages\EyeOn.png" />
+    <Content Include="Content\MojImages\PdoImages\GridAdd.png" />
+    <Content Include="Content\MojImages\PdoImages\GridAddHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Icn_CloseNorm.png" />
+    <Content Include="Content\MojImages\PdoImages\Icn_OpenHover.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_GreenAlert.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_MinouyHozerHover.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_MinouyHozerNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_MyReminderHover.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_MyReminderNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_NewFilesHover.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_NewFilesNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_OrangeAlert.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_PhonesHover.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_PhonesNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_RedAlert.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_WaitingMinouyHover.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_WaitingMinouyNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_ZakaoutHover.png" />
+    <Content Include="Content\MojImages\PdoImages\MainInformation\Icn_ZakaoutNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\MershamSeperator.png" />
+    <Content Include="Content\MojImages\PdoImages\NavTriangle.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextLeftHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextLeftNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextLeftPress.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextMiddleHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextMiddleNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextMiddlePress.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextRightHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextRightNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\Next\NextRightPress.png" />
+    <Content Include="Content\MojImages\PdoImages\Nominations\AdvancedDis.png" />
+    <Content Include="Content\MojImages\PdoImages\Nominations\AdvancedHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Nominations\AdvancedNorm.png" />
+    <Content Include="Content\MojImages\PdoImages\Nominations\SvavimDis.png" />
+    <Content Include="Content\MojImages\PdoImages\Nominations\SvavimHover.png" />
+    <Content Include="Content\MojImages\PdoImages\Nominations\SvavimNorm.png" />
+    <Content Include="Content\MojImages\PdoImages\not-authorized-icon.png" />
+    <Content Include="Content\MojImages\PdoImages\Pniyot.png" />
+    <Content Include="Content\MojImages\PdoImages\RefreshDis.png" />
+    <Content Include="Content\MojImages\PdoImages\RefreshOff.png" />
+    <Content Include="Content\MojImages\PdoImages\RefreshOn.png" />
+    <Content Include="Content\MojImages\PdoImages\ScreenRefreshDis.png" />
+    <Content Include="Content\MojImages\PdoImages\ScreenRefreshOff.png" />
+    <Content Include="Content\MojImages\PdoImages\ScreenRefreshOn.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryLeftHover.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryLeftNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryLeftPress.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryMiddleHover.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryMiddleNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryMiddlePress.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryRightHover.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryRightNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallPrimary\SmallPrimaryRightPress.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryLeftHover.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryLeftNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryLeftPress.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryMiddleHover.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryMiddleNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryMiddlePress.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryRightHover.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryRightNormal.png" />
+    <Content Include="Content\MojImages\PdoImages\SmallSecondary\SmallSecondaryRightPress.png" />
+    <Content Include="Content\MojImages\PdoImages\TopNavSeperator.png" />
+    <Content Include="Content\MojImages\PdoImages\UpdatesHistoryDis.png" />
+    <Content Include="Content\MojImages\PdoImages\UpdatesHistoryOff.png" />
+    <Content Include="Content\MojImages\PdoImages\UpdatesHistoryOn.png" />
+    <Content Include="Content\MojImages\PdoImages\V-Kayam.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Bikourim.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Hakpatzot.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\HehzerHotzaot.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Hotzaot.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Icn_ItourToranout.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Icn_ItourYeshivot.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Icn_MerkavaDeliver.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Icn_WatchMoutavDis.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Icn_WatchMoutavHover.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Icn_WatchMoutavNorm.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Klali.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Mismachim.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\NesiotHakpatzot.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Tirshomot.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Toranouyot.png" />
+    <Content Include="Content\MojImages\PDOMenus\feeRequestMenu\Yeshivot.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\Distance1.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\Distance2.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\Distance3.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\HafatzatHodaot.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\Log2.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\Matmonim.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\ParametrimGlobaliim.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\Setting.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\TavlaotKod.png" />
+    <Content Include="Content\MojImages\PDOMenus\managementMenu\Users.png" />
+    <Content Include="Content\MojImages\PDOMenus\NominationMenu\EtourPniotMinouy.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Pniyot\Diyounim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Pniyot\Hishtatfout.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Pniyot\Klali.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Pniyot\Minouyim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Pniyot\Pniyot.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Pniyot\Tircha.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Agrot.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Halichim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Ishiyim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Ktovot.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Maasarim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Mikoumim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Mismachim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Tizkorot.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Tlounot-pone.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Ponim\Yoman.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Sanegorim\Bakashot.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Sanegorim\Hozim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Sanegorim\Klali.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Sanegorim\Moutavim.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoLeftMenu\Sanegorim\Tirshomot.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavDochotOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavDochotOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavMinuyOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavMinuyOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavNihulOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavNihulOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavPniyotOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavPniyotOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavPonimOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavPonimOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavSanegorimOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavSanegorimOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavScahrTirchaOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavScahrTirchaOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavScahrToranuyotOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavScahrToranuyotOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavTikimOff.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\NavTikimOn.png" />
+    <Content Include="Content\MojImages\PDOMenus\PdoMainMenu\TopNavSeperator.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Bakashot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\HagdarotTaasuka.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Hozim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Klali.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\MichsatMinouy.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Mismachim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Moutavim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\SearchSanegor.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\SearchTofesBakasha.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\SivougSanegor.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Tichtovot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\TikratScharTircha.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Tirshomot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personAdvocateMenu\Tizkorot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Agra.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Agrot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\EhoudPonim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\EtourPone.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\FinancialEntitlement.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Halichim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Ishiyim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Klali.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Ktovot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Maasarim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Mikoumim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Mismachim.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\PniyotLepone.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Tirshomot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Tizkorot.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Tlounot-pone.png" />
+    <Content Include="Content\MojImages\PDOMenus\personApplicantMenu\Yoman.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\Agra.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\Diyunim.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\HistoryatMinouyim.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\HitkashroutTelephone.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\IturPniya.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\Minuyim.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\MouamadimLeMinouy.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\Pikuach.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\Pirtei-pnia.png" />
+    <Content Include="Content\MojImages\PDOMenus\processesMenu\TzerufPniyot.png" />
+    <Content Include="Content\MojImages\PDOMenus\shiftMenu\HafakatLuachToranuyot.png" />
+    <Content Include="Content\MojImages\PDOMenus\shiftMenu\IturToranut.png" />
+    <Content Include="Content\MojImages\RegTorButton.png" />
+    <Content Include="Content\MojImages\SearchButton.png" />
+    <Content Include="Content\MojImages\SearchButtonHover.png" />
+    <Content Include="Content\MojImages\SearchButtonPress.png" />
+    <Content Include="Content\MojImages\SearchFieldLeft.png" />
+    <Content Include="Content\MojImages\SearchFieldMiddle.png" />
+    <Content Include="Content\MojImages\SearchFieldRight.png" />
+    <Content Include="Content\MojImages\SecondHeader.png" />
+    <Content Include="Content\MojImages\SelectedTorButton.png" />
+    <Content Include="Content\MojImages\SeperatorLineTor.png" />
+    <Content Include="Content\MojImages\SeperatorTorButtons.png" />
+    <Content Include="Content\MojImages\SmallButtonDisable.png" />
+    <Content Include="Content\MojImages\SmallButtonOFF.png" />
+    <Content Include="Content\MojImages\SmallButtonON.png" />
+    <Content Include="Content\MojImages\support-top.png" />
+    <Content Include="Content\MojImages\TablePlus.png" />
+    <Content Include="Content\MojImages\TopHeader.png" />
+    <Content Include="Content\MojImages\TopTorAvoda.png" />
+    <Content Include="Content\MojImages\TorMenuBG.png" />
+    <Content Include="Content\MojImages\TriangleTorButton.png" />
+    <Content Include="Content\MojImages\UserButton.png" />
+    <Content Include="Content\Nominations\Nominations.css" />
+    <Content Include="Content\Parties\Parties.css" />
+    <Content Include="Content\PDOModules\FeeRequest\FeeRequest.css" />
+    <Content Include="Content\PDOModules\MainMenu\pdo-main-menu.css" />
+    <Content Include="Content\PDOModules\Management\Management.css" />
+    <Content Include="Content\PDOModules\Nominations\Nominations.css" />
+    <Content Include="Content\PDOModules\PersonAdvocate\PersonAdvocate.css" />
+    <Content Include="Content\PDOModules\PersonApplicantProcess\PersonApplicantProcess.css" />
+    <Content Include="Content\PDOModules\PersonApplicant\PersonApplicant.css" />
+    <Content Include="Content\PDOModules\Process\Process.css" />
+    <Content Include="Content\PDOModules\Shift\Shift.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\kendo\Black\editor.png" />
+    <Content Include="Content\kendo\Black\imagebrowser.png" />
+    <Content Include="Content\kendo\Black\indeterminate.gif" />
+    <Content Include="Content\kendo\Black\loading-image.gif" />
+    <Content Include="Content\kendo\Black\loading.gif" />
+    <Content Include="Content\kendo\Black\loading_2x.gif" />
+    <Content Include="Content\kendo\Black\markers.png" />
+    <Content Include="Content\kendo\Black\markers_2x.png" />
+    <Content Include="Content\kendo\Black\slider-h.gif" />
+    <Content Include="Content\kendo\Black\slider-v.gif" />
+    <Content Include="Content\kendo\Black\sprite.png" />
+    <Content Include="Content\kendo\Black\sprite_2x.png" />
+    <Content Include="Content\kendo\Black\sprite_kpi.png" />
+    <Content Include="Content\kendo\Black\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\BlueOpal\editor.png" />
+    <Content Include="Content\kendo\BlueOpal\imagebrowser.png" />
+    <Content Include="Content\kendo\BlueOpal\indeterminate.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading-image.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading_2x.gif" />
+    <Content Include="Content\kendo\BlueOpal\markers.png" />
+    <Content Include="Content\kendo\BlueOpal\markers_2x.png" />
+    <Content Include="Content\kendo\BlueOpal\slider-h.gif" />
+    <Content Include="Content\kendo\BlueOpal\slider-v.gif" />
+    <Content Include="Content\kendo\BlueOpal\sprite.png" />
+    <Content Include="Content\kendo\BlueOpal\sprite_2x.png" />
+    <Content Include="Content\kendo\BlueOpal\sprite_kpi.png" />
+    <Content Include="Content\kendo\BlueOpal\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Default\editor.png" />
+    <Content Include="Content\kendo\Default\imagebrowser.png" />
+    <Content Include="Content\kendo\Default\indeterminate.gif" />
+    <Content Include="Content\kendo\Default\loading-image.gif" />
+    <Content Include="Content\kendo\Default\loading.gif" />
+    <Content Include="Content\kendo\Default\loading_2x.gif" />
+    <Content Include="Content\kendo\Default\markers.png" />
+    <Content Include="Content\kendo\Default\markers_2x.png" />
+    <Content Include="Content\kendo\Default\slider-h.gif" />
+    <Content Include="Content\kendo\Default\slider-v.gif" />
+    <Content Include="Content\kendo\Default\sprite.png" />
+    <Content Include="Content\kendo\Default\sprite_2x.png" />
+    <Content Include="Content\kendo\Default\sprite_kpi.png" />
+    <Content Include="Content\kendo\Default\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\gauge\gauge-container-partial.png" />
+    <Content Include="Content\kendo\gauge\gauge-container.png" />
+    <Content Include="Content\kendo\gauge\linear-gauge-container-h.png" />
+    <Content Include="Content\kendo\gauge\linear-gauge-container.png" />
+    <Content Include="Content\kendo\images\back.png" />
+    <Content Include="Content\kendo\images\kendoui.svg" />
+    <Content Include="Content\kendo\images\wp8_icons.png" />
+    <Content Include="Content\kendo\images\wp8_inverseicons.png" />
+    <Content Include="Content\kendo\kendo.black.min.css" />
+    <Content Include="Content\kendo\kendo.blueopal.min.css" />
+    <Content Include="Content\kendo\kendo.common.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.min.css" />
+    <Content Include="Content\kendo\kendo.default.min.css" />
+    <Content Include="Content\kendo\kendo.metro.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.all.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.blackberry.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.ios.min.css" />
+    <Content Include="Content\kendo\kendo.mobile.meego.min.css" />
+    <Content Include="Content\kendo\kendo.silver.min.css" />
+    <Content Include="Content\kendo\Metro\editor.png" />
+    <Content Include="Content\kendo\Metro\imagebrowser.png" />
+    <Content Include="Content\kendo\Metro\indeterminate.gif" />
+    <Content Include="Content\kendo\Metro\loading-image.gif" />
+    <Content Include="Content\kendo\Metro\loading.gif" />
+    <Content Include="Content\kendo\Metro\loading_2x.gif" />
+    <Content Include="Content\kendo\Metro\markers.png" />
+    <Content Include="Content\kendo\Metro\markers_2x.png" />
+    <Content Include="Content\kendo\Metro\slider-h.gif" />
+    <Content Include="Content\kendo\Metro\slider-v.gif" />
+    <Content Include="Content\kendo\Metro\sprite.png" />
+    <Content Include="Content\kendo\Metro\sprite_2x.png" />
+    <Content Include="Content\kendo\Metro\sprite_kpi.png" />
+    <Content Include="Content\kendo\Metro\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\Silver\editor.png" />
+    <Content Include="Content\kendo\Silver\imagebrowser.png" />
+    <Content Include="Content\kendo\Silver\indeterminate.gif" />
+    <Content Include="Content\kendo\Silver\loading-image.gif" />
+    <Content Include="Content\kendo\Silver\loading.gif" />
+    <Content Include="Content\kendo\Silver\loading_2x.gif" />
+    <Content Include="Content\kendo\Silver\markers.png" />
+    <Content Include="Content\kendo\Silver\markers_2x.png" />
+    <Content Include="Content\kendo\Silver\slider-h.gif" />
+    <Content Include="Content\kendo\Silver\slider-v.gif" />
+    <Content Include="Content\kendo\Silver\sprite.png" />
+    <Content Include="Content\kendo\Silver\sprite_2x.png" />
+    <Content Include="Content\kendo\Silver\sprite_kpi.png" />
+    <Content Include="Content\kendo\Silver\sprite_kpi_2x.png" />
+    <Content Include="Content\kendo\textures\brushed-metal.png" />
+    <Content Include="Content\kendo\textures\dots1.png" />
+    <Content Include="Content\kendo\textures\dots10.png" />
+    <Content Include="Content\kendo\textures\dots11.png" />
+    <Content Include="Content\kendo\textures\dots12.png" />
+    <Content Include="Content\kendo\textures\dots13.png" />
+    <Content Include="Content\kendo\textures\dots2.png" />
+    <Content Include="Content\kendo\textures\dots3.png" />
+    <Content Include="Content\kendo\textures\dots4.png" />
+    <Content Include="Content\kendo\textures\dots5.png" />
+    <Content Include="Content\kendo\textures\dots6.png" />
+    <Content Include="Content\kendo\textures\dots7.png" />
+    <Content Include="Content\kendo\textures\dots8.png" />
+    <Content Include="Content\kendo\textures\dots9.png" />
+    <Content Include="Content\kendo\textures\glass-lighter.png" />
+    <Content Include="Content\kendo\textures\glass.png" />
+    <Content Include="Content\kendo\textures\highlight.png" />
+    <Content Include="Content\kendo\textures\hsv-gradient.png" />
+    <Content Include="Content\kendo\textures\hue.png" />
+    <Content Include="Content\kendo\textures\leather1.png" />
+    <Content Include="Content\kendo\textures\leather2.png" />
+    <Content Include="Content\kendo\textures\noise.png" />
+    <Content Include="Content\kendo\textures\stripe1.png" />
+    <Content Include="Content\kendo\textures\stripe2.png" />
+    <Content Include="Content\kendo\textures\stripe3.png" />
+    <Content Include="Content\kendo\textures\stripe4.png" />
+    <Content Include="Content\kendo\textures\stripe5.png" />
+    <Content Include="Content\kendo\textures\stripe6.png" />
+    <Content Include="Content\kendo\textures\transparency.png" />
+    <Content Include="Content\kendo\textures\transtexture.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\kendo\images\kendoui.ttf" />
+    <Content Include="Content\kendo\images\kendoui.woff" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Fonts\Assistant-Regular.ttf" />
+    <Content Include="Content\Fonts\BELL.TTF" />
+    <Content Include="Content\Fonts\BELL.woff" />
+    <Content Include="Content\Fonts\BELLB.TTF" />
+    <Content Include="Content\Fonts\BELLI.TTF" />
+    <Content Include="Content\Fonts\BN_Bilbo.ttf" />
+    <Content Include="Content\Fonts\BN_Bilbo.woff" />
+    <Content Include="Content\Fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Fonts\journal-webfont.eot" />
+    <Content Include="Content\Fonts\journal-webfont.ttf" />
+    <Content Include="Content\Fonts\journal-webfont.woff" />
+    <Content Include="Content\Fonts\opensanshebrew-bold-webfont.eot" />
+    <Content Include="Content\Fonts\opensanshebrew-bold-webfont.ttf" />
+    <Content Include="Content\Fonts\opensanshebrew-bold-webfont.woff" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="Content\kendo\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="Content\kendo\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="Content\kendo\fonts\glyphs\WebComponentsIcons.woff" />
+    <Content Include="Scripts\Common\moj-sites.json" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Common\CommonEvents.js" />
+    <Content Include="Scripts\Common\CommonPDO.js" />
+    <Content Include="Scripts\Common\CommonSignalR.js" />
+    <Content Include="Scripts\Common\custom.validations.js" />
+    <Content Include="Scripts\Common\custom.validations.pdo.js" />
+    <Content Include="Scripts\Common\EnumDefinitions.js" />
+    <Content Include="Scripts\Common\JDCCW2.1.0.js" />
+    <Content Include="Scripts\Common\jquery.fileDownload.js" />
+    <Content Include="Scripts\Common\MojCommon.js" />
+    <Content Include="Scripts\Common\MojCommon.Override.js" />
+    <Content Include="Scripts\Common\MojControls.js" />
+    <Content Include="Scripts\Common\MojControls.Override.js" />
+    <Content Include="Scripts\Common\mvcfoolproof.unobtrusive.js" />
+    <Content Include="Scripts\Common\MvcFoolproofJQueryValidation.js" />
+    <Content Include="Scripts\Common\Workers\InitTables.js" />
+    <Content Include="Scripts\GenericDocuments\CommonDocumentum.js" />
+    <Content Include="Scripts\GenericDocuments\CommonGenericDocuments.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.12.3.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Scripts\jquery-1.12.3.intellisense.js" />
+    <Content Include="Scripts\jquery-1.12.3.js" />
+    <Content Include="Scripts\jquery-1.12.3.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.js" />
+    <Content Include="Scripts\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\jquery.pjax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <None Include="Scripts\jquery\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Scripts\jquery\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\jquery\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery\jquery.min.js" />
+    <Content Include="Scripts\jquery\jquery.qtip.min.js" />
+    <Content Include="Scripts\jquery\jquery.qtip.validation.js" />
+    <Content Include="Scripts\jsnlog.js" />
+    <Content Include="Scripts\jsnlog.min.js" />
+    <Content Include="Scripts\kendo\kendo.all.min.js" />
+    <Content Include="Scripts\kendo\kendo.aspnetmvc.min.js" />
+    <Content Include="Scripts\kendo\kendo.culture.he-IL.min.js" />
+    <Content Include="Scripts\kendo\kendo.dataviz.gauge.min.js" />
+    <Content Include="Scripts\kendo\kendo.timezones.min.js" />
+    <Content Include="Scripts\kendo\kendo.web.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\plugins\jquery.json-2.3.js" />
+    <Content Include="Scripts\plugins\jquery.json-2.3.min.js" />
+    <Content Include="Scripts\plugins\jquery.maskedinput.js" />
+    <Content Include="Scripts\plugins\jquery.maskedinput.min.js" />
+    <Content Include="Scripts\plugins\jquery.tipsy.js" />
+    <Content Include="Scripts\plugins\jquery.unobtrusive-ajax.js" />
+    <None Include="Scripts\plugins\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\plugins\jquery.validate.js" />
+    <Content Include="Scripts\plugins\jquery.validate.min.js" />
+    <Content Include="Scripts\plugins\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\signalr\jquery.signalR-1.2.2.js" />
+    <Content Include="Scripts\signalr\Moj.SignalR.js" />
+    <Content Include="Scripts\ViewScripts\Administration\DistributionScreen.js" />
+    <Content Include="Scripts\ViewScripts\Administration\SendEmailsToAdvocate.js" />
+    <Content Include="Scripts\ViewScripts\Administration\SendEmailsToAdvocateDetails.js" />
+    <Content Include="Scripts\ViewScripts\Contact\AddressDetails.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentDetails.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentList.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentNormalEntitiesDetails.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentSearch.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentSpecialEntitiesDetails.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentsToEntityArea.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentsToEntityList.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentToEntityDetails.js" />
+    <Content Include="Scripts\ViewScripts\Documents\DocumentViewer.js" />
+    <Content Include="Scripts\ViewScripts\Documents\SendMail.js" />
+    <Content Include="Scripts\ViewScripts\Documents\SharedDocumentDetails.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\ConfirmBack.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\CallVisitBaseElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\MeetingDataElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\OffsetDataElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\OtherExpensesElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\PercentageAdditionBaseElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\SelectActivityPlace.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\SelectAdvocateElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\ShiftBaseElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\TravelExpensesBaseElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\TravelingToVisitOrToCallElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\Elements\VisitBaseElement.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestCallVisits.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestExpenses.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestExportView.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestGeneral.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestHeader.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestHearingDetails.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestLineApprovalDetails.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestLineDetails.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestLineExaminationDetails.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestLineGeneralDetails.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestLineStatuesHistoryView.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestLineSubmissionDetail.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestMemos.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestShiftsDetails.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestTravelExps.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestTravelToVisits.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\FeeRequestVisits.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\SearchFeeRequestHearing.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\SearchFeeRequestShiftsCalls.js" />
+    <Content Include="Scripts\ViewScripts\FeeRequest\SearchMemos.js" />
+    <Content Include="Scripts\ViewScripts\Home\Captcha.js" />
+    <Content Include="Scripts\ViewScripts\Home\DefaultPage.js" />
+    <Content Include="Scripts\ViewScripts\Home\EntitiesContent.js" />
+    <Content Include="Scripts\ViewScripts\Home\InformationPage.js" />
+    <Content Include="Scripts\ViewScripts\Management\DistanceCalculationListDetails.js" />
+    <Content Include="Scripts\ViewScripts\Management\LogLevelManager.js" />
+    <Content Include="Scripts\ViewScripts\Management\LogLevelManager_Consts.js" />
+    <Content Include="Scripts\ViewScripts\Management\LogManager.js" />
+    <Content Include="Scripts\ViewScripts\Management\LogManager_Consts.js" />
+    <Content Include="Scripts\ViewScripts\Management\PlacesDetails.js" />
+    <Content Include="Scripts\ViewScripts\Management\PlacesDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\Management\PlacesManager.js" />
+    <Content Include="Scripts\ViewScripts\Management\PlacesManager_Consts.js" />
+    <Content Include="Scripts\ViewScripts\Management\TableCodeDetails.js" />
+    <Content Include="Scripts\ViewScripts\Management\TableCodeDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\Management\TableCodeManager.js" />
+    <Content Include="Scripts\ViewScripts\Management\TableCodeManager_Consts.js" />
+    <Content Include="Scripts\ViewScripts\Memo\MemoDetails.js" />
+    <Content Include="Scripts\ViewScripts\Memo\SearchMemo.js" />
+    <Content Include="Scripts\ViewScripts\Nominations\NominationCandidatesDetails.js" />
+    <Content Include="Scripts\ViewScripts\Nominations\SearchNominations.js" />
+    <Content Include="Scripts\ViewScripts\Nominations\SearchProcessesForNomination.js" />
+    <Content Include="Scripts\ViewScripts\Nominations\SearchTelephoneConnection.js" />
+    <Content Include="Scripts\ViewScripts\Nominations\TransferProcessesFromNominator.js" />
+    <Content Include="Scripts\ViewScripts\PDOFile\PDOFileDetails.js" />
+    <Content Include="Scripts\ViewScripts\PDOFile\PDOFileTransferProcesses.js" />
+    <Content Include="Scripts\ViewScripts\PDOFile\SearchPdoFile.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\AddressDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\AddressDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\AdmissionRequestDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\AdmissionRequests.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\AdmissionRequests_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\AdvocateClassification.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\BeneficiaryDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\BeneficiaryDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\CandidateFormDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\ContractDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\ContractHoursDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\ContractReadingsDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\ContractRetainerDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\Contracts.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\EmploymentDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\Employments.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\PersonAdvocateDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\PersonAdvocateDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\ReplacementAdvocateDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\SearchCandidateForm.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\SearchPersonAdvocate.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\SearchPersonAdvocate_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\TaagidDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonAdvocate\TaagidDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\Addresses.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\ApplicantFees.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\ApplicantProcess.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\ContactDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\ContactDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\ContactInformations.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\ContactProcess.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\Imprisonments.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\Imprisonments_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\JoinApplicants.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\LocationDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\LocationDetails_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\LocationsForm.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\LocationsList.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\Locations_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\PersonApplicantDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\PhoneDetails.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\Processes.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\Processes_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\SearchPersonApplicant.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\SearchPersonApplicant_Consts.js" />
+    <Content Include="Scripts\ViewScripts\PersonApplicant\TransferProcesses.js" />
+    <Content Include="Scripts\ViewScripts\Process\AddProcessesAttached.js" />
+    <Content Include="Scripts\ViewScripts\Process\AddressesAndLocationsDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\AdvocateNominationCallDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\ApplicantDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\Arrests.js" />
+    <Content Include="Scripts\ViewScripts\Process\CandidateDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\CreateDocumentsView.js" />
+    <Content Include="Scripts\ViewScripts\Process\EntityProcessDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\FeeActionDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\FeeDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\FeePanel.js" />
+    <Content Include="Scripts\ViewScripts\Process\GeneralDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\HearingDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\Hearings.js" />
+    <Content Include="Scripts\ViewScripts\Process\HearingsAndEligibility.js" />
+    <Content Include="Scripts\ViewScripts\Process\HearingsForm.js" />
+    <Content Include="Scripts\ViewScripts\Process\HistoryNominationConsulationDay.js" />
+    <Content Include="Scripts\ViewScripts\Process\JoinedProcesses.js" />
+    <Content Include="Scripts\ViewScripts\Process\NewProcessDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\NewProcessWizard.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationCandidatesDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationCandidatesRounds.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationGeneralDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationGround.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationPdoFile.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationsHistory.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationsRelatedProcess.js" />
+    <Content Include="Scripts\ViewScripts\Process\NominationTelephoneConnection.js" />
+    <Content Include="Scripts\ViewScripts\Process\PdoFile.js" />
+    <Content Include="Scripts\ViewScripts\Process\ProcessAppealRecommendationDetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\ProcessesToPersonApplicant.js" />
+    <Content Include="Scripts\ViewScripts\Process\ProcessMatchingShifts.js" />
+    <Content Include="Scripts\ViewScripts\Process\ProcessNotRepresentedByPDODetails.js" />
+    <Content Include="Scripts\ViewScripts\Process\ProcessSupervision.js" />
+    <Content Include="Scripts\ViewScripts\Process\SearchPersonApplicant.js" />
+    <Content Include="Scripts\ViewScripts\Process\SearchProcess.js" />
+    <Content Include="Scripts\ViewScripts\Process\SearchProcessCriteria.js" />
+    <Content Include="Scripts\ViewScripts\Process\UpdateCourt.js" />
+    <Content Include="Scripts\ViewScripts\Process\UpdateProcessNumber.js" />
+    <Content Include="Scripts\ViewScripts\Shift\ShiftLineDetails.js" />
+    <Content Include="Scripts\ViewScripts\Shift\ShiftsDetails.js" />
+    <Content Include="Scripts\ViewScripts\Shift\ShiftsListReportProductionForAdvocate.js" />
+    <Content Include="Scripts\ViewScripts\Shift\ShiftsPerShiftConfiguration.js" />
+    <Content Include="Scripts\ViewScripts\Shift\ShiftsReportProduction.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jsnlog.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Scripts\ViewScripts\Process\Wizard\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog20, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Common.Logging.NLog20.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAnnotationsExtensions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=358a5681c50fd84c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\DataAnnotationsExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Dynamic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=68293a411f0cabcc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpressionEvaluator, Version=2.0.0.0, Culture=neutral, PublicKeyToken=90d9f15d622e2348, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ExpressionEvaluator.dll</HintPath>
+    </Reference>
+    <Reference Include="FUMS.DataContract, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\FUMS.DataContract.dll</HintPath>
+    </Reference>
+    <Reference Include="GOVIL.Wcf.Extensions, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\GOVIL.Wcf.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="JSNLog, Version=2.22.1.0, Culture=neutral, PublicKeyToken=742e180f6c5ccd0d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\JSNLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Kendo.Mvc, Version=2018.2.516.440, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Kendo.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.7.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.7.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.7.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.7.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.7.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.7.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Moj.Infrastructure.DataAnnotations, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Moj.Infrastructure.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Moj.Infrastructure.MVC, Version=3.5.6.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Moj.Infrastructure.MVC.dll</HintPath>
+    </Reference>
+    <Reference Include="Moj.Infrastructure.MVCPermissions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Moj.Infrastructure.MVCPermissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Extended, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NLog.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WcfContrib, Version=2.1.1.0, Culture=neutral, PublicKeyToken=7e71c73f7de51507, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\WcfContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57817</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57820/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

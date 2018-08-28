@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FieldMustBeDate" xml:space="preserve">
+    <value>שדה {0} חייב להיות תאריך.</value>
+  </data>
+  <data name="FieldMustBeNumeric" xml:space="preserve">
+    <value>שדה {0} חייב להיות מספר.</value>
+  </data>
+  <data name="PropertyValueInvalid" xml:space="preserve">
+    <value>הערך {0} אינו תקין עבור {1}.</value>
+    <comment>The value '{0}' is not valid for {1}.)</comment>
+  </data>
+  <data name="MerkavaNumberIsExist" xml:space="preserve">
+    <value>מספר מוטב מרכבה זהה בשתי צורות ההעסקה של הסנגור.</value>
+  </data>
+  <data name="PropertyValueInvalidCharacters" xml:space="preserve">
+    <value>תוים לא תקינים</value>
+  </data>
+  <data name="PropertyValueRequired" xml:space="preserve">
+    <value>{0} שדה חובה.</value>
+  </data>
+  <data name="Err15" xml:space="preserve">
+    <value>בכדי לפתוח לשונית נוספת נדרש לסגור את אחת הלשוניות הקימות</value>
+  </data>
+  <data name="Wrn13" xml:space="preserve">
+    <value>האם ברצונך להמשיך?</value>
+  </data>
+  <data name="WrnSaveParty" xml:space="preserve">
+    <value>שים לב, הנתונים במסך פרטי גורם בתיק לא נשמרו, בהמשך שמירה הם יאבדו</value>
+  </data>
+  <data name="SuccessSave" xml:space="preserve">
+    <value>השמירה בוצעה בהצלחה</value>
+  </data>
+  <data name="InvalidID" xml:space="preserve">
+    <value>תעודת זהות אינה תקינה, האם להמשיך?</value>
+  </data>
+  <data name="InvalidObjectToSearchPercent" xml:space="preserve">
+    <value>הסימן % יכול להופיע רק פעם אחת בתחילת/בסוף ערך החיפוש</value>
+  </data>
+  <data name="EntityTypeNotSupported" xml:space="preserve">
+    <value>ישות לא נתמכת</value>
+  </data>
+  <data name="DeleteLogs" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך למחוק את טבלת הלוגים?</value>
+  </data>
+  <data name="DeleteLogsCompleted" xml:space="preserve">
+    <value>טבלת הלוגים נמחקה בהצלחה!</value>
+  </data>
+  <data name="DeleteLogsTitle" xml:space="preserve">
+    <value>מחיקת לוגים</value>
+  </data>
+  <data name="RangeOfDates" xml:space="preserve">
+    <value>הזן תאריך בין {0} ל-{1}</value>
+  </data>
+  <data name="InvalidAdvocateID" xml:space="preserve">
+    <value>מספר תעודת זהות אינו תקין</value>
+  </data>
+  <data name="ErrNotCheckedInAviv" xml:space="preserve">
+    <value> שירות משרד הפנים אינו פעיל, לא ניתן ליצור סנגור חדש, נא נסה מאוחר יותר</value>
+  </data>
+  <data name="AdvocateNotExist" xml:space="preserve">
+    <value>סנגור לא קיים במערכת, האם ברצונך ליצור סנגור חדש ?</value>
+  </data>
+  <data name="ProcessNotExist" xml:space="preserve">
+    <value>פניה לא קיימת במערכת, האם ברצונך ליצור פניה חדשה ?</value>
+  </data>
+  <data name="InvalidHebrewPattern" xml:space="preserve">
+    <value>חובה להזין אותיות בעברית בלבד</value>
+  </data>
+  <data name="ErrorMsg" xml:space="preserve">
+    <value>ארעה שגיאה, אנא פנה למנהל המערכת</value>
+  </data>
+  <data name="NoApplicantProcess" xml:space="preserve">
+    <value>נמצא הליך ללא הליך פונה, האם ברצונך להמשיך ליצור הליך לפונה?</value>
+  </data>
+  <data name="NoProcess" xml:space="preserve">
+    <value>לא נמצא הליך, האם ברצונך להמשיך ליצור הליך?</value>
+  </data>
+  <data name="ErrNotExistInAviv" xml:space="preserve">
+    <value>לא ניתן ליצור סנגור שלא קיים במערכת משרד הפנים</value>
+  </data>
+  <data name="SelectPlaceType" xml:space="preserve">
+    <value>בחר סוג מוסד</value>
+  </data>
+  <data name="BussinessNumberIsExist" xml:space="preserve">
+    <value>מספר ח.פ./זהות זהה בשתי צורות העסקה של הסנגור.</value>
+  </data>
+  <data name="InvalidNoPhones" xml:space="preserve">
+    <value>חובה להזין לפחות מספר טלפון אחד</value>
+  </data>
+  <data name="BusinessEntityNumberNotValid" xml:space="preserve">
+    <value>מספר חפ אינו תקין</value>
+  </data>
+  <data name="FilterByText" xml:space="preserve">
+    <value>חפש לפי {filter-by}</value>
+  </data>
+  <data name="MaxLengthMessage" xml:space="preserve">
+    <value>השדה חייב להיות באורך מקסימלי של {0} תווים.</value>
+  </data>
+  <data name="InvalidHearingDate" xml:space="preserve">
+    <value>תאריך הדיון קטן מתאריך הפניה</value>
+  </data>
+  <data name="ValidationError" xml:space="preserve">
+    <value>הנתונים אינם תקינים</value>
+  </data>
+  <data name="ProcessNumberChanged" xml:space="preserve">
+    <value>מספר ההליך שונה כל פרטי ההליך ימחקו, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="ProcessTypeChanged" xml:space="preserve">
+    <value>סוג ההליך שונה, כל פרטי ההליך ימחקו, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="PreviousProcessesNotExist" xml:space="preserve">
+    <value>לא נמצאו פניות קודמות לפונה לאותו מספר הליך ו/או סוג הליך, ניתן להמשיך בתהליך</value>
+  </data>
+  <data name="WrnSearchPreviousProcess" xml:space="preserve">
+    <value>יש לבצע איתור פניה קודמת</value>
+  </data>
+  <data name="ErrExitSearchPersonApplicant" xml:space="preserve">
+    <value>יש לבחור פונה או ליצור פונה חדש</value>
+  </data>
+  <data name="WrnExitSearchPersonApplicant" xml:space="preserve">
+    <value>בחרת פונה אחר, כל הנתונים שהוזנו ימחקו האם ברצונך להמשיך?</value>
+  </data>
+  <data name="ProcessCategoryChanged" xml:space="preserve">
+    <value> קטגורית ההליך שונתה, כל פרטי ההליך ימחקו, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="WrnSearchParentProcess" xml:space="preserve">
+    <value>לא בוצע איתור הליך אב להליך נלוה</value>
+  </data>
+  <data name="ProcessNumberUnKnownChanged" xml:space="preserve">
+    <value>מספר ההליך לא ידוע, תוצאות איתור פניה קודמת ימחקו, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="WrnProcessPrefixEmpty" xml:space="preserve">
+    <value>לא נבחרה קידומת למספר הליך האם ברצונך להמשיך?</value>
+  </data>
+  <data name="WrnFutureHearingEmpty" xml:space="preserve">
+    <value>לא מולא דיון, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="WrnIdentificationDetailsValues" xml:space="preserve">
+    <value>קיימים ערכים בשדות פרטי הזיהוי \n</value>
+  </data>
+  <data name="MsgOnlyAddressCopy" xml:space="preserve">
+    <value>קיימים ערכים בשדות פרטי הזיהוי, יועתקו רק נתוני הכתובת \n</value>
+  </data>
+  <data name="DataNotSaved" xml:space="preserve">
+    <value>נא לשמור את הנתונים</value>
+  </data>
+  <data name="IdNumberAlreadyExist" xml:space="preserve">
+    <value>סוג זיהוי ומספר זיהוי זה כבר קיימים במערכת</value>
+  </data>
+  <data name="NameAlreadyExist" xml:space="preserve">
+    <value>במערכת כבר קיים פונה עם שם משפחה ושם פרטי זהה. האם להמשיך?</value>
+  </data>
+  <data name="WrnConvertNewAddressToMainAddress" xml:space="preserve">
+    <value>האם להפוך את כתובת המרשם החדשה לכתובת למשלוח דואר?</value>
+  </data>
+  <data name="ContactedToProcess" xml:space="preserve">
+    <value>המיקום מקושר לפניה – קישור חדש יחליף את הקישור הנוכחי. האם להמשיך ?</value>
+  </data>
+  <data name="DatesOverlap" xml:space="preserve">
+    <value>התאריכים חופפים תאריכים של מיקום נוכחי</value>
+  </data>
+  <data name="ExistCurrentLocation" xml:space="preserve">
+    <value>קיים מיקום נוכחי, לאחר אישור יסומן שהפונה סיים את השהות במיקום והוא יצורף למיקומים קודמים</value>
+  </data>
+  <data name="FromDateOverlap" xml:space="preserve">
+    <value>התאריך חופף תאריכים של מיקומים קודמים</value>
+  </data>
+  <data name="InvalidOnlyNumbers" xml:space="preserve">
+    <value>השדה לא יכול להכיל רק ספרות</value>
+  </data>
+  <data name="WrnMissingSearchValue" xml:space="preserve">
+    <value>יש להזין פרמטר לחיפוש</value>
+  </data>
+  <data name="ErrPdoFileTab" xml:space="preserve">
+    <value>ההליך המשפטי הסתיים חובה לקשר לתיק סנגוריה</value>
+  </data>
+  <data name="SuccessSaveNewProcess" xml:space="preserve">
+    <value>פניה {0} נשמרה בהצלחה</value>
+  </data>
+  <data name="CandidateFormAccepted" xml:space="preserve">
+    <value>הטופס נקלט בהצלחה</value>
+  </data>
+  <data name="WrnNominationMoreThanOneAdvocate" xml:space="preserve">
+    <value>אין אפשרות למנות כאשר יש יותר מסנגור אחד</value>
+  </data>
+  <data name="WrnInvalidAddAdvocate" xml:space="preserve">
+    <value>אין אפשרות להוסיף סנגור נוסף כאשר סטטוס המינוי הוא "מינוי"</value>
+  </data>
+  <data name="WrnAdvocateAlreadyExist" xml:space="preserve">
+    <value>הסנגור כבר מועמד למינוי לפניה</value>
+  </data>
+  <data name="WrnNominatorChanged" xml:space="preserve">
+    <value>בשינוי הממנה לא ישמרו נתוני המינוי ששונו; האם ברצונך להמשיך?</value>
+  </data>
+  <data name="IsDeletedNominationGround" xml:space="preserve">
+    <value>עילת מינוי תימחק – האם להמשיך?</value>
+  </data>
+  <data name="IsDeletedNominationGroundAndEndOfRepresentation" xml:space="preserve">
+    <value>עילת מינוי תימחק, ותום הייצוג יוסר – האם להמשיך</value>
+  </data>
+  <data name="IsUpdateProcessNominationGround" xml:space="preserve">
+    <value>עילת המינוי של הפניה תתעדכן לעילת המינוי של הפניה המקושרת האם להמשיך?</value>
+  </data>
+  <data name="ThereIsActiveNomination" xml:space="preserve">
+    <value>קיימים מינויים פעילים עבור הפניה – בסימון "תום ייצוג" המינויים יסתיימו.</value>
+  </data>
+  <data name="ThereIsAttachedProcessDisconnectTheProcess" xml:space="preserve">
+    <value>קיימות פניות המקושרות כפנייה נוספת או נלוות, יש לנתק את הקשר לפני הפיכת הפניה ללא זכאית.</value>
+  </data>
+  <data name="WrnProcessConnectionDeletedChooseNewNominationGround" xml:space="preserve">
+    <value>הקשר בין הפניות ימחק – יש לבחור עילת מינוי חדשה</value>
+  </data>
+  <data name="WrnProcessHasNoCourtChangesHistory" xml:space="preserve">
+    <value>אין לפניה הסטוריית שינויים בשדה בית משפט</value>
+  </data>
+  <data name="WrnProcessHasNoProcessNumberChangesHistory" xml:space="preserve">
+    <value>אין לפניה הסטוריית שינויים במספר הליך</value>
+  </data>
+  <data name="WrnProcessHasNoStatusChangesHistory" xml:space="preserve">
+    <value>אין לפניה הסטוריית שינויים בסטטוס הפניה</value>
+  </data>
+  <data name="ErrThereIsActiveNominations" xml:space="preserve">
+    <value>קיימים מינויים לפניה - לא ניתן לשנות את סטטוס זכאות</value>
+  </data>
+  <data name="ErrNoProcessSelected" xml:space="preserve">
+    <value>לא נבחרה פניה</value>
+  </data>
+  <data name="WrnProcessSelected" xml:space="preserve">
+    <value>קיימת פניה מקושרת זהה</value>
+  </data>
+  <data name="AmountAndAmountFromPreviousLessThanUsed" xml:space="preserve">
+    <value>הכמות והכמות משנים קודמות אינה יכולה להיות קטנה מהניצול</value>
+  </data>
+  <data name="AmountLessThanUsed" xml:space="preserve">
+    <value>הכמות אינה יכולה להיות קטנה מהניצול</value>
+  </data>
+  <data name="DoesNoRate" xml:space="preserve">
+    <value>אין תעריף לתאריך תחילת החוזה, אין אפשרות לשמור את החוזה</value>
+  </data>
+  <data name="AllSelectedProcessesApplicantWillChange" xml:space="preserve">
+    <value>שים לב, בכל הפניות שנבחרו ישתנה הפונה. האם ברצונך להמשיך?</value>
+  </data>
+  <data name="CantDeleteContract" xml:space="preserve">
+    <value>אין אפשרות למחוק חוזה אשר נוצל</value>
+  </data>
+  <data name="ApplicantsWillJoin" xml:space="preserve">
+    <value>שים לב, הפונה {0}  יצורף ל {1} האם אתה בטוח ?</value>
+  </data>
+  <data name="EmploymentTypeChange" xml:space="preserve">
+    <value>צורת העסקה שונתה ותשונה גם במינויים הקשורים לחוזה, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="MaxNumberOfEmployeesIs" xml:space="preserve">
+    <value>מספר השכירים המירבי הוא</value>
+  </data>
+  <data name="CantChooseSameBussinessEntity" xml:space="preserve">
+    <value>לא ניתן לבחור אותו משרד כשכיר ועצמאי לאותו סנגור</value>
+  </data>
+  <data name="CanBeChangedAmountOnlyIfThereAreRemainderForReduction" xml:space="preserve">
+    <value>אין אפשרות להפחית את הכמות (אין יתרה לקיזוז)</value>
+  </data>
+  <data name="CanOnlyLessenAmount" xml:space="preserve">
+    <value>בחוזה הסטורי אין אפשרות להוסיף לכמות</value>
+  </data>
+  <data name="CantLessenCountOfEmployee" xml:space="preserve">
+    <value>אין אפשרות לשנות את מספר השכירים למספר הקטן ממספר השכירים הקיימים במשרד</value>
+  </data>
+  <data name="OnlyDistrictAttorneyCanApproveMoreEmployee" xml:space="preserve">
+    <value>רק בעל הרשאה של סנגור ארצי יכול לשנות את השדה אישור לשכירים נוספים.</value>
+  </data>
+  <data name="TheLessHasToBeToAmountOfRemainderForReduction" xml:space="preserve">
+    <value>ניתן להפחית את הכמות עד ל -{0}</value>
+  </data>
+  <data name="InvalidIdentificationNo" xml:space="preserve">
+    <value>תעודת זהות לא תקינה</value>
+  </data>
+  <data name="CantAddAddressInDistrict" xml:space="preserve">
+    <value>לסנגור שאינו מוגדר במחוז אין אפשרות להוסיף כתובת משרד במחוז</value>
+  </data>
+  <data name="ErrFelonyLawClauseNotExist" xml:space="preserve">
+    <value>סעיף העבירה לא קיים</value>
+  </data>
+  <data name="CantCreateAdvocateAvivIsNotActive" xml:space="preserve">
+    <value>שרות משרד הפנים אינו זמין, לא ניתן לקלוט סנגור שלא אומת במשרד הפנים</value>
+  </data>
+  <data name="CantCreateAdvocateIsNotExistInAviv" xml:space="preserve">
+    <value>לא ניתן לקלוט סנגור שאינו  קיים במשרד הפנים</value>
+  </data>
+  <data name="CantCreateAdvocateIsNotExistInLicensedLawyers" xml:space="preserve">
+    <value>לא ניתן לקלוט סנגור שאינו פעיל בלשכת עורכי הדין</value>
+  </data>
+  <data name="IdNumberIsNotValid" xml:space="preserve">
+    <value>מספר תעודת זהות לא תקין</value>
+  </data>
+  <data name="CantCloseEmploymentIfHasActiveEmployee" xml:space="preserve">
+    <value>אין אפשרות לסיים את ההעסקה של העצמאי במשרד אשר קיימים בו שכירים</value>
+  </data>
+  <data name="CantCloseEmploymentIfIsLast" xml:space="preserve">
+    <value>אין אפשרות לסיים את ההעסקה האחרונה של הסנגור במחוז</value>
+  </data>
+  <data name="AlreadySelectedAdvocateContact" xml:space="preserve">
+    <value>הסנגור כבר נבחר</value>
+  </data>
+  <data name="AlreadyExistAdvocateAgreedToNominationCallResult" xml:space="preserve">
+    <value>כבר קיים סנגור אשר הסכים להקפצה</value>
+  </data>
+  <data name="AvivServiceUnavailable" xml:space="preserve">
+    <value>שירות משרד הפנים אינו זמין</value>
+  </data>
+  <data name="PDOFileNotExist" xml:space="preserve">
+    <value>מספר תיק לא קיים</value>
+  </data>
+  <data name="OnlyDistrictAttorneyCanAddOverMaxNumberOfEmployees" xml:space="preserve">
+    <value>רק בעל הרשאה של סנגור ארצי יכול להגדיל את מספר השכירים למשרד </value>
+  </data>
+  <data name="CantUndoTheApproval" xml:space="preserve">
+    <value>אין אפשרות לבטל את האישור לשכירים נוספים מאחר וכבר נוספו השכירים</value>
+  </data>
+  <data name="InlineNewEditMessage" xml:space="preserve">
+    <value>רשומה אחרת פתוחה לעדכון ,הנתונים ימחקו . &lt;/br&gt;האם ברצונך להמשיך?</value>
+  </data>
+  <data name="InlineNewEditSaveMessage" xml:space="preserve">
+    <value>נא לשמור את הרשומה שהוקלדה</value>
+  </data>
+  <data name="CantEditTheDocument" xml:space="preserve">
+    <value>לא ניתן לערוך את המסמך</value>
+  </data>
+  <data name="CantViewTheDocument" xml:space="preserve">
+    <value>לא ניתן לצפות במסמך</value>
+  </data>
+  <data name="ConfirmSplit" xml:space="preserve">
+    <value>המסמך ייפצל. האם ברצונך להמשיך ?</value>
+  </data>
+  <data name="DocumentView" xml:space="preserve">
+    <value>המסמך מיועד לצפייה בלבד וכל שינוי שייעשה בו לא יישמר.</value>
+  </data>
+  <data name="ErrAddDocument" xml:space="preserve">
+    <value>ארעה שגיאה בהוספת המסמך</value>
+  </data>
+  <data name="ErrCantAddLnk" xml:space="preserve">
+    <value>לא ניתן להוסיף רכיב - אנא הזן את כל השדות הנדרשים</value>
+  </data>
+  <data name="ErrDocumentAlreadyConnect" xml:space="preserve">
+    <value>המסמך כבר מקושר לפריט</value>
+  </data>
+  <data name="ErrEditDocument" xml:space="preserve">
+    <value>ארעה שגיאה בעדכון המסמך</value>
+  </data>
+  <data name="ErrNotUpdate" xml:space="preserve">
+    <value>הפעולה לא בוצעה, נא ודא כי המסמך אינו בשימוש משתמש אחר</value>
+  </data>
+  <data name="ErrPrintDocument" xml:space="preserve">
+    <value>ארעה שגיאה בהדפסת המסמך</value>
+  </data>
+  <data name="ErrSelectDocumentAlreadyConnect" xml:space="preserve">
+    <value>המסמך שנבחר כבר מקושר לפריט</value>
+  </data>
+  <data name="ErrSplitDocument" xml:space="preserve">
+    <value>ארעה שגיאה בפיצול המסמך</value>
+  </data>
+  <data name="ExistFile" xml:space="preserve">
+    <value>למסמך זה כבר קיים קובץ, האם לדרוס ?</value>
+  </data>
+  <data name="NoDocumentsChecked" xml:space="preserve">
+    <value>לא נבחרו מסמכים</value>
+  </data>
+  <data name="NoPDF" xml:space="preserve">
+    <value>ניתן לפצל קובץ PDF בלבד</value>
+  </data>
+  <data name="NoSelectRecord" xml:space="preserve">
+    <value>נא לבחור רשומה</value>
+  </data>
+  <data name="RemoveBrowseDocument" xml:space="preserve">
+    <value>לא ניתן לסמן "ללא קובץ" כאשר נבחר מסמך. האם להסיר את המסמך שנבחר ?</value>
+  </data>
+  <data name="RemoveWithoutFile" xml:space="preserve">
+    <value>לא ניתן לבחור מסמך. יש להסיר את הסימון מ"ללא קובץ ".</value>
+  </data>
+  <data name="CantAddContract" xml:space="preserve">
+    <value>אין אפשרות להוסיף חוזה לסנגור שאינו פעיל במחוז</value>
+  </data>
+  <data name="PdoFileIdNotExist" xml:space="preserve">
+    <value>תיק סנגוריה לא קיים</value>
+  </data>
+  <data name="ChangeLogLevelSuccess" xml:space="preserve">
+    <value>רמת לוג שונתה בהצלחה</value>
+  </data>
+  <data name="ChangeLogLevelTitle" xml:space="preserve">
+    <value>שינוי רמת לוג</value>
+  </data>
+  <data name="NeedFillStartDateInFirst" xml:space="preserve">
+    <value>יש להזין תחילה את תאריך התחלת החוזה</value>
+  </data>
+  <data name="WrnProcessCourtsAreSame" xml:space="preserve">
+    <value>בית המשפט החדש זהה לבית המשפט הקודם.</value>
+  </data>
+  <data name="WrnProcessNumbersAreSame" xml:space="preserve">
+    <value>נתוני מספר ההליך החדשים זהים לנתונים הקיימים.</value>
+  </data>
+  <data name="ErrIdentificationNumberMandatory" xml:space="preserve">
+    <value>מספר מזהה הוא שדה חובה</value>
+  </data>
+  <data name="DistanceCalculationIsExist" xml:space="preserve">
+    <value>היישובים שנבחרו קיימים כבר במערכת</value>
+  </data>
+  <data name="SuccessTransferProcessesFromNominator" xml:space="preserve">
+    <value>תהליך העברת הפניות בין ממנים הסתיים בהצלחה</value>
+  </data>
+  <data name="SuccessTransferProcessesFromApplicant" xml:space="preserve">
+    <value>תהליך העברת פניות בין פונים הסתיים בהצלחה</value>
+  </data>
+  <data name="SuccessJoinApplicants" xml:space="preserve">
+    <value>תהליך איחוד הפונים התבצע בהצלחה</value>
+  </data>
+  <data name="WrnNewSearch" xml:space="preserve">
+    <value>יתבצע איתור חדש, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="WrnSelectedProcessHaveAttachedProcess" xml:space="preserve">
+    <value>קיימות לפניה שבחרת פניות קשורות יש להעביר גם אותן, האם ברצונך לבצע את ההעברה?</value>
+  </data>
+  <data name="ErrCheckChronologicalTime" xml:space="preserve">
+    <value>{0} חייב להיות גדול או שווה ל {1}</value>
+  </data>
+  <data name="MoreOneActiveNominationForProcess" xml:space="preserve">
+    <value>קיים לפניה יותר ממינוי אחד פעיל</value>
+  </data>
+  <data name="ObjectToSearchIsNotValid" xml:space="preserve">
+    <value>הפרמטר לאיתור יכול להכיל רק ספרות ואותיות</value>
+  </data>
+  <data name="ErrTransferAllProcessesToNewPDOFile" xml:space="preserve">
+    <value>אין אפשרות להחליף תיק -  אין אפשרות להעביר את כל הפניות לתיק חדש</value>
+  </data>
+  <data name="WrnDifferentsReceivedDates" xml:space="preserve">
+    <value>תאריך הקליטה שהוזן שונה מתאריך הקליטה של הבקשה. האם להשאיר את התאריך שהוזן?</value>
+  </data>
+  <data name="WrnIsNotReplacementAuthorized" xml:space="preserve">
+    <value>שימו לב, המחליף שנבחר אינו מורשה להחליף את הסנגור</value>
+  </data>
+  <data name="ErrZeroKmDistance" xml:space="preserve">
+    <value>מקום המוצא ומקום היעד שנבחרו נמצאים באותו הישוב. לא ניתן לשלם הוצאות נסיעה באותו הישוב.</value>
+  </data>
+  <data name="ErrEmptyDistanceSelectionIndication" xml:space="preserve">
+    <value>אין אפשרות לבחור קבוצת תעריף כאשר אין ערך בשדה מרחק בק"מ</value>
+  </data>
+  <data name="ErrSubmissionDetailsExaminationDetailsProcessId" xml:space="preserve">
+    <value>מספר פניה בפרטי בדיקה חייב להיות זהה למספר פניה בפרטי דרישה</value>
+  </data>
+  <data name="ErrNotAdditionChangesCallsGrid" xml:space="preserve">
+    <value>לא ניתן לבצע שינויים נוספים בהקפצה ללא שמירה של השינויים שנעשו</value>
+  </data>
+  <data name="ErrEqualSubmissionDetailsActivityDate" xml:space="preserve">
+    <value>תאריך פעילות ב{0} חייב להיות זהה לתאריך פעילות בפרטי דרישה</value>
+  </data>
+  <data name="WrnAttachedCurrentPDOFile" xml:space="preserve">
+    <value>לא ניתן לקשר לתיק נוכחי</value>
+  </data>
+  <data name="WrnAttachedPDOFileExist" xml:space="preserve">
+    <value>קיים קישור לתיק זה</value>
+  </data>
+  <data name="ErrInvalidHoursTravelingTime" xml:space="preserve">
+    <value>ערך השדה שעות (זמן נסיעה) אינו יכול להיות גדול מ-23 שעות</value>
+  </data>
+  <data name="ErrInvalidMinutesTravelingTime" xml:space="preserve">
+    <value>ערך השדה דקות (זמן נסיעה) אינו יכול להיות גדול מ-59 דקות</value>
+  </data>
+  <data name="ErrInvalidHoursShiftTime" xml:space="preserve">
+    <value>ערך השדה שעות (זמן פעילות) אינו יכול להיות גדול מ-23 שעות</value>
+  </data>
+  <data name="ErrInvalidMinutesShiftTime" xml:space="preserve">
+    <value>ערך השדה דקות (זמן פעילות) אינו יכול להיות גדול מ-59 דקות</value>
+  </data>
+  <data name="ErrNegativeTimesDiff" xml:space="preserve">
+    <value>שדה "עד שעה" לא יכול להיות לפני שדה "משעה" בזמן</value>
+  </data>
+  <data name="ErrInvalidHoursVisitTime" xml:space="preserve">
+    <value>ערך השדה שעות(זמן ביקור) אינו יכול להיות גדול מ-23 שעות</value>
+  </data>
+  <data name="ErrInvalidMinutesVisitTime" xml:space="preserve">
+    <value>ערך השדה דקות(זמן ביקור) אינו יכול להיות גדול מ-59 שעות</value>
+  </data>
+  <data name="MsgCreateNewProcess" xml:space="preserve">
+    <value>תיווצר פניה חדשה , האם ברצונך להמשיך?</value>
+  </data>
+  <data name="WrnShiftModuleHasNotBusinessEntityMerkava" xml:space="preserve">
+    <value>לא קיים מוטב מרכב"ה לצורת ההעסקה לסנגור בבקשה. יש לפנות לאחראי על הנושא בסנגוריה.</value>
+  </data>
+  <data name="ErrNullDistanceValue" xml:space="preserve">
+    <value>המרחק בין {0} לבין {1} לא קיים בטבלת מרחקים. יש לפנות למנהל מערכת.</value>
+  </data>
+  <data name="WrnHearingModuleHasNotBusinessEntityMerkava" xml:space="preserve">
+    <value>לא קיים מוטב מרכב"ה לצורת ההעסקה לסנגור בפניה. יש לפנות לאחראי על הנושא בסנגוריה.</value>
+  </data>
+  <data name="ErrNoCity" xml:space="preserve">
+    <value>למקום {0} – {1} לא הוזן ישוב, ולכן לא ניתן לחשב מרחקים עבורו. יש לפנות למנהל מערכת.</value>
+  </data>
+  <data name="WrnChagneCourtAffectRetainer" xml:space="preserve">
+    <value>קיימים לפניה מינויים מסוג ריטיינר, ובית המשפט החדש לא מאפשר מינויים כאילו. האם ברצונך להמשיך?</value>
+  </data>
+  <data name="ErrResetToDate" xml:space="preserve">
+    <value>אין אפשרות למחוק את תאריך הסיום</value>
+  </data>
+  <data name="ConfirmDoumentDelete" xml:space="preserve">
+    <value>המסמך ימחק מכל המקומות אליהם הוא מקושר. האם ברצונך להמשיך?</value>
+  </data>
+  <data name="ExistFileForMark" xml:space="preserve">
+    <value>למסמך זה כבר קיים קובץ, האם למחוק אותו?</value>
+  </data>
+  <data name="ErrIsNoNominationConsultationWithAgreedCall" xml:space="preserve">
+    <value>קיים סנגור שהסכים להקפצה, יש למחוק את ההקפצה ולשמור את הנתונים לפני סימון השדה לא הוקפץ סנגור</value>
+  </data>
+  <data name="ErrAgreedCallWithIsNoNominationConsultation" xml:space="preserve">
+    <value>אין אפשרות להקפיץ סנגור כאשר נבחר "לא הוקפץ סנגור", יש לבטל את "לא הוקפץ סנגור" ולאחר מכן להקפיץ את הסנגור.</value>
+  </data>
+  <data name="ErrExistFeeRequestWhenEmploymentTypeIsChanged" xml:space="preserve">
+    <value>אין אפשרות לשנות את צורת ההקפצה של הסנגור, קיימות בקשות שכ"ט פעילות</value>
+  </data>
+  <data name="WrnAccompanyingProcessAllreadyExist" xml:space="preserve">
+    <value>הפניה כבר מקושרת לפניית אב. נתק את הקשר הקודם כדי לקשר לפניית אב אחרת</value>
+  </data>
+  <data name="ErrNominationTypeNotAllowedFeeRequest" xml:space="preserve">
+    <value>סוג המינוי של הסנגור בפניה אינו מאפשר בקשת שכר טירחה. יש לפנות למנהל מערכת.</value>
+  </data>
+  <data name="ErrNoSameEmploymentTypes" xml:space="preserve">
+    <value>אין התאמה בין צורת ההעסקה של הסנגור לצורת ההעסקה שעל המינוי. יש לפנות למנהל מערכת.</value>
+  </data>
+  <data name="ActivityDateIsNull" xml:space="preserve">
+    <value>יש להזין קודם ערך בשדה תאריך פעילות</value>
+  </data>
+  <data name="EntityTypeAllreadyExist" xml:space="preserve">
+    <value>ישות קיימת</value>
+  </data>
+  <data name="WrnHearingModuleHaveMoreThanOneBusinessEntityMerkava" xml:space="preserve">
+    <value>קיים יותר ממוטב מרכבה אחד  לצורת ההעסקה לסנגור בבקשה</value>
+  </data>
+  <data name="WrnFeeRequestEmploymentTypeNotExist" xml:space="preserve">
+    <value>צורת ההעסקה לסנגור של {0} המעודכנת בבקשה אינה פעילה יותר לסנגור במחוז {1}. לא ניתן יהיה לעדכן שורות שכ"ט בבקשה או לאשר אותה אישור סופי.</value>
+  </data>
+  <data name="DragFile" xml:space="preserve">
+    <value>גרור את הקובץ לכאן</value>
+  </data>
+  <data name="ErrDCCVersion" xml:space="preserve">
+    <value>אפשרות גרירת מסמכים אינה נתמכת בגרסת דוקומנטום המותקנת במחשב. על מנת לתקן את הבעיה יש לפנות למרכז השרות.</value>
+  </data>
+  <data name="ErrorsMessageRemark" xml:space="preserve">
+    <value>נא עבור על כל השדות בטופס ותקן את השגויים.</value>
+  </data>
+  <data name="MsgEndProcessHearingDate" xml:space="preserve">
+    <value>המינויים הפתוחים לפניה יסגרו האם ברצונך להמשיך?</value>
+  </data>
+  <data name="ErrHoursGreaterThan24" xml:space="preserve">
+    <value>השדה שעות לא יכול להיות גדול מ24 שעות</value>
+  </data>
+  <data name="ErrMinutesGreaterThan59" xml:space="preserve">
+    <value>השדה דקות לא יכול להיות גדול מ59 דקות</value>
+  </data>
+  <data name="ErrActualFromTimeGreatherThanToTime" xml:space="preserve">
+    <value>ביצוע – "משעה" חייב להיות קטן מ "עד שעה"</value>
+  </data>
+  <data name="ErrEmptyShiftChangeTimeReason" xml:space="preserve">
+    <value>כאשר שעות הביצוע רבות יותר מהתכנון חובה להכניס סיבה לריבוי השעות</value>
+  </data>
+  <data name="ErrExistShiftInCurrentShiftConfiguration" xml:space="preserve">
+    <value>כבר קיים שיבוץ לסנגור במוקד ביום זה</value>
+  </data>
+  <data name="ErrNotExistActiveContract" xml:space="preserve">
+    <value>אין לסנגור חוזה פעיל ליום זה</value>
+  </data>
+  <data name="ErrOnlyInternalAdvocates" xml:space="preserve">
+    <value>בסוג תורנות זה אפשר לשבץ רק סנגורים פנימים</value>
+  </data>
+  <data name="ErrPlannedFromTimeGreatherThanToTime" xml:space="preserve">
+    <value>תכנון – "משעה" חייב להיות קטן מ "עד שעה"</value>
+  </data>
+  <data name="ErrSingleActualTimeFieldIsEmpty" xml:space="preserve">
+    <value>בביצוע יש למלא את שני השדות "משעה" ו""עד שעה (או אף אחד מהם)</value>
+  </data>
+  <data name="WrnTransferAllPDOFileProcesses" xml:space="preserve">
+    <value>כל הפניות יועברו מתיק  {0}. התיק יסגר, כל הפניות, התרשומות, התזכורות והמסמכים יועברו  לתיק היעד  {1} - האם  ברצונך להמשיך?</value>
+  </data>
+  <data name="ErrExistUnpaidFeeRequestsForShift" xml:space="preserve">
+    <value>אין אפשרות למחוק את התורנות; קיימות בקשות שכ"ט פעילות {0}</value>
+  </data>
+  <data name="ErrOpenedProcessesForShift" xml:space="preserve">
+    <value>קיימות פניות שנפתחו מהתורנות, אין אפשרות למחוק את התורנות</value>
+  </data>
+  <data name="ErrNotExistActiveReadingContract" xml:space="preserve">
+    <value>לסנגור אין חוזה הקראות ליום התורנות, אין אפשרות לשבץ אותו בתורנות הקראות</value>
+  </data>
+  <data name="ErrActiveFeeRequestChangeAdvocate" xml:space="preserve">
+    <value>אין אפשרות לשנות את הסנגור בתורנות; קיימות בקשות שכ"ט פעילות {0}</value>
+  </data>
+  <data name="ErrActiveFeeRequestChangeEmploymentType" xml:space="preserve">
+    <value>אין אפשרות לשנות את צורת ההעסקה של ההסנגור קיימות בקשות שכ"ט פעילות {0}</value>
+  </data>
+  <data name="ErrNotSendAssignmentLetters" xml:space="preserve">
+    <value>לא נמצאו סנגורים המשובצים לתורנויות, לא נשלחו מכתבי שיבוץ.</value>
+  </data>
+  <data name="SentAssignmentLettersMessage" xml:space="preserve">
+    <value>נשלחו מכתבי שיבוץ ל {0} סנגורים במחוז</value>
+  </data>
+  <data name="SuccessTransferProcessesFromPDOFile" xml:space="preserve">
+    <value>העברת הפניות בין התיקים הסתיימה בהצלחה</value>
+  </data>
+  <data name="SuccessTransferProcessesToNewPDOFile" xml:space="preserve">
+    <value> העברת הפניות לתיק חדש מספר {0} הסתיימה בהצלחה</value>
+  </data>
+  <data name="ErrChangeEmploymentTypeContractReadingUsedGreatherThanZero" xml:space="preserve">
+    <value>אין אפשרות לשנות את צורת ההעסקה כאשר יש ניצול - שיבוצים הקשורים לחוזה</value>
+  </data>
+  <data name="ErrDifferenceBetweenDatesOver24Hours" xml:space="preserve">
+    <value>ההפרש בין שעת סיום ביקור לשעת הקפצה אינו יכול להיות גדול או שווה ל24 שעות</value>
+  </data>
+  <data name="ErrShiftNominationChangeFromDate" xml:space="preserve">
+    <value>אין אפשרות לשנות את תאריך תחילת המינוי מכיוון שהמינוי נפתח מתורנות בתאריך זה</value>
+  </data>
+  <data name="ErrCheckNominationTypeFeeRequestCompatibility" xml:space="preserve">
+    <value>קיימת בקשת שכ"ט לסנגור בפניה, אין אפשרות לשנות לסוג המינוי המבוקש, כיון שסוג המינוי החדש אינו תואם את סוג השכ"ט הקיים</value>
+  </data>
+  <data name="SaveDistanceMessage" xml:space="preserve">
+    <value>המרחק נשמר בהצלחה</value>
+  </data>
+  <data name="ErrExistNominationCandidateForShift" xml:space="preserve">
+    <value>קיימות פניות עם מועמדים למינוי המקושרים לתורנות, אין אפשרות למחוק את התורנות</value>
+  </data>
+  <data name="ErrExistNominationForShift" xml:space="preserve">
+    <value>קיימות פניות שמיוצגות בתורנות, אין אפשרות למחוק את התורנות</value>
+  </data>
+  <data name="ErrExistNominationCandidateForShiftAdvocateChange" xml:space="preserve">
+    <value>קיימות פניות עם מועמדים למינוי המקושרים לתורנות, אין אפשרות לשנות את התורנות</value>
+  </data>
+  <data name="ErrExistNominationForShiftAdvocateChange" xml:space="preserve">
+    <value>קיימות פניות שמיוצגות בתורנות, אין אפשרות לשנות את התורנות</value>
+  </data>
+  <data name="ErrOpenedProcessesForShiftAdvocateChange" xml:space="preserve">
+    <value>קיימות פניות שנפתחו מהתורנות, אין אפשרות לשנות את התורנות</value>
+  </data>
+  <data name="ErrIsExistExternalProcesses" xml:space="preserve">
+    <value>עבור הפונה מספר הליך זה כבר צורף לקבוצה אחרת</value>
+  </data>
+  <data name="ErrIsExistProcesses" xml:space="preserve">
+    <value>קיימת פניה לפונה עם אותו מספר ההליך</value>
+  </data>
+  <data name="WrnAllJoinedProcessesDeleted" xml:space="preserve">
+    <value>לא קיימות פניות בקבוצת הצירוף, המידע של ההליכים הנוספים ימחק, האם ברצונך להמשיך?</value>
+  </data>
+  <data name="ErrMustToJoinProcessToJoinedProcess" xml:space="preserve">
+    <value>חובה להוסיף לפחות פניה אחת לרשימת ההליכים המצורפים</value>
+  </data>
+  <data name="ErrPoliceIncidentNumberOrProcessNumberAreRequired" xml:space="preserve">
+    <value>מספר הליך או פ"א הם שדות חובה</value>
+  </data>
+  <data name="SameAdvocatesInReplacement" xml:space="preserve">
+    <value>אין אפשרות שהסנגור יחליף את עצמו</value>
+  </data>
+  <data name="ErrEndHearingNominationDuringCall" xml:space="preserve">
+    <value>לא ניתן להזין תאריך דיון מסיים הליך כשהפניה במהלך בירור טלפוני</value>
+  </data>
+  <data name="ErrEndNominationDuringCall" xml:space="preserve">
+    <value>לא ניתן לסיים מינוי כשהפניה במהלך בירור טלפוני</value>
+  </data>
+  <data name="ExportIndexSuccess" xml:space="preserve">
+    <value>המסמכים נשלחו עם אינדקס</value>
+  </data>
+  <data name="MissingBodyAlert" xml:space="preserve">
+    <value>האם ברצונך לשלוח הודעה זו ללא תוכן?</value>
+  </data>
+  <data name="PrintSent" xml:space="preserve">
+    <value>המסמכים נשלחו להדפסה</value>
+  </data>
+  <data name="ActivityTotalTimeOver24" xml:space="preserve">
+    <value>תורנות לא יכולה להתפרש על יותר מ24 שעות</value>
+  </data>
+</root>

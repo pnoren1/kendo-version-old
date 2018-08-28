@@ -1,0 +1,48 @@
+﻿.hayavimOn {
+    background-image: url('../../MojImages/icons/HayavimOn.png'); 
+    width: 16px;
+    height: 16px;
+    
+}
+
+.tabs-container ul li .icon.IturToranut {
+    background-image: url(../../MojImages/PDOMenus/shiftMenu/IturToranut.png);
+}
+
+.tabs-container ul li .icon.HafakatLuachToranuyot {
+    background-image: url(../../MojImages/PDOMenus/shiftMenu/HafakatLuachToranuyot.png);
+}
+
+    
+
+.titlePlannedShiftsPerShiftConfigurationGrid{
+    width:384px;
+    float:left;
+    text-align:center;
+    vertical-align: middle;
+    background:-webkit-linear-gradient(bottom, #b5def4  60%, #e3f3fd  60%);
+    margin-left:543px;
+    font-weight :bold;
+    font-size:0.928em;
+    border-style:solid;
+    border-width:1px 1px 0 1px;
+    border-color :#9eb3c7;
+
+}
+
+.titleActualShiftsPerShiftConfigurationGrid{
+    width:291px;
+    float:left;
+    text-align:center;
+    vertical-align: middle;
+    background:-webkit-linear-gradient(bottom, #b5def4  60%, #e3f3fd  60%);
+    margin-left:-585px;
+    font-weight :bold;
+    font-size:0.928em;
+    border-style:solid;
+    border-width:1px 1px 0 1px;
+    border-color :#9eb3c7;
+
+}
+
+ 

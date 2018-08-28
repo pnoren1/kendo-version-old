@@ -1,0 +1,27 @@
+﻿@model Moj.PDO.UI.ViewModels.ProcessDetailsModel
+
+
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jquery-ui")
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/kendo")
+@Scripts.Render("~/bundles/common")
+@Scripts.Render("~/bundles/mvcfoolproof")
+@Styles.Render("~/content/kendo/kendo")
+@Styles.Render("~/content/jquery/jquery-ui")
+@Styles.Render("~/content/common/common")
+
+<h1 style="font-weight: bold">Old kendo version - without kendo.syncReady function</h1>
+<br />
+<h1 style="font-weight: bold">kendo.Mvc DLL version: 2015.1.318.440</h1>
+
+
+@Html.ComboBox(model => model.ProcessTypeId, 75, 335, Model.ProcessTypes, -1)
+@Html.ComboBox(model => model.ProcessTypeId, 75, 335, Model.ProcessTypes, -1)
+@Html.ComboBox(model => model.ProcessTypeId, 75, 335, Model.ProcessTypes, -1)
+@Html.ComboBox(model => model.ProcessTypeId, 75, 335, Model.ProcessTypes, -1)
+@Html.ComboBox(model => model.ProcessTypeId, 75, 335, Model.ProcessTypes, -1)
+@Html.ComboBox(model => model.ProcessTypeId, 75, 335, Model.ProcessTypes, -1)
+
+

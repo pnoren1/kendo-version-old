@@ -1,0 +1,64 @@
+﻿.container {
+    width: 1270px;
+    margin: 0 auto;
+    display: table;
+    padding: 0 !important;
+    /*overflow-x: hidden;*/
+}
+
+.moj-form {
+    width: 1098px;
+    display: table;
+}
+
+.moj-form-title .txt {
+    width: 94%;
+}
+
+.moj-panel {
+    width: 100%;
+}
+
+.ltr-elements .col:not(.col-txt), .ltr-elements [class*='col-xs-']:not(.col-txt) {
+    padding-left: 0px !important;
+}
+
+.moj-form-line .col-txt.txt-left {
+    padding-left: 0px !important;
+}
+
+    .moj-form-line .col-txt.txt-left + [class*='col-sm-'], .moj-form-line [class*='col-sm-']:not(.moj-grey-panel), .moj-form-line [class*='col-xs-'] {
+        padding-left: 0px !important;
+    }
+
+.k-widget .form-control, .k-widget [class*='col-sm-'] {
+    box-sizing: content-box !important;
+}
+
+.div-icon-button {
+    padding-left: 0px !important;
+}
+
+.moj-input-txt, .moj-form-textarea {
+    border: 1px solid #c5c5c5;
+}
+
+.div-buttons > div {
+    float: left;
+    /*margin-right: 10px;*/
+}
+
+.div-icon-button {
+    padding-left: 0px !important;
+}
+
+@media(min-width:768px) {
+    .div-buttons > div > div.moj-button {
+        height: 33px;
+    }
+}
+
+.moj-window-message-data {
+    width: 75%;
+    float: right;
+}

@@ -1,0 +1,29 @@
+﻿@model Moj.Infrastructure.MVC.ViewModels.CaptchaModel
+@using (Ajax.MojBeginForm(new AjaxOptions() { OnSuccess = "captchaSaveSuccess" }))
+{
+    @Html.MojAddScriptIfExists()
+    using (Html.MojLine())
+    {
+        <img src='~/Content/MojImages/icons/AlertPopIcon.png' alt='' class='moj-message-img padding-top6' />
+        <div class="captcha-window-text">
+            @using (Html.MojLine())
+            {
+                @Html.MojLabel(0, Moj.Infrastructure.MVC.Properties.Resources.NonRobot, IsAutoWidth: true)
+                <br />
+                @Html.MojLabel(0, Moj.Infrastructure.MVC.Properties.Resources.CompleteValidationCheck, IsAutoWidth: true)
+            }
+        </div>
+    }
+    @Html.MojHeightDiv(10)
+    @Html.MojRecaptchaFor(model => model.CaptchaValue, 45)
+    using (Html.MojWebsiteWindowBottom())
+    {
+        using (Html.MojButtonsLine())
+        {
+            @Html.MojCancelButton()
+            @Html.MojActionButton(Url.Action("CheckCaptcha", "Home"), Moj.Infrastructure.MVC.Properties.Resources.Ok)
+            @Html.MojIndentation(5)
+        }
+    }
+}
+

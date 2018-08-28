@@ -1,0 +1,118 @@
+﻿.tabs-container ul li .icon.searchProcess {
+    background-image: url(../../MojImages/PDOMenus/processesMenu/IturPniya.png);
+}
+
+
+.status-previous-process-div {
+    display: none;
+}
+
+.tabs-container ul li .icon.Pirtei-pnia {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/Pirtei-pnia.png');
+}
+
+.tabs-container ul li .icon.Diyounim {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/Diyunim.png');
+}
+
+.tabs-container ul li .icon.TzerufPniyot {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/TzerufPniyot.png');
+}
+
+.openExtendedSearchProcesses-button {
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background-image: url(../../MojImages/PdoImages/Icn_OpenHover.png);
+}
+
+.closeExtendedSearchProcesses-button {
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background-image: url(../../MojImages/PdoImages/Icn_CloseNorm.png);
+}
+
+
+.tabs-container ul li .icon.MouamadimLeMinouy {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/MouamadimLeMinouy.png');
+}
+
+.tabs-container ul li .icon.HistoryatMinouyim {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/HistoryatMinouyim.png');
+}
+
+.tabs-container ul li .icon.HitkashroutTelephone {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/HitkashroutTelephone.png');
+}
+
+.tabs-container ul li .icon.Minuyim {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/Minuyim.png');
+}
+
+.tabs-container ul li .icon.Agra {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/Agra.png');
+}
+
+.tabs-container ul li .icon.Pikuach {
+    background-image: url('../../MojImages/PDOMenus/processesMenu/Pikuach.png');
+}
+
+.break-Connection {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../MojImages/PdoImages/BreakConnectionOff.png'); 
+}
+
+    .break-Connection:hover {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../../MojImages/PdoImages/BreakConnectionOn.png');
+    }
+
+    .break-Connection[disabled] {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../../MojImages/PdoImages/BreakConnectionDis.png');
+    }
+
+    .break-Connection[disabled]:hover {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../../MojImages/PdoImages/BreakConnectionDis.png');
+    }
+
+.titleColumnsGrid {
+    width: 359px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    background: -webkit-linear-gradient(bottom, #b5def4 60%, #e3f3fd 60%);
+    margin-left: 51px;
+    margin-right: 64px;
+    font-weight: bold;
+    font-size: 0.928em;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: #9eb3c7;
+}
+
+.ProcessHeaderdivBigHeight {
+    background-color: #e1e1e1;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    height: 132px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ProcessHeaderdivSmallHeight {
+    background-color: #e1e1e1;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    height: 102px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

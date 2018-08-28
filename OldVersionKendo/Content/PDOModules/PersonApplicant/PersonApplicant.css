@@ -1,0 +1,112 @@
+﻿
+
+.refresh-details-button {
+    background-repeat: no-repeat;
+    background-image: url(../../MojImages/PdoImages/ScreenRefreshOff.png);
+}
+
+    .refresh-details-button:hover {
+        background-repeat: no-repeat;
+        background-image: url(../../MojImages/PdoImages/ScreenRefreshOn.png);
+    }
+
+    .refresh-details-button[disabled] {
+        background-repeat: no-repeat;
+        background-image: url(../../MojImages/PdoImages/ScreenRefreshDis.png) !important;
+    }
+
+.copy-details-button {
+    background-repeat: no-repeat;
+    background-image: url(../../MojImages/PdoImages/CopyPasteOff.png);
+}
+
+    .copy-details-button:hover {
+        background-repeat: no-repeat;
+        background-image: url(../../MojImages/PdoImages/CopyPasteOn.png);
+    }
+
+    .copy-details-button[disabled] {
+        background-repeat: no-repeat;
+        background-image: url(../../MojImages/PdoImages/CopyPasteDis.png) !important;
+    }
+
+.divPersonHeader {
+    background-color: #e1e1e1;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    height: 67px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.divContactDetails {
+    /* margin-left: 10px;
+    margin-right: 10px;*/
+}
+
+.divJoinApplicantPanel {
+    border: 2px solid #c1c1c1;
+    padding: 10px;
+    margin-top: 0;
+    margin: 20px;
+    border-radius: 3px;
+    height: 450px;
+}
+
+.btnCopyDetails {
+    background: url('../MojImages/icons/CopyDetails.png');
+    background-repeat: no-repeat;
+}
+
+.btnCopyAddress {
+    background: url('../MojImages/icons/CopyAddress.png');
+    background-repeat: no-repeat;
+}
+
+.tabs-container ul li .icon.details {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Klali.png);
+}
+
+.tabs-container ul li .icon.agrot {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Agra.png);
+}
+
+.tabs-container ul li .icon.FinancialEntitlement {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/FinancialEntitlement.png);
+}
+
+.tabs-container ul li .icon.locations {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Mikoumim.png);
+}
+
+.tabs-container ul li .icon.addresses {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Ktovot.png);
+}
+
+.tabs-container ul li .icon.imprisonments {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Maasarim.png);
+}
+
+.tabs-container ul li .icon.processes {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Halichim.png);
+}
+
+.tabs-container ul li .icon.Tizkorot {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Tizkorot.png);
+}
+
+.tabs-container ul li .icon.Tirshomot {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/Tirshomot.png);
+}
+
+.tabs-container ul li .icon.EtourPone {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/EtourPone.png);
+}
+.tabs-container ul li .icon.PniyotLepone {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/PniyotLepone.png);
+}
+.tabs-container ul li .icon.EhoudPonim {
+    background-image: url(../../MojImages/PDOMenus/personApplicantMenu/EhoudPonim.png);
+}

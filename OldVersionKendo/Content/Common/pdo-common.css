@@ -1,0 +1,575 @@
+﻿span.k-widget.k-datepicker.k-header {
+    width: 120px !important;
+}
+
+span.k-widget.k-datetimepicker.k-header {
+    width: 175px !important;
+}
+    /*span.k-widget.k-datetimepicker.k-header input{
+        width: 78% !important;
+        padding-left: 22% !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }*/
+.k-datetimepicker .k-picker-wrap.k-state-default {
+    padding-left: 40px;
+}
+
+.k-datetimepicker .k-select {
+    direction: ltr;
+}
+
+.k-datetimepicker .k-link.k-link-time {
+    position: relative;
+    left: -7px;
+}
+
+.k-datetimepicker .k-picker-wrap .k-select {
+    width:2.5em;
+}
+
+.k-datetimepicker .k-picker-wrap.k-state-disabled .k-select {
+    width: 1.5em;
+}
+
+
+span.k-link.k-link-time {
+    left: 34px;
+    top: -1px;
+    position: relative;
+    border-left: #c5c5c5 solid 1px;
+}
+
+
+.exist-row {
+    background-color: #cbdae7 !important;
+}
+
+.counter-title {
+    font-family: "arial";
+    font-size: 2em;
+    font-weight: bold;
+    color: #325082;
+    width: 100%;
+    display: table;
+    margin-top: -20px;
+    margin-bottom: -8px;
+}
+
+/*start block - override for shrinking the calculated size of controls (ui infra 4 breaks)*/
+/*.moj-input-txt.form-control, .k-widget {
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+.control, .k-widget [class*='col-sm-'] {
+     box-sizing: border-box !important; 
+}*/
+/*end block - override for shrinking the calculated size of controls (ui infra 4 breaks)*/
+
+.moj-dots-line {
+    width: 100%;
+    margin: 20px auto 10px;
+    height: 1px;
+    background-image: url('../MojImages/DotsSeperator.png');
+}
+
+.requiredIndicationAfterLabel:after {
+    content: "*";
+    width: 50px;
+    height: 50px;
+}
+
+.k-tabstrip-items .k-loading {
+    border-color: transparent !important;
+}
+
+.search-person-applicant-button {
+    /*width: 30px !important;
+    height: 30px !important;
+    margin: 0px !important;*/
+    background-repeat: no-repeat;
+    background-image: url(../MojImages/icons/Searchoff.png);
+}
+
+    .search-person-applicant-button:hover {
+        background-repeat: no-repeat;
+        background-image: url(../MojImages/icons/SearchOn.png);
+    }
+
+    .search-person-applicant-button[disabled] {
+        background-repeat: no-repeat;
+        background-image: url(../MojImages/icons/SearchDis.png) !important;
+    }
+
+.k-grid tbody .copy-file .k-button {
+    background-image: url(../MojImages/icons/EditDocOFF.png);
+}
+
+    .k-grid tbody .copy-file .k-button:hover {
+        background-image: url(../MojImages/icons/EditDocOn.png);
+    }
+
+    .k-grid tbody .copy-file .k-button[disabled] {
+        background-image: url(../MojImages/icons/EditDocDis.png);
+    }
+
+
+
+.ul-metro li a {
+    font-size: 1.1em;
+}
+
+.ul-metro li.active a {
+    font-weight: bold;
+}
+
+
+/*.scroll-to-top{
+     background-image: url(../MojImages/icons/back-to-top.png);
+}*/
+
+.moj-create-button {
+    background-image: url(../MojImages/PdoImages/GridAdd.png);
+}
+
+    .moj-create-button:hover {
+        background-image: url(../MojImages/PdoImages/GridAddHover.png);
+    }
+
+.k-overlay {
+    background-color: black;
+    opacity: 0.5 !important;
+    /*position: absolute !important;*/
+}
+
+
+.moj-top-menu ul li .button .parties {
+    background-image: url(../MojImages/buttonsMenu/MenuPartiesButtonNormal.png);
+}
+
+.moj-top-menu ul li:hover .button .parties {
+    background-image: url(../MojImages/buttonsMenu/MenuPartiesButtonHover.png);
+}
+
+.moj-top-menu ul li:active .button .parties {
+    background-image: url(../MojImages/buttonsMenu/MenuPartiesButtonPress.png);
+}
+
+.moj-top-menu ul li .button .documents {
+    background-image: url(../MojImages/buttonsMenu/MenuFilesButtonNormal.png);
+}
+
+.moj-top-menu ul li:hover .button .documents {
+    background-image: url(../MojImages/buttonsMenu/MenuFilesButtonHover.png);
+}
+
+.moj-top-menu ul li:active .button .documents {
+    background-image: url(../MojImages/buttonsMenu/MenuFilesButtonPress.png);
+}
+
+
+.moj-top-menu ul li .button .payments {
+    background-image: url(../MojImages/buttonsMenu/MenuPaymentsButttonNormal.png);
+}
+
+.moj-top-menu ul li:hover .button .payments {
+    background-image: url(../MojImages/buttonsMenu/MenuPaymentsButttonHover.png);
+}
+
+.moj-top-menu ul li:active .button .payments {
+    background-image: url(../MojImages/buttonsMenu/MenuPaymentsButttonPress.png);
+}
+
+.tabs-container ul li .icon.general {
+    background-image: url(../MojImages/icons/IconInfo.png);
+}
+
+.moj-top-menu ul li .button .new {
+    background-image: url(../MojImages/buttonsMenu/MenuNewButton.png);
+}
+
+.moj-top-menu ul li:hover .button .new {
+    background-image: url(../MojImages/buttonsMenu/MenuNewHover.png);
+}
+
+.moj-top-menu ul li:active .button .new {
+    background-image: url(../MojImages/buttonsMenu/MenuNewPress.png);
+}
+
+header {
+    height: 93px !important;
+}
+
+
+.moj-top-search .moj-input-Search {
+    margin-left: 0px !important;
+    width: 120px !important;
+}
+
+    .moj-top-search .moj-input-Search .bg {
+        width: 105px !important;
+    }
+
+
+.moj-top-search {
+    width: 230px;
+}
+
+    .moj-top-search .dpl {
+        height: 30px;
+        margin-left: 20px;
+        float: right;
+    }
+
+
+.moj-top-menu ul li .button .code-table {
+    background-image: url(../MojImages/buttonsMenu/MenuMasotButtonNormal.png);
+}
+
+
+
+.divEntitiesContent {
+    background-color: #fafafa;
+    border: 1px solid #c1c1c1;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.divEntitiesContentHeader {
+    background-color: #fafafa;
+    border: 1px solid #c1c1c1;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.moj-tab-content {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.tabs-container li[hidden] + li.tab-sep {
+    display: none;
+}
+
+#topPanel1.Dev {
+    background: -webkit-linear-gradient(bottom, #2073b4, #2073b4);
+}
+
+#topPanel1.QA {
+    background: -webkit-linear-gradient(bottom, #e12a2b, #e02428);
+}
+
+#topPanel1.Unit {
+    background: -webkit-linear-gradient(bottom, #fcd209, #e6b221);
+}
+
+#topPanel1.Integration {
+    background: -webkit-linear-gradient(bottom, #4db849, #4ab148);
+}
+
+#topPanel1.Production {
+    background: -webkit-linear-gradient(bottom, #324B82, #506EAA);
+}
+
+tr.unSelected {
+    background-color: rgb(237, 233, 233) !important;
+}
+
+div.unSelectedColor {
+    color: #7D827D;
+}
+
+.btnLeftButton {
+    background: url('../MojImages/icons/ArrowsBack.png');
+    background-repeat: no-repeat;
+}
+
+.btnRightButton {
+    background: url('../MojImages/icons/ArrowsForward.png');
+    background-repeat: no-repeat;
+}
+
+.btnAllRightButton {
+    background: url('../MojImages/PdoImages/ArrowsAllRight.png');
+    background-repeat: no-repeat;
+}
+
+.btnAllLeftButton {
+    background: url('../MojImages/PdoImages/ArrowsAllLeft.png');
+    background-repeat: no-repeat;
+}
+
+
+.colorRed {
+    color: red !important;
+}
+
+
+/****************************************************************************************************************/
+
+/*Buttons
+/****************************************************************************************************************/
+/*Action Button */
+
+.col.moj-button div, .col.moj-button input {
+    cursor: pointer;
+}
+
+.moj-button[disabled] div, .moj-button[disabled] input {
+    cursor: auto;
+}
+
+.ok-button {
+    bottom: -50px;
+    position: absolute;
+    left: 0px;
+}
+
+.div-update-panel {
+    border: 1px solid #c1c1c1;
+    background-color: #fafafa;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 3px;
+}
+
+.view-history {
+    width: 26px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../MojImages/PdoImages/DataHistoryOff.png);
+}
+
+    .view-history:hover {
+        background-position: center;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-image: url(../MojImages/PdoImages/DataHistoryOn.png);
+    }
+
+    .view-history[disabled] {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../MojImages/PdoImages/DataHistoryDis.png);
+    }
+
+
+.edit-data {
+    background-repeat: no-repeat;
+    background-image: url('../MojImages/icons/EditOFF.png');
+}
+
+    .edit-data:hover {
+        background-repeat: no-repeat;
+        background-image: url('../MojImages/icons/EditON.png');
+    }
+
+    .edit-data[disabled] {
+        background-repeat: no-repeat;
+        background-image: url('../MojImages/icons/EditDIS.png');
+    }
+
+
+.k-grid tbody .edit-rownewFullDeduction .k-button {
+    background-image: url('../MojImages/icons/FeeRequestKizuzBasis.png');
+}
+
+    .k-grid tbody .edit-rownewFullDeduction .k-button:hover {
+        background-image: url('../MojImages/icons/FeeRequestKizuzBasis.png');
+    }
+
+    .k-grid tbody .edit-rownewFullDeduction .k-button[disabled] {
+        background-image: url('../MojImages/icons/FeeRequestKizuzBasis.png');
+    }
+
+.td-action.edit-rownewFullDeduction.hide-inner > a {
+    display: none !important;
+}
+
+.newPercentageAddition {
+    background-image: url('../MojImages/icons/TosefetReg.png');
+    background-repeat: no-repeat;
+}
+
+    .newPercentageAddition:hover {
+        background-image: url(../MojImages/icons/TosefetHover.png);
+    }
+
+    .newPercentageAddition[disabled] {
+        background-image: url(../MojImages/icons/TosefetDIS.png);
+    }
+
+.newDeduction {
+    background-image: url('../MojImages/icons/KizuzHelkiReg.png');
+    background-repeat: no-repeat;
+}
+
+    .newDeduction:hover {
+        background-image: url(../MojImages/icons/KizuzHelkiHover.png);
+    }
+
+    .newDeduction[disabled] {
+        background-image: url(../MojImages/icons/KizuzHelkiDIS.png);
+    }
+
+.newFullDeduction {
+    background-image: url('../MojImages/icons/KizuzMaleReg.png');
+    background-repeat: no-repeat;
+}
+
+    .newFullDeduction:hover {
+        background-image: url(../MojImages/icons/KizuzMaleHover.png);
+    }
+
+    .newFullDeduction[disabled] {
+        background-image: url(../MojImages/icons/KizuzMaleDIS.png);
+    }
+
+.statusOn {
+    background-image: url(../MojImages/icons/StatusOn.png);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.noStatus {
+    background-image: url(../MojImages/icons/NoStatus.png);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.statusOff {
+    background-image: url(../MojImages/icons/StatusOff.png);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.wizard-content {
+    width: -moz-calc(100% );
+    width: -webkit-calc(100% );
+    width: calc(100% );
+    margin-top: 10px;
+}
+
+.topNavSeperator {
+    margin-top: 4px;
+    margin-left: 20px;
+    margin-right: 10px;
+    float: right;
+    width: 1px;
+    height: 25px;
+    background-image: url(../MojImages/PDOMenus/PdoMainMenu/TopNavSeperator.png);
+    background-repeat: no-repeat;
+}
+
+.wizard-form-container {
+    margin-bottom: 0px !important;
+    top: 3px;
+    left: 1px;
+    padding-top: 5px;
+}
+
+.scroll {
+    background-color: #f5f5f5;
+    height: 667px;
+    border-bottom: groove;
+    border-top: groove;
+    border-right: groove;
+    border-left: groove;
+}
+
+.wizard-navigation-container {
+    width: 1250px;
+}
+
+.moj-button-large {
+    cursor: pointer;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    font-family: "arial";
+    font-weight: bold;
+    font-size: 1em;
+    color: #007ada;
+    border: solid;
+    border-width: 2px;
+    border-color: #007ada;
+}
+
+.icon-button {
+    border: 1px solid #FABEA1;
+}
+
+.icon-button-active {
+    border: 1px solid #FABEA1 !important;
+}
+
+.div-border-info {
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    background-color: #fafafa;
+    margin-top: 10px;
+    float: right;
+    height: 40px;
+}
+
+.moduleDefault {
+    background-color: black;
+}
+
+.moduleShift {
+    background-color: gold;
+}
+
+.moduleApplicants {
+    background-color: green;
+}
+
+.moduleAdvocates {
+    background-color: blue;
+}
+
+.moduleProcesses {
+    background-color: red;
+}
+
+.moduleNominations {
+    background-color: yellow;
+}
+
+.moduleFees {
+    background-color: purple;
+}
+
+.moduleFiles {
+    background-color: orange;
+}
+
+.moduleReports {
+    background-color: magenta;
+}
+
+.moduleManagement {
+    background-color: sienna;
+}
+
+/*#lblnotificationMessage::before{
+    content : "\02022";
+   	width: 50px;
+	height: 50px; 
+    margin-left:10px;
+    margin-right :10px
+
+}*/
+
+.k-grid td {
+    white-space:nowrap;
+}

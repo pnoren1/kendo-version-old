@@ -1,0 +1,324 @@
+﻿.form-container {
+    width: 1122px; /*float:right; */
+    display: table-cell;
+    vertical-align: top;
+    /*padding-right: 15px;*/
+    position: relative;
+    overflow: hidden;
+    height: 801px;
+    background-color: #f5f5f5;
+}
+
+.moj-form-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.moj-content {
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.moj-form {
+    /*width: 1098px;
+    display: table;*/
+    border: 1px solid #bebebe;
+    position: relative;
+    margin: 0 auto;
+}
+
+.moj-form-title {
+    width: 100%;
+    height: 31px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #bebebe;
+}
+
+.panel-seperator {
+    background: #A5B4C8 repeat-x;
+    width: 95%;
+    height: 1px;
+    padding: 0 3px;
+}
+
+.in-title {
+    border-top: 1px solid #bebebe;
+}
+
+.moj-form-title .txt {
+    /*width: 1048px;*/
+    height: 26px;
+    float: right;
+    padding-right: 9px;
+    padding-top: 5px;
+    color: #325082;
+    font-size: 1.142em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.moj-form-title .sep {
+    width: 2px;
+    height: 31px;
+    float: left;
+    background-image: url(../MojImages/PanelSeperator.png);
+}
+
+.moj-form-title .button-open-close {
+    width: 39px;
+    height: 31px;
+    float: left;
+    position: relative;
+}
+
+    .moj-form-title .button-open-close div {
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        position: absolute;
+        top: 6px;
+        right: 11px;
+    }
+
+        .moj-form-title .button-open-close div a {
+            width: 17px;
+            height: 17px;
+            background-repeat: no-repeat;
+            float: right;
+        }
+
+        .moj-form-title .button-open-close div.plus a {
+            background-image: url(../MojImages/PanelPlus.png);
+        }
+
+        .moj-form-title .button-open-close div.minus a {
+            background-image: url(../MojImages/PanelMinus.png);
+        }
+
+
+.moj-form-all-lines {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 10px 0px;
+    position: relative;
+}
+
+.moj-form-line {
+    width: 100%;
+    display: table;
+    margin-top: 7px;
+}
+
+    .moj-form-line .col {
+        float: right;
+        margin-left: 10px;
+        color: #424242;
+        min-height: 20px;
+        position: relative;
+    }
+
+td .col {
+    float: right;
+    color: #424242;
+    min-height: 20px;
+    position: relative;
+}
+
+.moj-form-line .col:last-child {
+    margin-left: 0px !important;
+}
+.moj-form-line div.ltr-elements .col:last-child {
+    margin-left: 10px !important;
+}
+
+.moj-form-line .col-txt {
+    padding-top: 4px;
+    min-height: 15px;
+}
+
+    .moj-form-line .col-txt.txt-left {
+        padding-left: 10px !important;
+        padding-right: 0;
+    }
+
+        .moj-form-line .col-txt.txt-left + [class*='col-sm-'], .moj-form-line [class*='col-sm-']:not(.moj-grey-panel), .moj-form-line [class*='col-xs-']:not(.moj-multiselect-panel-textbox) {
+            padding-right: 0px !important;
+            padding-left: 10px !important;
+        }
+
+.moj-form-line [class*='col-sm-'] + [class*='col-sm-']:last-child {
+    /*padding-left: 0px !important;*/
+}
+
+@media (max-width: 767px) {
+    .txt-left { /*.txt-left.col-txt*/
+        text-align: right !important;
+    }
+
+    .col:not(.hide):not(.radio-txt):not(.moj-button):not([class*='hidden-xs']) {
+        display: inline-block; /*!important*/
+        float: initial !important;
+        vertical-align: top;
+    }
+}
+
+.moj-panel {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+    .moj-panel.hide {
+        display: none !important;
+    }
+
+@media (max-width: 767px) {
+    .moj-panel fieldset {
+        padding: 0 10px !important;
+        width: 100%;
+    }
+}
+
+.no-border-bottom {
+    border-bottom: 0px !important;
+}
+
+.no-border-top {
+    border-top: 0px;
+}
+
+/*multiselect panel*/
+.moj-multiselect-panel-content {
+    padding-right: 10px !important;
+}
+
+.moj-form-line .moj-multiselect-panel[class*='col-sm-'] {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.moj-multiselect-panel ul li.no-left-border {
+    border-left: 0px !important;
+}
+
+.moj-multiselect-panel ul {
+    padding-right: 0px !important;
+    margin-bottom: 0px;
+}
+
+    .moj-multiselect-panel ul li {
+        display: inline-block;
+        width: 100%;
+        border-left: 1px solid #bebebe;
+        min-height: 45px;
+        margin-bottom: -10px;
+        padding-top: 10px;
+        float: right;
+        -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+        page-break-inside: avoid; /* Firefox */
+        break-inside: avoid; /* IE 10+ */
+        overflow-y: hidden;
+    }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .moj-multiselect-panel ul li {
+        margin-bottom: -18px !important;
+        float: none !important;
+    }
+}
+
+.moj-multiselect-panel-textbox {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.moj-multiselect-panel ul li [type='text'] {
+    text-align: center;
+}
+
+
+.moj-multiselect-panel-title {
+    width: 100%;
+    min-height: 30px;
+    max-height: 50px;
+    border-bottom: 1px solid #bebebe;
+    cursor: pointer;
+    display: flex;
+}
+
+    .moj-multiselect-panel-title .txt {
+        width: 100%;
+        min-height: 30px;
+        max-height: 50px;
+        overflow-y: hidden;
+        padding-right: 9px;
+        padding-top: 5px;
+        float: right;
+    }
+
+    .moj-multiselect-panel-title .button-open-close {
+        width: 25px;
+        min-height: 30px;
+        max-height: 50px;
+        overflow-y: hidden;
+        float: left;
+        border-right: 1px solid #bebebe;
+    }
+
+        .moj-multiselect-panel-title .button-open-close div {
+            font-family: FontAwesome;
+            padding: 5px;
+            min-height: 30px;
+            float: left
+        }
+
+.moj-multiselect-panel .div-icon-button {
+    padding-left: 0px !important
+}
+
+.moj-multiselect-panel-title .button-open-close div.plus-icon:before {
+    content: "\f053"
+}
+
+.moj-multiselect-panel-title .button-open-close div.minus-icon:before {
+    content: "\f078";
+}
+
+.moj-multiselect-panel .plus-icon-button {
+    font-family: FontAwesome;
+    background-color: #1E61AF;
+    color: #fff;
+    padding-top: 4px;
+    padding-right: 8px;
+}
+
+.moj-multiselect-panel .minus-icon-button {
+    font-family: FontAwesome;
+    background-color: #4078BA;
+    color: #fff;
+    padding-top: 4px;
+    padding-right: 8px;
+}
+
+    .moj-multiselect-panel .minus-icon-button[disabled] {
+        background-color: #747474;
+    }
+
+.moj-multiselect-panel .div-icon-button a {
+    height: 28px;
+    width: 28px
+}
+
+    .moj-multiselect-panel .div-icon-button a:hover, .moj-multiselect-panel .div-icon-button a:focus {
+        text-decoration: none !important;
+    }
+
+.moj-multiselect-panel .plus-icon-button::before {
+    content: "\f067"
+}
+
+.moj-multiselect-panel .minus-icon-button::before {
+    content: "\f068"
+}
+
+/*end multiselect panel*/

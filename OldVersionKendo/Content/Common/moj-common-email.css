@@ -1,0 +1,47 @@
+﻿.txt-left
+{
+    text-align: left;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.moj-blue-bold-text
+{
+    font-weight: bold;
+    color: #004691;
+}
+
+.moj-bold
+{
+    font-weight: bold;
+}
+
+.moj-form-line
+{
+    width: 100%;
+    display: table;
+    margin-top: 7px;
+}
+
+body, div, p, span, input, textarea, a, select, label
+{
+    color: #424242;
+    font-family: Arial, Sans-Serif;
+}
+
+ .moj-link
+ {
+    color:#00aae6 !important;
+    text-decoration:underline !important;
+    cursor:pointer;
+ }
+
+ .layout-line {
+
+    border-top: #244c83 3px solid;
+    min-width:1024px
+
+}

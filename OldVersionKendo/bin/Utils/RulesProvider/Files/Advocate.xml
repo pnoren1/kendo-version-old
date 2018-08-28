@@ -1,0 +1,102 @@
+﻿<RulesMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rules>
+    <Rule Name="PersonAdvocateDetails">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+        </RootBlock>
+      </Flow>
+    </Rule>
+    <Rule Name="AdvocateMainScreen">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+        </RootBlock>
+      </Flow>
+    </Rule>
+    <Rule Name="AdmissionRequests">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="IfBlock" Condition="AdvocateHelper.HasAdvocateProfile(Entity, Scope.District)">
+              <IfTrue>
+                <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+              </IfTrue>
+          </FlowBlock>
+        </RootBlock>
+      </Flow>
+    </Rule>
+     <Rule Name="AdvocateClassification">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="IfBlock" Condition="AdvocateHelper.HasAdvocateProfile(Entity, Scope.District)">
+            <IfTrue>
+              <FlowBlock xsi:type="ActionBlock" Action="Scope.Add('status', AdvocateHelper.GetAdvocateProfile(Entity, Scope.District).AdvocateStatusId)"/>
+              <FlowBlock xsi:type="IfBlock" Condition="Scope.CompareEnum('status', AdvocateStatusType.Rejected) == Scope.Comparer.Constants.GREATER">
+                <IfTrue>
+                  <FlowBlock xsi:type="IfBlock" Condition="AdvocateHelper.GetAdvocateProfile(Entity, Scope.District).AdvocateEmploymentInDistricts != null">
+                    <IfTrue>
+                      <FlowBlock xsi:type="IfBlock" Condition="AdvocateHelper.GetAdvocateProfile(Entity, Scope.District).AdvocateEmploymentInDistricts.Count > 0">
+                        <IfTrue>
+                          <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+                        </IfTrue>
+                      </FlowBlock>
+                    </IfTrue>
+                  </FlowBlock>
+                </IfTrue>
+              </FlowBlock>
+            </IfTrue>
+          </FlowBlock>
+        </RootBlock>
+      </Flow>
+    </Rule>
+
+    <Rule Name="AdvocateBeneficiaries">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+        </RootBlock>
+      </Flow>
+    </Rule>
+
+    <Rule Name="DocumentViewer">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+        </RootBlock>
+      </Flow>
+    </Rule>
+    
+    <Rule Name="SearchMemoListByEntity">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="IfBlock" Condition="AdvocateHelper.HasAdvocateProfile(Entity, Scope.District)">
+            <IfTrue>
+              <FlowBlock xsi:type="ActionBlock" Action="Scope.Add('status', AdvocateHelper.GetAdvocateProfile(Entity, Scope.District).AdvocateStatusId)"/>
+              <FlowBlock xsi:type="IfBlock" Condition="Scope.CompareEnum('status', AdvocateStatusType.Rejected) == Scope.Comparer.Constants.GREATER">
+                <IfTrue>
+                  <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+                </IfTrue>
+              </FlowBlock>
+            </IfTrue>
+          </FlowBlock>
+        </RootBlock>
+      </Flow>
+    </Rule>
+    <Rule Name="AdvocateDefinitions">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="IfBlock" Condition="AdvocateHelper.HasAdvocateProfile(Entity, Scope.District)">
+              <IfTrue>
+                <FlowBlock xsi:type="ActionBlock" Action="Scope.Add('status', AdvocateHelper.GetAdvocateProfile(Entity, Scope.District).AdvocateStatusId)"/>
+                <FlowBlock xsi:type="IfBlock" Condition="Scope.CompareEnum('status', AdvocateStatusType.Rejected) == Scope.Comparer.Constants.GREATER">
+                  <IfTrue>
+                    <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+                  </IfTrue>
+              </FlowBlock>
+              </IfTrue>
+          </FlowBlock>
+        </RootBlock>
+      </Flow>
+    </Rule>
+  </Rules>
+</RulesMap>

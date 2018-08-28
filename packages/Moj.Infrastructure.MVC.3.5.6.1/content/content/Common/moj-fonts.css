@@ -1,0 +1,121 @@
+﻿.txt-left {text-align: left;}
+.txt-center {text-align: center;}
+.txt-white {color: #fff;}
+.txt-12 {font-size: 0.857em;}
+.bold {font-weight:bold;}
+.normal {font-weight:normal;}
+
+.black {color: #424242 !important;}
+.blue1 {color: #3a78c1 !important;}
+.blue2 {color: #325082 !important;}
+.blue3 {color: #194493 !important;}
+.blue4 {color: #184e84 !important;}
+.blue5 {color: #195082 !important;}
+.blue6 {color:#0064b4 !important;}
+.orange1 {color: #ff880e !important;}
+.orange2 {color: #a65200 !important;}
+.orange3 {color: #c86400 !important;}
+.orange4 {color: #a85e34 !important;}
+.red1 {color:#b40000 !important;}
+.red2 {color:#a10125 !important;}
+.green1 {color: #177c00 !important;}
+.grey {color: #646464 !important;}
+
+
+.font-12 { font-size: 0.857em;}
+.font-14 { font-size: 1em;}
+.font-16 { font-size: 1.142em;}
+.font-18 { font-size: 1.285em;}
+.font-20 { font-size: 1.428em;}
+.font-22 { font-size: 1.571em;}
+.font-24 { font-size: 1.714em;}
+
+.moj-italic-text
+{
+    font-style:italic;
+}
+    
+.moj-blue-text label, .moj-blue-text, .moj-blue-text div, .moj-blue-text span, .moj-blue-bold-text, .moj-blue-bold-text label, .moj-blue-bold-text div, .moj-blue-bold-text span, .blue label, .blue-text
+{
+    color:#004691 !important;
+}
+
+.moj-blue-bold-text, .moj-blue-bold-text label, .moj-blue-bold-text div, .moj-blue-bold-text span
+.moj-green-bold-text, .moj-green-bold-text label, .moj-green-bold-text div, .moj-green-bold-text span,
+.moj-red-bold-text, .moj-red-bold-text label, .moj-red-bold-text div, .moj-red-bold-text span
+{
+    font-weight:bold;
+}
+
+.moj-orange-text label, .moj-orange-text, .moj-orange-text div, .moj-orange-text span
+{
+    color:#ff880e !important;
+    font-weight:bold;
+    font-size:1.285em;
+}
+
+.moj-white-text label, .moj-white-text, .moj-white-text div, .moj-white-text span
+{
+    color:#FFFFFF  !important;
+}
+
+.moj-red-text, .moj-red-text div, .moj-red-text label, .moj-red-text span, .red-text,
+.moj-red-bold-text,  .moj-red-bold-text div, .moj-red-bold-text label, .moj-red-bold-text span, .red label
+{
+    color:#a5000f !important;
+}
+
+.moj-green-text, .moj-green-text div, .moj-green-text label, .moj-green-text span, .green-text,
+.moj-green-bold-text,  .moj-green-bold-text div, .moj-green-bold-text label, .moj-green-bold-text span, .green label
+{
+    color:#177c00 !important;
+}
+
+.BN-font
+{
+    font-family: "BN Bilbo";
+}
+.Bell-font
+{
+    font-family: "Bell MT";
+}
+.font-size24
+{
+    font-size: 1.714em !important;
+}
+
+@font-face
+{
+    font-family: "BN Bilbo";
+    src: url('../Fonts/BN_Bilbo.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: "Bell MT";
+    src: url('../Fonts/BELL.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: "JOURNAL";
+    src: url('../Fonts/journal-webfont.eot');
+    src: url('../Fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/journal-webfont.woff') format('woff'),
+    url('../Fonts/journal-webfont.ttf') format('truetype'),
+    url('../Fonts/journal-webfont.svg#alefregular') format('svg');
+}
+
+@font-face {
+    font-family: 'Assistant-Regular';
+    src: url('../Fonts/Assistant-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'opensanshebrew';
+    src: url('../Fonts/opensanshebrew-bold-webfont.eot');
+    src: url('../Fonts/opensanshebrew-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/opensanshebrew-bold-webfont.woff') format('woff'),
+    url('../Fonts/opensanshebrew-bold-webfont.ttf') format('truetype'),
+    url('../Fonts/opensanshebrew-bold-webfont.svg#alefregular') format('svg');
+}

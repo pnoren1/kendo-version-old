@@ -1,0 +1,203 @@
+﻿.request-panel {
+    position:absolute; 
+    top:125px;
+    width:180px; min-height:200px; 
+    display:table;
+    z-index: 200;
+    left: -175px;
+}
+
+.request-panel .open-close {
+    position:absolute; 
+    top:27px; 
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    right: -28px;
+    height: 46px;
+}
+.request-panel .open-close.close{
+    background-image:url(../MojImages/request-icons/Close-panel.png);
+}
+.request-panel .open-close.open{
+    background-image:url(../MojImages/request-icons/Open-panel.png);
+}
+
+.request-panel .pin
+{
+    background-image: url(../MojImages/request-icons/PinOff.png);
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.request-panel .pin.pin-on
+{
+    background-image: url(../MojImages/request-icons/PinOn.png);
+}
+
+.request-panel .panel {
+    width:176px; display:table; 
+    background-color:#fff; 
+    border:2px solid #2DB1D7; 
+    border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;  
+    box-shadow: 2px 2px 2px 0 #B7CAE1; 
+    -webkit-box-shadow: 2px 2px 2px 0 #B7CAE1;
+}
+.request-panel .panel .title {
+    width:152px; height:22px; 
+    margin:2px auto; 
+    padding:5px 10px 0; 
+    color:#3f4040; font-size:1em; font-weight:bold; 
+    background-color:#cfd1d2; 
+    border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;  
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0; 
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-left-radius: 0; 
+    -moz-border-bottom-right-radius: 0;
+}
+
+.request-panel .separator {
+    width:100%; height:1px; background-color:#cfd1d2;
+}
+
+.request-panel .buttons-container {
+    width:163px; margin:0 auto; display:table;
+}
+
+.ul-request-details-panel
+{ width: 152px; padding:0; margin:7px 10px; list-style-type:none;}
+
+.ul-request-details-panel li { width: 152px; margin-bottom: 8px;}
+.ul-request-details-panel li span, .ul-request-details-panel li label {color:#3f4040; font-size:0.857em;}
+
+.ul-request-buttons {width: 163px; padding:0; margin:0; list-style-type:none;}
+.ul-request-buttons li {width:161px; height:24px;  
+                        margin:7px 0;
+                        border:1px solid #949494;
+                        border-radius: 5px; 
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;}
+
+.ul-request-buttons li:hover, .ul-request-buttons li.active {border:1px solid #0092cb;}
+
+.ul-request-buttons li .button {
+    width:159px; height:22px;
+    cursor: pointer;
+    border:1px solid #FCFEFB;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; 
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#E6E6E6), to(#F3F3F3)); /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(bottom, #E6E6E6, #F3F3F3); /* Firefox 3.6+ */
+    background: -moz-linear-gradient(bottom, #E6E6E6, #F3F3F3); /* IE 10 */
+    background: -ms-linear-gradient(bottom, #E6E6E6, #F3F3F3); /* Opera 11.10+ */
+    background: -o-linear-gradient(bottom, #E6E6E6, #F3F3F3);
+}
+
+.ul-request-buttons li:hover .button, .ul-request-buttons li.active .button {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#CEE7EE), to(#E5F3F6)); /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(bottom, #CEE7EE, #E5F3F6); /* Firefox 3.6+ */
+    background: -moz-linear-gradient(bottom, #CEE7EE, #E5F3F6); /* IE 10 */
+    background: -ms-linear-gradient(bottom, #CEE7EE, #E5F3F6); /* Opera 11.10+ */
+    background: -o-linear-gradient(bottom, #CEE7EE, #E5F3F6);
+}
+
+.ul-request-buttons li .button .icon {
+    width: 16px;
+    height: 16px;
+    float: right;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 3px 5px 0 12px;
+}
+.ul-request-buttons li .button .icon.approve {
+    background-image: url(../MojImages/request-icons/ApproveOff.png);
+}
+.ul-request-buttons li:hover .button .icon.approve, .ul-request-buttons li.active .button .icon.approve {
+    background-image: url(../MojImages/request-icons/ApproveOn.png);
+}
+.ul-request-buttons li .button .icon.denay {
+    background-image: url(../MojImages/request-icons/DenayOff.png);
+}
+.ul-request-buttons li:hover .button .icon.denay, .ul-request-buttons li.active .button .icon.PartialApprove {
+    background-image: url(../MojImages/request-icons/DenayOn.png);
+}
+.ul-request-buttons li .button .icon.PartialApprove {
+    background-image: url(../MojImages/request-icons/PartialApproveOff.png);
+}
+.ul-request-buttons li:hover .button .icon.PartialApprove, .ul-request-buttons li.active .button .icon.PartialApprove {
+    background-image: url(../MojImages/request-icons/PartialApproveOn.png);
+}
+.ul-request-buttons li .button .icon.save {
+    background-image: url(../MojImages/request-icons/SaveOff.png);
+}
+.ul-request-buttons li:hover .button .icon.save, .ul-request-buttons li.active .button .icon.save {
+    background-image: url(../MojImages/request-icons/SaveOn.png);
+}
+.ul-request-buttons li .button .txt {
+    float: right;
+    margin: 3px 0 0 0;
+    color: #414141;
+    font-size:0.857em;
+    font-weight: bold;
+}
+.ul-request-buttons li:hover .button .txt, .ul-request-buttons li.active .button .txt {
+    color: #274877;
+}
+
+/*------------------floating-panel-------------------------*/
+.li-button-floating-panel
+{
+    position: relative;
+}
+
+.button-floating-panel
+{
+    opacity: 0;
+    background: transparent;
+    z-index: 101;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+/*---------------------------------------------------------*/
+
+#btnUploadDocsAndApprove {
+    position: absolute;
+    width:147px;
+    height: 20px;
+    z-index: 999999999;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+#btnUploadDocsAndApproveTemp {
+    position: absolute;
+    width:147px;
+    height: 20px;
+    z-index: 999999999;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+
+
+
+
+

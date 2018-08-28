@@ -1,0 +1,96 @@
+﻿.moj-window-line {
+    border-bottom: solid 1px white;
+    border-top: solid 1px #cacaca;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.moj-window-buttons {
+    float: left;
+}
+
+.moj-window-message-container {
+    margin-bottom: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 14px;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.moj-window-message-data {
+    line-height: 15px;
+    font-size: 0.928em;
+    vertical-align: top;
+    /*float: right;
+    width:264px;*/
+    margin-right: 11px;
+    margin-top: 2px;
+    color: #010101;
+    font-weight: bold;
+}
+
+    .moj-window-message-data div, .moj-window-message-data span {
+        color: #010101;
+        font-weight: bold;
+        font-size: 0.928em;
+        line-height: 15px;
+    }
+
+    .moj-window-message-data > div {
+        margin-bottom: 7px;
+    }
+
+.moj-message-img {
+    vertical-align: top;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.moj-window-container-content {
+    margin: 10px 10px 10px 10px !important;
+}
+
+#popup-buttons-container {
+    position: absolute;
+    bottom: 6px;
+    left: 16px;
+}
+
+/*---------------------------alert message -label*/
+
+.moj-message-label {
+    border: 1px solid #eed197 !important;
+    padding: 2px 2px 1px 6px;
+    display: inline-block;
+    background-color: #fffcd1 !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 3px;
+    background-image: url('../MojImages/icons/Alert.png');
+    background-repeat: no-repeat;
+    background-position: -moz-calc(100% - 3px) center;
+    background-position: -webkit-calc(100% - 3px) center;
+    background-position: calc(100% - 3px) center;
+    padding-right: 23px;
+    padding-left: 7px;
+    min-height: 19px;
+    height: auto;
+    background-position: top 5px right 4px;
+}
+
+    .moj-message-label span {
+        font-size: 1em !important;
+        color: #40423f !important;
+    }
+
+.row-data-txt {
+    display: block;
+}
+
+.row-data-txt center input {
+    float: right;
+}

@@ -1,0 +1,222 @@
+﻿
+.tabs-container ul li .icon.itourYeshivotIcon {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Icn_ItourYeshivot.png);
+}
+
+.tabs-container ul li .icon.itourToranoutIcon {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Icn_ItourToranout.png);
+}
+
+
+.tabs-container ul li .icon.merkavaDeliverIcon {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Icn_MerkavaDeliver.png);
+}
+
+.button-watch-invalid-merkava {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Icn_WatchMoutavNorm.png);
+}
+
+.button-icon-text-gradient:hover .button-watch-invalid-merkava {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Icn_WatchMoutavHover.png);
+}
+
+.button-icon-text-gradient[disabled] .button-watch-invalid-merkava {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Icn_WatchMoutavDis.png);
+}
+
+
+.is-exist-merkava {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Icn_MerkavaDeliver.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+.divFeeRequestHeader {
+    background-color: #e1e1e1;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    margin-left: 10px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+/*Menus icons*/
+.tabs-container ul li .icon.Bikourim {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Bikourim.png);
+}
+
+.tabs-container ul li .icon.Hakpatzot {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Hakpatzot.png);
+}
+.tabs-container ul li .icon.HehzerHotzaot {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/HehzerHotzaot.png);
+}
+.tabs-container ul li .icon.Hotzaot {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Hotzaot.png);
+}
+.tabs-container ul li .icon.Klali {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Klali.png);
+}
+.tabs-container ul li .icon.Mismachim {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Mismachim.png);
+}
+.tabs-container ul li .icon.NesiotHakpatzot {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/NesiotHakpatzot.png);
+}
+.tabs-container ul li .icon.Tirshomot {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Tirshomot.png);
+}
+.tabs-container ul li .icon.Toranouyot {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Toranouyot.png);
+}
+.tabs-container ul li .icon.Yeshivot {
+    background-image: url(../../MojImages/PDOMenus/feeRequestMenu/Yeshivot.png);
+}
+
+
+
+
+.divFeeRequestSecondHeader {
+    background-color: #e1e1e1;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.divFeeRequestShiftsSecondHeader {
+    background-color: #e1e1e1;
+    border-color: #b9b9b9;
+    border: 1px solid #c1c1c1;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.fee-request-classification {
+    background-image: url(../../MojImages/icons/RashiOff.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fee-request-alert {
+    background-image: url(../../MojImages/icons/Alert.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fee-request-Basis {
+    background-image: url(../../MojImages/icons/FeeRequestBasis.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fee-request-PercentageAddition {
+    background-image: url(../../MojImages/icons/FeeRequestTosefetAhuz.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fee-request-Offsetting {
+    background-image: url(../../MojImages/icons/FeeRequestKizuz.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fee-request-FullOffsetBase {
+    background-image: url(../../MojImages/icons/FeeRequestKizuzBasis.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fee-request-FullOffsetAdditionPercentage {
+    background-image: url(../../MojImages/icons/FeeRequestKizuzahuz.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.fee-request-AutomaticOffset {
+    background-image: url(../../MojImages/icons/FeeRequestkizuzAutomat.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+    .fee-request-classification[disabled] {
+        background-image: url(../../MojImages/icons/RashiDis.png);
+        background-repeat: no-repeat;
+    }
+
+    .fee-request-classification:hover {
+        background-image: url(../../MojImages/icons/RashiOn.png);
+        background-repeat: no-repeat;
+    }
+
+
+
+
+    .fee-request-objection {
+    background-image: url(../../MojImages/icons/FeeRequestHasaga.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+    .fee-request-addition {
+    background-image: url(../../MojImages/icons/FeeRequestTosefet.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

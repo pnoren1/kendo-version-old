@@ -1,0 +1,19 @@
+﻿<RulesMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rules>
+    <Rule Name="Test">
+      <Flow>
+        <RootBlock>
+          <FlowBlock xsi:type="IfBlock" Condition="Entity.ApplicantLocations.Count()==0">
+            <IfFalse>
+              <FlowBlock xsi:type="IfBlock" Condition="ApplicantHelper.HasCurrentAddressForDelivery(Entity.Addresses)">
+                <IfTrue>
+                  <FlowBlock xsi:type="BooleanResultBlock" Result="true" />
+                </IfTrue>
+              </FlowBlock>
+            </IfFalse>
+          </FlowBlock>
+        </RootBlock>
+      </Flow>
+    </Rule>
+  </Rules>
+</RulesMap>

@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Applicant" xml:space="preserve">
+    <value>פונה</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>ביטול</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>הרשומה תמחק. האם ברצונך להמשיך?</value>
+  </data>
+  <data name="IdentificationNo" xml:space="preserve">
+    <value>ת.ז.</value>
+  </data>
+  <data name="LoseChanges" xml:space="preserve">
+    <value>הנתונים לא נשמרו האם לאבד את הנתונים?</value>
+  </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>הודעת שגיאה</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>אישור</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>בקשה</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>מיקוד</value>
+    <comment>:</comment>
+  </data>
+  <data name="NewApplicant" xml:space="preserve">
+    <value>פונה חדש</value>
+  </data>
+  <data name="Advocate" xml:space="preserve">
+    <value>סנגור</value>
+  </data>
+  <data name="NewAdvocate" xml:space="preserve">
+    <value>סנגור חדש</value>
+  </data>
+  <data name="NewProcess" xml:space="preserve">
+    <value>פניה חדשה</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>בחר</value>
+    <comment>Locations</comment>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>שכיר</value>
+  </data>
+  <data name="SelfEmployed" xml:space="preserve">
+    <value>עצמאי</value>
+  </data>
+  <data name="Process" xml:space="preserve">
+    <value>פניה</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>שליחת מייל</value>
+  </data>
+  <data name="ErrTaagidNotExist" xml:space="preserve">
+    <value>לא נמצא תאגיד עם מספר ח.פ לסוג תאגיד שנבחר.</value>
+  </data>
+  <data name="TaagidDetails" xml:space="preserve">
+    <value>פרטי תאגיד</value>
+  </data>
+  <data name="UpdateDetails" xml:space="preserve">
+    <value>עדכון פרטים</value>
+  </data>
+  <data name="ProcessWithSameProcessNumber" xml:space="preserve">
+    <value>פניות לפונה עם אותו מספר הליך</value>
+  </data>
+  <data name="ProcessWithSameProcessType" xml:space="preserve">
+    <value>פניות לפונה עם אותו סוג הליך</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>לא</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="CurrentAddress" xml:space="preserve">
+    <value>נוכחית</value>
+  </data>
+  <data name="PreviousAddress" xml:space="preserve">
+    <value>קודמת</value>
+  </data>
+  <data name="CreateProcess" xml:space="preserve">
+    <value>יצירת פניה</value>
+  </data>
+  <data name="ContactToProcess" xml:space="preserve">
+    <value>קשר לפניה</value>
+  </data>
+  <data name="LeftLocation" xml:space="preserve">
+    <value>סיים את השהות</value>
+  </data>
+  <data name="Dev" xml:space="preserve">
+    <value>סביבת פיתוח</value>
+  </data>
+  <data name="PROD" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QA" xml:space="preserve">
+    <value>סביבת בדיקות</value>
+  </data>
+  <data name="HistoryProcessNumber" xml:space="preserve">
+    <value> היסטורית מספר הליך</value>
+  </data>
+  <data name="NewProcessDetails" xml:space="preserve">
+    <value>מספר הליך חדש</value>
+  </data>
+  <data name="OldProcessDetails" xml:space="preserve">
+    <value>מספר הליך קיים</value>
+  </data>
+  <data name="UpdateProcessNumber" xml:space="preserve">
+    <value>עדכון מספר הליך</value>
+  </data>
+  <data name="ProcessCourtHistory" xml:space="preserve">
+    <value>הסטורית בתי משפט</value>
+  </data>
+  <data name="UpdateProcessCourt" xml:space="preserve">
+    <value>עדכון בית משפט</value>
+  </data>
+  <data name="StatusesHistory" xml:space="preserve">
+    <value>היסטוריית סטטוסים</value>
+  </data>
+  <data name="MemoHistory" xml:space="preserve">
+    <value>הסטוריית תרשומות</value>
+  </data>
+  <data name="HearingsAndEligibility" xml:space="preserve">
+    <value>דיונים וזכאות</value>
+  </data>
+  <data name="PDOFileId" xml:space="preserve">
+    <value>תיק סנגוריה</value>
+  </data>
+  <data name="PersonDetails" xml:space="preserve">
+    <value>פרטי פונה</value>
+  </data>
+  <data name="ProcessDetail" xml:space="preserve">
+    <value>פרטי הליך</value>
+  </data>
+  <data name="SearchPerson" xml:space="preserve">
+    <value>איתור פונה</value>
+  </data>
+  <data name="CurrentDistrictId" xml:space="preserve">
+    <value>מחוז נוכחי</value>
+  </data>
+  <data name="CurrentModuleId" xml:space="preserve">
+    <value>סוג יישות</value>
+  </data>
+  <data name="HistoryAdmissionRequestStatuses" xml:space="preserve">
+    <value>סטטוסים קודמים של בקשה</value>
+  </data>
+  <data name="SearchPersonAdvocates" xml:space="preserve">
+    <value>איתור סנגורים</value>
+  </data>
+  <data name="HistoryNominationConsulationDay" xml:space="preserve">
+    <value>הסטורית הקפצות</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>הדפס</value>
+  </data>
+  <data name="SendToNominee" xml:space="preserve">
+    <value>שלח לממונה</value>
+  </data>
+  <data name="NominationsRelatedProcessTitle" xml:space="preserve">
+    <value>מינויים לפניות קשורות</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>בחר</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>הודעה</value>
+  </data>
+  <data name="CandidateForm" xml:space="preserve">
+    <value>טופס בקשה</value>
+  </data>
+  <data name="ChangeLogLevel" xml:space="preserve">
+    <value>שינוי רמת לוג</value>
+  </data>
+  <data name="DiscountReason" xml:space="preserve">
+    <value>סיבת מתן הנחה</value>
+  </data>
+  <data name="ExemptionReason" xml:space="preserve">
+    <value>סיבת מתן פטור</value>
+  </data>
+  <data name="LastPaymentDate" xml:space="preserve">
+    <value>תאריך אחרון לתשלום</value>
+  </data>
+  <data name="LastTreatmentDate" xml:space="preserve">
+    <value>תאריך אחרון לטיפול</value>
+  </data>
+  <data name="AddProcessesAttached" xml:space="preserve">
+    <value>הוספת קשר לפניה</value>
+  </data>
+  <data name="AnAlert" xml:space="preserve">
+    <value>הודעת התראה</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>לתשומת ליבך</value>
+  </data>
+  <data name="IdNumberOnlyDigits" xml:space="preserve">
+    <value>מספר מזהה</value>
+  </data>
+  <data name="PreviousNominationRoundsTitle" xml:space="preserve">
+    <value>סבבי התקשרות טלפונית</value>
+  </data>
+  <data name="DocumentToEntityStatusAccepted" xml:space="preserve">
+    <value>טרם נתקבל קובץ</value>
+  </data>
+  <data name="IncomingDocument" xml:space="preserve">
+    <value>מסמך נכנס</value>
+  </data>
+  <data name="OutgoingDocument" xml:space="preserve">
+    <value>מסמך יוצא</value>
+  </data>
+  <data name="RecordsIdentified" xml:space="preserve">
+    <value>רשומות מתוך</value>
+  </data>
+  <data name="PDOFile" xml:space="preserve">
+    <value>תיק סנגוריה</value>
+  </data>
+  <data name="ReplacementAdvocateDetails" xml:space="preserve">
+    <value>פרטי החלפת סנגור</value>
+  </data>
+  <data name="CurrentApplicantPlace" xml:space="preserve">
+    <value>מיקום נוכחי לפונה</value>
+  </data>
+  <data name="HearingTypeName" xml:space="preserve">
+    <value>מהות הדיון</value>
+  </data>
+  <data name="IsReceivedReleaseForm" xml:space="preserve">
+    <value>התקבל טופס שחרור בפועל</value>
+  </data>
+  <data name="LastHearingDate" xml:space="preserve">
+    <value>תאריך הדיון האחרון</value>
+  </data>
+  <data name="LastOrCurrentNominations" xml:space="preserve">
+    <value>המינוי הפעיל/האחרון</value>
+  </data>
+  <data name="NextHearingDate" xml:space="preserve">
+    <value>תאריך הדיון הבא</value>
+  </data>
+  <data name="PDOFileApplicantProcess" xml:space="preserve">
+    <value>פניות לפונה בתיק</value>
+  </data>
+  <data name="SeriousFelonyLaw" xml:space="preserve">
+    <value> סעיפי האישום החמורים</value>
+  </data>
+  <data name="Supervision" xml:space="preserve">
+    <value>פיקוח</value>
+  </data>
+  <data name="InfoMessage" xml:space="preserve">
+    <value>לתשומת לבך</value>
+  </data>
+  <data name="WarningMessage" xml:space="preserve">
+    <value>הודעת אזהרה</value>
+  </data>
+  <data name="CreateNewProcess" xml:space="preserve">
+    <value>צור פניה</value>
+  </data>
+  <data name="CreateAppealProcess" xml:space="preserve">
+    <value>יצירת פניה נלווית</value>
+  </data>
+  <data name="BackToExaminationTitle" xml:space="preserve">
+    <value>החזרת שורת שכ"ט לבדיקה</value>
+  </data>
+  <data name="BackToApprovalTitle" xml:space="preserve">
+    <value>החזרת שורת שכ"ט להחלטת ממונה</value>
+  </data>
+  <data name="ApprovalDetails" xml:space="preserve">
+    <value>פרטי החלטת ממונה</value>
+  </data>
+  <data name="ExaminationDetails" xml:space="preserve">
+    <value>פרטי בדיקה</value>
+  </data>
+  <data name="AddDocument" xml:space="preserve">
+    <value>הוספת מסמך</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>תיאור</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>איתור</value>
+  </data>
+  <data name="The" xml:space="preserve">
+    <value>ה</value>
+  </data>
+  <data name="Favorable" xml:space="preserve">
+    <value>חיובי</value>
+  </data>
+  <data name="Unfavorable" xml:space="preserve">
+    <value>שלילי</value>
+  </data>
+  <data name="FeeRequestFinalApprovalAlert" xml:space="preserve">
+    <value>באישור סופי של בקשה: כל שורות שכ"ט המאושרות יאושרו סופית, כל שורות שכ"ט הדחויות יידחו סופית. הפעולה סופית ולא ניתן לחזור ממנה. האם להמשיך בפעולה?</value>
+  </data>
+  <data name="FeeRequestRangeDatesCallProcessesTitle" xml:space="preserve">
+    <value>רשימת פניות מהקפצה לסנגור בטווח תאריכים בשכ"ט</value>
+  </data>
+  <data name="MemoRecipientHistory" xml:space="preserve">
+    <value>הסטוריית נמענים</value>
+  </data>
+  <data name="PDOFileSupervisorsHistory" xml:space="preserve">
+    <value>הסטוריית רפרנטים לתיק</value>
+  </data>
+  <data name="ProcessExpertHistory" xml:space="preserve">
+    <value>הסטוריית מומחים</value>
+  </data>
+  <data name="ProcessSupervisorsHistory" xml:space="preserve">
+    <value>הסטוריית רפרנטים לפניות בתיק</value>
+  </data>
+  <data name="ReminderHistory" xml:space="preserve">
+    <value>הסטוריית תזכורות</value>
+  </data>
+  <data name="DisconnectFrom" xml:space="preserve">
+    <value>הסרה מהרשימה ב</value>
+  </data>
+  <data name="Discount" xml:space="preserve">
+    <value>סכום הנחה</value>
+  </data>
+  <data name="MessageAlert" xml:space="preserve">
+    <value>התראה</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>אינטגרציה</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>בדיקות משתמשים</value>
+  </data>
+  <data name="ConnectToPdoFile" xml:space="preserve">
+    <value>קישור לתיק סנגוריה</value>
+  </data>
+  <data name="ReplacementsInProcessHearings" xml:space="preserve">
+    <value>החלפות בפניות במחוז</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>שליחת הודעה</value>
+  </data>
+</root>

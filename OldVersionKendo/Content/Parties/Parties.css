@@ -1,0 +1,130 @@
+﻿.reorder
+{
+    background-image: url(../MojImages/Icons/ArrangeListOff.png);
+    width: 19px;
+    height: 18px;
+    margin: 3px auto 2px;
+}
+
+.reorder[disabled]
+{
+    background-image: url(../MojImages/Icons/ArrangeListDis.png);
+}
+
+.reorder:hover
+{
+    background-image: url(../MojImages/Icons/ArrangeListON.png);
+}
+
+.main-address
+{
+    background-image: url(../MojImages/Icons/RashiOff.png);
+    width: 19px;
+    height: 18px;
+    margin: 3px auto 2px;
+}
+
+.main-address[disabled]
+{
+    background-image: url(../MojImages/Icons/RashiDis.png);
+}
+
+.main-address:hover
+{
+    background-image: url(../MojImages/Icons/RashiOn.png);
+}
+
+.add-new-party
+{
+    background-image: url(../MojImages/Icons/AddClientOff.png);
+    width: 19px;
+    height: 18px;
+    margin: 3px auto 2px;
+}
+
+.add-new-party[disabled]
+{
+    background-image: url(../MojImages/Icons/AddClientDis.png);
+}
+
+.add-new-party:hover
+{
+    background-image: url(../MojImages/Icons/AddClientOn.png);
+}
+
+.add-existing-party
+{
+    background-image: url(../MojImages/Icons/connectOff.png);
+    width: 19px;
+    height: 18px;
+    margin: 3px auto 2px;
+}
+
+.add-existing-party[disabled]
+{
+    background-image: url(../MojImages/Icons/connectDis.png);
+}
+
+.add-existing-party:hover
+{
+    background-image: url(../MojImages/Icons/connectOn.png);
+}
+
+.move-up
+{
+    background-image: url(../MojImages/Icons/ChosenUpOff.png);
+    width: 19px !important;
+    height: 18px !important;
+    margin: 3px auto 2px !important;
+}
+
+.move-up[disabled]
+{
+    background-image: url(../MojImages/Icons/ChosenUpDis.png);
+}
+
+.move-up:hover
+{
+    background-image: url(../MojImages/Icons/ChosenUpOn.png);
+}
+
+.move-down
+{
+    background-image: url(../MojImages/Icons/ChosenDownOff.png);
+    width: 19px !important;
+    height: 18px !important;
+    margin: 3px auto 2px !important;
+}
+
+.move-down[disabled]
+{
+    background-image: url(../MojImages/Icons/ChosenDownDis.png);
+}
+
+.move-down:hover
+{
+    background-image: url(../MojImages/Icons/ChosenDownOn.png);
+}
+
+.add-party
+{
+    background-image: url(../MojImages/icons/AddOff.png);
+}
+
+.add-party:hover
+{
+    background-image: url(../MojImages/icons/AddOn.png);
+}
+
+.add-party[disabled]
+{
+    background-image: url(../MojImages/icons/AddDis.png) !important;
+}
+
+.default-address
+{
+    background-image: url(../MojImages/icons/StarFav.png);
+    width: 16px;
+    height: 16px;
+    border: none;
+}

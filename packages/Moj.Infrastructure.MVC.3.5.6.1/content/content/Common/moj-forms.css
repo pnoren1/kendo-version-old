@@ -1,0 +1,180 @@
+﻿.form-container
+{
+    width: 1122px; /*float:right; */
+    display: table-cell;
+    vertical-align: top;
+    /*padding-right: 15px;*/
+    position: relative;
+    overflow: hidden;
+    height: 801px;
+    background-color: #f5f5f5;
+}
+
+.moj-form-container
+{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.moj-content
+{
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom:10px;
+}
+
+.moj-form
+{
+    width: 1098px;
+    display: table;
+    border: 1px solid #bebebe;
+    position: relative;
+    margin: 0 auto;
+}
+
+.moj-form-title
+{
+    width: 100%;
+    height: 31px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #bebebe;
+}
+
+.panel-seperator
+{
+    background: #A5B4C8 repeat-x;
+    width: 95%;
+    height: 1px;
+    padding: 0 3px;
+}
+
+.in-title
+{
+    border-top: 1px solid #bebebe;
+}
+
+.moj-form-title .txt
+{
+    width: 1048px;
+    height: 26px;
+    float: right;
+    padding-right: 9px;
+    padding-top: 5px;
+    color: #325082;
+    font-size: 1.142em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.moj-form-title .sep
+{
+    width: 2px;
+    height: 31px;
+    float: right;
+    background-image: url(../MojImages/PanelSeperator.png);
+}
+
+.moj-form-title .button-open-close
+{
+    width: 39px;
+    height: 31px;
+    float: right;
+    position: relative;
+}
+
+.moj-form-title .button-open-close div
+{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 11px;
+}
+.moj-form-title .button-open-close div a {
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    float:right;
+}
+.moj-form-title .button-open-close div.plus a
+{
+    background-image: url(../MojImages/PanelPlus.png);
+}
+
+.moj-form-title .button-open-close div.minus a
+{
+    background-image: url(../MojImages/PanelMinus.png);
+}
+
+
+.moj-form-all-lines
+{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 10px 0px;
+    position: relative;
+}
+
+.moj-form-line
+{
+    width: 100%;
+    display: table;
+    margin-top: 7px;
+}
+
+.moj-form-line .col
+{
+    float: right;
+    margin-left: 10px;
+    color: #424242;
+    min-height: 20px;
+    position:relative;
+}
+
+td .col 
+{
+    float: right;
+    color: #424242;
+    min-height: 20px;
+    position:relative;
+}
+
+.moj-form-line .col:last-child
+{
+    margin-left: 0px !important;
+    
+}
+.moj-form-line div.ltr-elements .col:last-child {
+    margin-left: 10px !important;
+}
+
+.moj-form-line .col-txt
+{
+    padding-top: 5px;
+    min-height: 15px;
+}
+
+.moj-panel
+{
+    background-color:#fafafa;
+}
+
+.moj-panel.hide{
+    display: none !important;
+}
+
+.no-border-bottom
+{
+    border-bottom:0px;
+}
+
+.no-border-top
+{
+    border-top:0px;
+}
+
+
+
+
+

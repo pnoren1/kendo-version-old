@@ -1,0 +1,37 @@
+﻿.tabs-container ul li .icon.ParametrimGlobaliim {
+    background-image: url(../../MojImages/PDOMenus/managementMenu/ParametrimGlobaliim.png);
+}
+
+.tabs-container ul li .icon.TavlaotKod {
+    background-image: url(../../MojImages/PDOMenus/managementMenu/TavlaotKod.png);
+}
+
+.tabs-container ul li .icon.Log {
+    background-image: url(../../MojImages/PDOMenus/managementMenu/Log2.png);
+}
+
+.tabs-container ul li .icon.Users {
+    background-image: url(../../MojImages/PDOMenus/managementMenu/Users.png);
+}
+
+.tabs-container ul li .icon.Matmonim {
+    background-image: url(../../MojImages/PDOMenus/managementMenu/Matmonim.png);
+}
+
+.tabs-container ul li .icon.Distance2 {
+    background-image: url(../../MojImages/PDOMenus/managementMenu/Distance2.png);
+}
+
+.tabs-container ul li .icon.HafatzatHodaot {
+    background-image: url(../../MojImages/PDOMenus/managementMenu/HafatzatHodaot.png);
+}
+
+
+
+.non-authorized-icon {
+    background-image: url(../../MojImages/PdoImages/not-authorized-icon.png);
+    width: 133px;
+    height: 107px;
+    background-repeat: no-repeat;
+    /*cursor: pointer;*/
+}

@@ -1,0 +1,322 @@
+﻿.tabs-container 
+{
+    width: 100%;
+    height: 55px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbbcbe), to(#e8e9ea));
+    background: -webkit-linear-gradient(top, #e8e9ea, #bbbcbe);
+    background: -moz-linear-gradient(top, #e8e9ea, #bbbcbe);
+    background: -ms-linear-gradient(top,  #e8e9ea, #bbbcbe);
+    background: -o-linear-gradient(top,  #e8e9ea, #bbbcbe);
+    margin-bottom: 5px;
+}
+
+.tabs-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /*height: 70px;*/
+}
+
+.tabs-container ul li {
+    float: right;
+    /*padding: 0 20px;*/
+    width: 90px;
+    height: 55px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.tabs-container ul li.active {
+    background-image: url(../MojImages/buttonsTabs/SelectedMiddle.png);
+    background-position:center;
+}
+
+.tabs-container ul li .border-right, .tabs-container ul li .border-left, .tabs-container ul li .border-right-for-request, .tabs-container ul li .border-left-for-request {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 55px;  
+    background-image: url(../MojImages/buttonsTabs/SelectedSides.png);
+    z-index: 99;
+    background-position:center;
+}
+.tabs-container ul li .border-right ,.tabs-container ul li .border-right-for-request{
+    right: 0;
+}
+.tabs-container ul li .border-left ,.tabs-container ul li .border-left-for-request{
+    left: 0;
+}
+
+.tabs-container ul li .icon {
+  
+   height: 18px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 12px auto 2px;
+	display:inline-table;
+    text-align:center;
+    padding-top:20px;
+}
+
+.tabs-container ul li .icon.k-link
+{
+    line-height: normal;
+    padding: 20px 4px 0px 0px;
+}
+.tabs-container ul li .icon.k-link .k-i-arrow-s
+{
+    margin-right: 0px;
+    background-image: url(../MojImages/icons/GrayTriangle.png);
+    background-position: top left;
+    height: 7px;
+    width: 14px;
+}
+
+.tabs-container .k-state-active, .tabs-container .k-state-hover
+{
+    background: transparent !important;
+}
+
+.tab-menu .icon {padding-right:6px;}
+
+.tabs-container ul li a {
+    font-size: 1em;
+}
+
+.tabs-container .tab-sep {
+    width: 2px;
+    height: 55px;
+    background-image: url(../MojImages/buttonsTabs/TabSeperator.png);
+}
+
+.tabs-container .tab-sep.sep-right{ margin-right: 30px;}
+.tabs-container .tab-sep.sep-left{ margin-left: 10px;}
+
+.tabs-container .tab-menu {
+     width: 90px;
+}
+
+.tabs-container .tab-menu .txt-menu {
+    
+}
+
+.tabs-container .tab-menu .triangle {
+    background-image:url(../MojImages/icons/GrayTriangle.png); 
+    width:8px; 
+    height:5px;
+    margin-top: 6px;
+    margin-right: 5px;
+}
+
+
+
+.ul-menu 
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #fff;
+    width: 180px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.ul-menu li, .ul-menu.k-menu .k-group .k-item {
+    width: 166px !important;
+    height: 26px !important;
+    border-bottom: 1px dashed #ccc !important;
+    margin: 3px auto;
+}
+
+.tabs-container .k-menu .k-group .k-item:first-child {
+    margin-top: 7px;
+}
+
+.tabs-container .k-menu .k-group .k-item:last-child {
+    margin-bottom: 7px;
+}
+
+.tabs-container .k-menu .k-group .k-item.k-state-hover {
+    background-color: #d6e8ed !important;
+    background-image: none;
+}
+
+.tabs-container .k-menu .k-group .k-item > .k-link {
+    padding: 3px 6px 0 4px;
+    text-align: right;
+}
+
+.tabs-container .k-menu {
+    cursor: pointer;
+}
+
+.tabs-container .k-menu.k-widget, .k-menu .k-item, .k-widget.k-menu-horizontal > .k-item { 
+    border-width: 0;
+}
+
+.tabs-container .k-menu::after {
+    display: none;
+}
+
+.tabs-container .k-animation-container
+{ right: -3px;}
+
+
+/*************************************************************************************************/
+
+.tabs-container .k-tabstrip-items
+{
+    list-style-type: none; 
+    margin: 0 !important; 
+    font-weight: normal !important; 
+    padding: 0 !important; 
+    height: 55px !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+.tabs-container .k-tabstrip-items > .k-state-default 
+{
+    float: right !important;
+    min-width: 90px !important;
+    height: 55px !important;
+    text-align: center !important;
+    position: relative !important;
+    cursor: pointer !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-width: 0px !important;
+    border-bottom-width: 0px !important;
+    padding: 0 !important;
+    background-image: none !important;
+    
+}
+.tabs-container .k-tabstrip-items > .k-state-active 
+{
+    background-image: url(../MojImages/buttonsTabs/SelectedMiddle.png) !important;
+}
+
+.tabs-container .k-tabstrip-items > .k-item {
+    margin: 0 !important;
+}
+
+.tabs-container .k-tabstrip-items .k-link {
+    padding: 0 !important;
+}
+
+#tabStrip .k-tabstrip-items
+{
+    background-color: #0e5082; height: 30px; list-style-type: none; margin: 0 !important; font-weight: bold; padding: 0 !important;
+}
+#tabStrip .k-tabstrip-items > .k-state-default 
+{
+    background-color: #D3D3D3;
+    padding: 0 10px;
+    float: right;
+    height: 30px;
+    color: #424242;
+    text-align: center;
+    min-width: 150px;
+    max-width: 165px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-color: #23375F;
+    border-width: 0px;
+    margin: 0 0 0 1px;
+    
+}
+#tabStrip .k-tabstrip-items > .k-state-active 
+{
+    background-color: #f5f5f5;
+    border-bottom-width: 0px;
+}
+
+#tabStrip .k-tabstrip-items .k-state-default:first-child, #tabStrip .k-tabstrip-items .k-state-active:first-child {border-top-right-radius: 0px !important;}
+
+#tabStrip .k-tabstrip-items > .k-item {
+    background-image: none;
+}
+
+#tabStrip .k-tabstrip-items .k-link { 
+    padding: 5px 0 0 0 !important; 
+    width: 100%; 
+    background-color: transparent;
+    overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+#mytabStrip .k-content
+{
+    padding:0,5px,0,0 !important;
+}
+
+#mytabStrip .k-tabstrip-items
+{
+    background-color:transparent !important;
+    width: 100%; height: 36px; list-style-type: none; margin: 0 !important; font-weight: bold; padding: 0 !important;
+}
+#mytabStrip .k-tabstrip-items .k-state-default 
+{
+    background: url(../MojImages/icons/NoshimOff.png) no-repeat center top !important;
+	display:inline-table;
+    height: 40px !important;
+    min-width: 90px !important;
+    
+    min-height:40px;
+    text-align:center;
+    font-size:0.857em !important;
+    font-weight:bold;
+    padding:0;
+    padding-top:40px;
+}
+
+#mytabStrip .k-link
+{
+    font-size:0.857em !important;
+}
+
+#mytabStrip .k-tabstrip-items .k-state-active, #mytabStrip .k-tabstrip-items .k-state-default:hover
+{
+    background: url(../MojImages/icons/NoshimOn.png) no-repeat center top !important;
+	display:inline-table;
+    height: 40px;
+    min-width: 90px !important;
+    min-height:40px;
+    text-align:center;
+    font-size:0.857em !important;
+    font-weight:bold;
+    padding:0;
+    padding-top:40px;
+}
+
+.tab-close
+{
+    background-image:url('../MojImages/icons/CloseTabOff.png');
+    height: 8px;
+    width: 8px;
+    top: 11px; 
+	display: block; 
+	background-repeat: no-repeat; 
+	opacity: 0.6; 
+	position: absolute; 
+	float:left;
+	left: 7px; 
+	cursor: pointer; 
+	z-index: 2;
+}
+
+.tab-close:hover
+{
+    background-image:url('../MojImages/icons/CloseTabOn.png');
+}
+
+.tab-close:active
+{
+    background-image:url('../MojImages/icons/CloseTabPress.png');
+}
+
+

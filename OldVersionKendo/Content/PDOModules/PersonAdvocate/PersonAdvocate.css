@@ -1,0 +1,104 @@
+﻿
+
+.divAdvocateHeader {
+    background-color: #fafafa;
+    border: 1px solid #c1c1c1;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tabs-container ul li .icon.details {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/Klali.png);
+}
+
+.tabs-container ul li .icon.main {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/Klali.png);
+}
+
+.tabs-container ul li .icon.employment {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/HagdarotTaasuka.png);
+}
+
+.tabs-container ul li .icon.contracts {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/Hozim.png);
+}
+
+.tabs-container ul li .icon.requests {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/Bakashot.png);
+}
+.tabs-container ul li .icon.classification {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/SivougSanegor.png);
+}
+
+.tabs-container ul li .icon.FeeQuotas {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/TikratScharTircha.png);
+}
+
+.tabs-container ul li .icon.NominationQuota {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/MichsatMinouy.png);
+}
+
+.tabs-container ul li .icon.Tirshomot {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/Tirshomot.png);
+}
+
+.tabs-container ul li .icon.Tizkorot {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/Tizkorot.png);
+}
+
+.tabs-container ul li .icon.Mismachim {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/Mismachim.png);
+}
+
+.tabs-container ul li .icon.searchPersonAdvocate {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/SearchSanegor.png);
+}
+.tabs-container ul li .icon.searchCandidateForm {
+    background-image: url(../../MojImages/PDOMenus/personAdvocateMenu/SearchTofesBakasha.png);
+}
+.btnSearchMerkavaNumber {
+    background: url('../MojImages/icons/CopyDetails.png');
+    background-repeat: no-repeat;
+}
+.sumLine td{
+border-top :2px solid black;
+border-bottom :2px solid black;
+}
+
+.sumLine td:first-child{
+border-right :2px solid black !important;
+}
+
+.sumLine td:last-child{
+border-left :2px solid black !important;
+}
+
+.titleHistoryGrid{
+    width:366px;
+    float:left;
+    text-align:center;
+    vertical-align: middle;
+    background:-webkit-linear-gradient(bottom, #b5def4  60%, #e3f3fd  60%);
+    margin-left:65px;
+    font-weight :bold;
+    font-size:0.928em;
+    border-style:solid;
+    border-width:1px 1px 0 1px;
+    border-color :#9eb3c7;
+
+}
+.titleHistoryGridOnlyView{
+    width:380px;
+    float:left;
+    text-align:center;
+    vertical-align: middle;
+    background:-webkit-linear-gradient(bottom, #b5def4  60%, #e3f3fd  60%);
+    margin-left:32px;
+    font-weight :bold;
+    font-size:0.928em;
+    border-style:solid;
+    border-width:1px 1px 0 1px;
+    border-color :#9eb3c7;
+
+}
